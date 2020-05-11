@@ -11,6 +11,6 @@ experimental=False
 deprecated=False
 about=Plugin for QGIS 3 providing simple access to WMS and WFS geographic flows from GeoGrandEst and other useful geographic resources in the Grand Est region.
 tracker=https://www.geograndest.fr/portail/fr/faq-page
-repository=https://www.geograndest.fr/tools/plugin-qgis-geograndest/plugins.xml
+repository=https://github.com/geograndest/qgis-plugin
 homepage=https://www.geograndest.fr/portail/fr/ressources
 tags=geograndest,géograndest,GeoGrandEst,GéoGrandEst,GrandEst, Grand Est
