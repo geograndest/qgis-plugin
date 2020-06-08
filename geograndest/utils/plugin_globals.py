@@ -18,7 +18,7 @@ class PluginGlobals:
     # PLUGIN_TAG = u"GéoGrandEst"
     PLUGIN_TAG = u"geograndest"
     PLUGIN_VERSION = u"0.9.1"
-    PLUGIN_SOURCE_REPOSITORY = u"https://github.com/geo-grandest/test"
+    PLUGIN_SOURCE_REPOSITORY = u"https://github.com/geograndest/qgis-plugin"
 
     # Tree nodes types
     NODE_TYPE_FOLDER = "folder"
