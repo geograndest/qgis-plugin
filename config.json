@@ -1,5 +1,5 @@
 {
-  "title": "GéoGrandEst",
+  "title": "GéoGrandEst - version 15/05/2020",
   "description": "",
   "type": "folder",
   "children": [{
@@ -46,9 +46,7 @@
             "url": "https://osm.geograndest.fr/maps/osm-default",
             "name": "default",
             "format": "image/png",
-            "srs": "epsg:2154",
-			"maxHeight":"1024",
-			"maxWidth":"1024"
+            "srs": "epsg:2154"
 			
           }
         },
@@ -60,13 +58,11 @@
             "url": "https://osm.geograndest.fr/maps/osm-google",
             "name": "default",
             "format": "image/png",
-            "srs": "epsg:2154",
-			"maxHeight":"1024",
-			"maxWidth":"1024"
+            "srs": "epsg:2154"
           }
         },
-        {
-          "title": "test OpenStreetMap - style MapBox",
+		{
+          "title": "OpenStreetMap - style MapBox",
           "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style MapBox",
           "type": "wms_layer",
           "params": {
@@ -226,7 +222,21 @@
           "title": "Vues aériennes récentes - RVB",
           "description": "Photographies aériennes prises dans le domaine visible depuis 2014",
           "type": "folder",
-          "children": [{
+          "children": [
+			{
+              "title": "Vue aérienne RVB complète du Grand Est",
+              "description": "Agrégat des dernières orthophotographies RVB faites par l'IGN.",
+              "type": "wmts_layer", 
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0129-0000",
+              "params": {
+                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
+				"tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:GGE_ORTHO_RVB_ACTUELLE",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              }
+            },
+			{
               "title": "Vue aérienne des Ardennes",
               "description": "Orthophotographie des Ardennes - 2016 - 20cm",
               "type": "wms_layer",
@@ -234,7 +244,7 @@
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2016_08_TIF_L93",
-                "format": "image/jpeg",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
@@ -246,7 +256,7 @@
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2016_10_TIF_L93",
-                "format": "image/jpeg",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
@@ -258,7 +268,7 @@
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2016_51_TIF_L93",
-                "format": "image/jpeg",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
@@ -270,7 +280,7 @@
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2016_52_TIF_L93",
-                "format": "image/jpeg",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
@@ -282,7 +292,7 @@
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_54_TIF_L93",
-                "format": "image/jpeg",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
@@ -294,7 +304,7 @@
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_55_TIF_L93",
-                "format": "image/jpeg",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
@@ -306,7 +316,7 @@
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_57_TIF_L93",
-                "format": "image/jpeg",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
@@ -318,7 +328,7 @@
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_67_TIF_L93",
-                "format": "image/jpeg",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
@@ -330,7 +340,7 @@
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_68_TIF_L93",
-                "format": "image/jpeg",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
@@ -342,7 +352,7 @@
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_88_TIF_L93",
-                "format": "image/jpeg",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
@@ -363,7 +373,21 @@
           "title": "Vues aériennes récentes - Infrarouge",
           "description": "Photographies aériennes prises dans le domaine infrarouge depuis 2016",
           "type": "folder",
-          "children": [{
+          "children": [
+			{
+              "title": "Vue aérienne IRC complète du Grand Est",
+              "description": "Agrégat des dernières orthophotographies IRC faites par l'IGN.",
+              "type": "wmts_layer", 
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0129-0000",
+              "params": {
+                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
+				"tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:GGE_ORTHO_IRC_ACTUELLE",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              }
+            },
+			{
               "title": "Vue aérienne IRC des Ardennes",
               "description": "Orthophotographie infrarouge des Ardennes - 2016 - 50cm",
               "type": "wms_layer",
@@ -493,27 +517,28 @@
               "title": "Relief Europe couleurs",
               "description": "Fond de plan relief et surfaces en eau - Europe 2013",
 			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-EUDEM30-TERR-EAU_2013",
-              "type": "wms_layer",
+              "type": "wmts_layer",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/ref/ows",
-                "name": "REF_EUDEM30_COL_2013_TIFLZW_ETRS80",
+                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
+				"tilematrixset_name": "EPSG:2154",
+                "name": "ref:REF_EUDEM30_COL_2013_TIFLZW_ETRS80",
                 "format": "image/jpeg",
-                "srs": "epsg:3857"
+                "srs": "EPSG:2154"
               }
             },
             {
               "title": "Relief Europe niveaux de gris",
               "description": "Fond de plan relief et surfaces en eau - Europe 2013",
 			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-EUDEM30-NB_OP_2013",
-              "type": "wms_layer",
+              "type": "wmts_layer",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/ref/ows",
-                "name": "REF_EUDEM30_NB_2013_TIFLZW_ETRS80",
+                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
+				"tilematrixset_name": "EPSG:2154",
+                "name": "ref:REF_EUDEM30_NB_2013_TIFLZW_ETRS80",
                 "format": "image/jpeg",
-                "srs": "epsg:3857"
+                "srs": "EPSG:2154"
               }
-            }
-          ]
+			}]
     },
     {
       "title": "Limites administratives",
