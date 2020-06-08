@@ -222,6 +222,19 @@
           "description": "Photographies aériennes prises dans le domaine visible depuis 2014",
           "type": "folder",
           "children": [{
+              "title": "Vue aérienne RVB complète du Grand Est",
+              "description": "Orthophotographie RVB 2016/2018 - 20cm",
+              "type": "wmts_layer",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-ORTHO-RVB-2014-2016-GRANDEST",
+              "params": {
+                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
+                "name": "geograndest:GGE_ORTHO_RVB_ACTUELLE",
+				"TileMatrixSetName":"EPSG:2154",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              }
+            },
+			{
               "title": "Vue aérienne des Ardennes",
               "description": "Orthophotographie des Ardennes - 2016 - 20cm",
               "type": "wms_layer",
@@ -359,6 +372,19 @@
           "description": "Photographies aériennes prises dans le domaine infrarouge depuis 2016",
           "type": "folder",
           "children": [{
+              "title": "Vue aérienne IRC complète du Grand Est",
+              "description": "Orthophotographie infrarouge 2016/2018 - 20cm",
+              "type": "wmts_layer",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-ORTHO-RVB-2014-2016-GRANDEST",
+              "params": {
+                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
+                "name": "geograndest:GGE_ORTHO_IRC_ACTUELLE",
+				"TileMatrixSetName":"EPSG:2154",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              }
+            },
+			{
               "title": "Vue aérienne IRC des Ardennes",
               "description": "Orthophotographie infrarouge des Ardennes - 2016 - 50cm",
               "type": "wms_layer",
