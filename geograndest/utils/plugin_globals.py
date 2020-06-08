@@ -47,7 +47,7 @@ class PluginGlobals:
     CONFIG_FILES_DOWNLOAD_AT_STARTUP = True
     CONFIG_DIR_NAME = "config"
     CONFIG_FILE_NAMES = ["config.json"]
-    CONFIG_FILE_URLS = ["https://www.geograndest.fr/tools/plugin-qgis-geograndest/config.json"]
+    CONFIG_FILE_URLS = ["https://github.com/geograndest/qgis-plugin/blob/master/geograndest/config/config.json"]
 
     # Hide resources with status = warn
     HIDE_RESOURCES_WITH_WARN_STATUS = True
