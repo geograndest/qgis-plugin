@@ -23,7 +23,7 @@ class AboutBox(QDialog):
         mainLayout.addWidget(self.logo)
 
 
-        title = u"À propos de l'extension Géo2France…"
+        title = u"À propos de l'extension GéoGrandEst…"
         description = u"""Extension pour QGIS donnant un accès simplifié aux ressources géographiques utiles aux 
 partenaires de GéoGrandEst
 Version {0}
