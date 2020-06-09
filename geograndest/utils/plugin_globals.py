@@ -129,7 +129,7 @@ class PluginGlobals:
         s.setValue(u"{0}/config_files_download_at_startup".format(self.PLUGIN_TAG), u"1")#0
         s.setValue(u"{0}/config_file_names".format(self.PLUGIN_TAG), ["config.json"])
         s.setValue(u"{0}/config_file_urls".format(self.PLUGIN_TAG),
-                   ["https://www.geograndest.fr/tools/plugin-qgis-geograndest/config.json"])
+                   ["https://github.com/geograndest/qgis-plugin/blob/master/geograndest/config/config.json"])
 
     def get_qgis_setting_default_value(self, setting):
         """
