@@ -41,6 +41,7 @@
       "children":[{
           "title": "OpenStreetMap - style standard",
           "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style standard",
+	  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
             "url": "https://osm.geograndest.fr/maps/osm-default",
@@ -52,6 +53,7 @@
         {
           "title": "OpenStreetMap - style Google Maps",
           "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style Google Maps",
+	  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
             "url": "https://osm.geograndest.fr/maps/osm-google",
@@ -63,6 +65,7 @@
         {
           "title": "OpenStreetMap - style MapBox",
           "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style MapBox",
+	  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
             "url": "https://osm.geograndest.fr/maps/magnacarto",
