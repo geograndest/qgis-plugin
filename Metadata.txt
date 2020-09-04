@@ -1,7 +1,7 @@
 [general]
 name=GéoGrandEst
 description=Plugin pour QGIS 3 fournissant un accès simple aux flux de géographiques WMS et WFS de GéoGrandEst et d'autres ressources géographiques utiles en région Grand Est.
-version=0.9.1
+version=2
 qgisMinimumVersion=3.00
 qgisMaximumVersion=3.99
 author=Neogeo Technologies
