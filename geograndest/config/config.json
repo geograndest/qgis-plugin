@@ -1,9 +1,9 @@
 {
-  "title": "GéoGrandEst",
+  "title": "GéoGrandEst - version 15/05/2020",
   "description": "",
   "type": "folder",
   "children": [{
-      "title": "Fonds topographiques IGN",
+      "title": "Fonds topographiques IGN / OSM",
       "description": "Fonds cartographique décrivant la nature du terrain",
       "type": "folder",
       "children": [{
@@ -29,55 +29,46 @@
             "format": "image/png",
             "srs": "epsg:2154"
           }
-        }
-		]
-	},
-		
-	
-	  {
-	  "title": "Fonds OpenStreetMap",
-      "description": "Fonds OpenStreetMap",
-      "type": "folder",
-      "children":[{
+        },
+		{
           "title": "OpenStreetMap - style standard",
-          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style standard",
-	  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style Standard",
+		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
             "url": "https://osm.geograndest.fr/maps/osm-default",
             "name": "default",
-            "format": "image/jpeg",
+            "format": "image/png",
             "srs": "epsg:2154"
+			
           }
         },
         {
           "title": "OpenStreetMap - style Google Maps",
           "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style Google Maps",
-	  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
             "url": "https://osm.geograndest.fr/maps/osm-google",
             "name": "default",
-            "format": "image/jpeg",
+            "format": "image/png",
             "srs": "epsg:2154"
           }
         },
-        {
+		{
           "title": "OpenStreetMap - style MapBox",
           "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style MapBox",
-	  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
             "url": "https://osm.geograndest.fr/maps/magnacarto",
             "name": "map",
-            "format": "image/jpeg",
+            "format": "image/png",
             "srs": "epsg:3857"
           }
-        }    
-        
-      ]
-    },
-    {
+        }]
+	},
+	{
       "title": "Occupation du sol",
       "description": "Données concernant l'occupation et l'usage des sols",
       "type": "folder",
@@ -152,7 +143,55 @@
             "format": "image/png",
             "srs": "epsg:2154"
           }
-        }
+        },
+		{
+              "title": "Régions naturelles du Grand Est - ODONAT - niveau 1",
+              "description": "Au niveau 1 sont identifiés les grands éléments du relief",
+              "type": "wms_layer",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "params": {
+                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
+                "format": "image/png",
+                "name": "Regions_Naturelles_N1_GE_ODONAT_2018",
+                "srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Régions naturelles du Grand Est - ODONAT - niveau 2",
+              "description": "Le niveau 2 subdivise ces éléments avec une logique géologique",
+              "type": "wms_layer",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "params": {
+                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
+                "format": "image/png",
+                "name": "Regions_Naturelles_N2_GE_ODONAT_2018",
+                "srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Régions naturelles du Grand Est - ODONAT - niveau 3",
+              "description": "Le niveau 3 identifie une quarantaine de régions naturelles avec un logique géologique plus précise, ainsi que les vallées alluviales principales",
+              "type": "wms_layer",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "params": {
+                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
+                "format": "image/png",
+                "name": "Regions_Naturelles_N3_GE_ODONAT_2018",
+                "srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Régions naturelles du Grand Est - ODONAT - niveau 4",
+              "description": "Le niveau 4 précise le découpage de certaines unités de niveau 3 et fait la distinction entre les plaines alluviales et le reste de la vallée",
+              "type": "wms_layer",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "params": {
+                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
+                "format": "image/png",
+                "name": "Regions_Naturelles_N4_GE_ODONAT_2018",
+                "srs": "epsg:2154"
+              }
+            }
 	]
     },
 	{
@@ -171,8 +210,8 @@
           }
         },
         {
-          "title": "Sections",
-          "description": "Section du PCI vecteur 2018",
+          "title": "Sections (visible du 1:4.000 au 1:30.000)",
+          "description": "Section du PCI vecteur 2018 (visible du 1:4.000 au 1:30.000)",
           "type": "wms_layer",
           "params": {
             "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
@@ -182,8 +221,8 @@
           }
         },
         {
-          "title": "Parcelle",
-          "description": "Parcelles du PCI vecteur 2018",
+          "title": "Parcelle (visible <1:10.000)",
+          "description": "Parcelles du PCI vecteur 2018 (visible <1:10.000)",
           "type": "wms_layer",
           "params": {
           "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
@@ -193,24 +232,13 @@
           }
         },
         {
-          "title": "Bâti",
-          "description": "Bâti du PCI vecteur 2018",
+          "title": "Bâti (visible <1:10.000)",
+          "description": "Bâti du PCI vecteur 2018 (visible <1:10.000)",
           "type": "wms_layer",
           "params": {
           "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
           "name": "batiment",
           "format": "image/png",
-          "srs": "epsg:2154"
-          }
-        },
-		{
-          "title": "Propriétés foncières de la Région Grand Est",
-          "description": "Bâti du PCI vecteur 2018",
-          "type": "wms_layer",
-          "params": {
-          "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
-          "version": "2.0.0",
-          "name": "region-grand-est:propriete_fonciere_region",
           "srs": "epsg:2154"
           }
         }
@@ -224,45 +252,46 @@
           "title": "Vues aériennes récentes - RVB",
           "description": "Photographies aériennes prises dans le domaine visible depuis 2014",
           "type": "folder",
-          "children": [{
+          "children": [
+			{
               "title": "Vue aérienne RVB complète du Grand Est",
-              "description": "Orthophotographie RVB 2016/2018 - 20cm",
-              "type": "wmts_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-ORTHO-RVB-2014-2016-GRANDEST",
+              "description": "Agrégat des dernières orthophotographies RVB faites par l'IGN.",
+			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0129-0000",
+              "type": "wmts_layer", 
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
+				"tilematrixset_name": "EPSG:2154",
                 "name": "geograndest:GGE_ORTHO_RVB_ACTUELLE",
-				"TileMatrixSetName":"EPSG:2154",
                 "format": "image/png",
-                "srs": "epsg:2154"
+                "srs": "EPSG:2154"
               }
             },
 			{
-              "title": "Vue aérienne des Ardennes",
-              "description": "Orthophotographie des Ardennes - 2016 - 20cm",
+              "title": "Vue aérienne des Ardennes - 2019",
+              "description": "Orthophotographie des Ardennes - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D08-2016",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D08-2019",
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-                "name": "GGE_ORTHORVB_2016_08_TIF_L93",
+                "name": "GGE_ORTHORVB_2019_08_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
 			{
-              "title": "Vue aérienne de l'Aube",
-              "description": "Orthophotographie de l'Aube - 2016 - 20cm",
+              "title": "Vue aérienne de l'Aube - 2019",
+              "description": "Orthophotographie de l'Aube - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D10-2016",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2019_10_TIF_L93",
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-                "name": "GGE_ORTHORVB_2016_10_TIF_L93",
+                "name": "GGE_ORTHORVB_2019_10_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
 			{
-              "title": "Vue aérienne de la Marne",
+              "title": "Vue aérienne de la Marne - 2019",
               "description": "Orthophotographie de la Marne - 2016 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D51-2016",
@@ -274,19 +303,19 @@
               }
             },
 			{
-              "title": "Vue aérienne de la Haute-Marne",
-              "description": "Orthophotographie de la Haute-Marne - 2016 - 20cm",
+              "title": "Vue aérienne de la Haute-Marne - 2019",
+              "description": "Orthophotographie de la Haute-Marne - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D52-2016",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2019_52_TIF_L93",
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-                "name": "GGE_ORTHORVB_2016_52_TIF_L93",
+                "name": "GGE_ORTHORVB_2019_52_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
 			{
-              "title": "Vue aérienne de Meurthe-et-Moselle",
+              "title": "Vue aérienne de Meurthe-et-Moselle - 2018",
               "description": "Orthophotographie de Meurthe-et-Moselle - 2018 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2018_54_TIF_L93",
@@ -298,7 +327,7 @@
               }
             },
 			{
-              "title": "Vue aérienne de Meuse",
+              "title": "Vue aérienne de Meuse - 2018",
               "description": "Orthophotographie de Meuse - 2018 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_55_TIF_L93",
@@ -310,7 +339,7 @@
               }
             },
 			{
-              "title": "Vue aérienne de Moselle",
+              "title": "Vue aérienne de Moselle - 2018",
               "description": "Orthophotographie de Moselle - 2018 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_57_TIF_L93",
@@ -322,7 +351,7 @@
               }
             },
 			{
-              "title": "Vue aérienne du Bas-Rhin",
+              "title": "Vue aérienne du Bas-Rhin - 2018",
               "description": "Orthophotographie du Bas-Rhin - 2018 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_67_TIF_L93",
@@ -334,7 +363,7 @@
               }
             },
 			{
-              "title": "Vue aérienne du Haut-Rhin",
+              "title": "Vue aérienne du Haut-Rhin - 2018",
               "description": "Orthophotographie du Haut-Rhin - 2018 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_68_TIF_L93",
@@ -346,7 +375,7 @@
               }
             },
 			{
-              "title": "Vue aérienne des Vosges",
+              "title": "Vue aérienne des Vosges - 2018",
               "description": "Orthophotographie des Vosges - 2018 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_88_TIF_L93",
@@ -374,46 +403,47 @@
           "title": "Vues aériennes récentes - Infrarouge",
           "description": "Photographies aériennes prises dans le domaine infrarouge depuis 2016",
           "type": "folder",
-          "children": [{
+          "children": [
+			{
               "title": "Vue aérienne IRC complète du Grand Est",
-              "description": "Orthophotographie infrarouge 2016/2018 - 20cm",
-              "type": "wmts_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-ORTHO-RVB-2014-2016-GRANDEST",
+              "description": "Agrégat des dernières orthophotographies IRC faites par l'IGN.",
+			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0130-0000",
+              "type": "wmts_layer", 
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
+				"tilematrixset_name": "EPSG:2154",
                 "name": "geograndest:GGE_ORTHO_IRC_ACTUELLE",
-				"TileMatrixSetName":"EPSG:2154",
                 "format": "image/png",
-                "srs": "epsg:2154"
+                "srs": "EPSG:2154"
               }
             },
 			{
-              "title": "Vue aérienne IRC des Ardennes",
-              "description": "Orthophotographie infrarouge des Ardennes - 2016 - 50cm",
+              "title": "Vue aérienne IRC des Ardennes - 2019",
+              "description": "Orthophotographie infrarouge des Ardennes - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D08-2016",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHOIRC_2019_08_TIF_L93",
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-                "name": "GGE_ORTHOIRC_2016_08_TIF_L93",
+                "name": "GGE_ORTHOIRC_2019_08_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
 			{
-              "title": "Vue aérienne IRC de l'Aube",
-              "description": "Orthophotographie infrarouge de l'Aube - 2016 - 50cm",
+              "title": "Vue aérienne IRC de l'Aube - 2019",
+              "description": "Orthophotographie infrarouge de l'Aube - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D10-2016",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHOIRC_2019_10_TIF_L93",
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-                "name": "GGE_ORTHOIRC_2016_10_TIF_L93",
+                "name": "GGE_ORTHOIRC_2019_10_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
 			{
-              "title": "Vue aérienne IRC de la Marne",
-              "description": "Orthophotographie infrarouge de la Marne - 2016 - 50cm",
+              "title": "Vue aérienne IRC de la Marne - 2019",
+              "description": "Orthophotographie infrarouge de la Marne - 2019 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D51-2016",
               "params": {
@@ -424,19 +454,19 @@
               }
             },
 			{
-              "title": "Vue aérienne IRC de la Haute-Marne",
-              "description": "Orthophotographie infrarouge de la Haute-Marne - 2016 - 50cm",
+              "title": "Vue aérienne IRC de la Haute-Marne - 2019",
+              "description": "Orthophotographie infrarouge de la Haute-Marne - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D52-2016",
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHOIRC_2019_52_TIF_L93",
               "params": {
                 "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-                "name": "GGE_ORTHOIRC_2016_52_TIF_L93",
+                "name": "GGE_ORTHOIRC_2019_52_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
 			{
-              "title": "Vue aérienne IRC de Meurthe-et-Moselle",
+              "title": "Vue aérienne IRC de Meurthe-et-Moselle - 2018",
               "description": "Orthophotographie infrarouge de Meurthe-et-Moselle - 2015 - 50cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D54-2015",
@@ -448,7 +478,7 @@
               }
             },
 			{
-              "title": "Vue aérienne IRC de Meuse",
+              "title": "Vue aérienne IRC de Meuse - 2018",
               "description": "Orthophotographie infrarouge de Meuse - 2014 - 50cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D55-2014",
@@ -460,7 +490,7 @@
               }
             },
 			{
-              "title": "Vue aérienne IRC de Moselle",
+              "title": "Vue aérienne IRC de Moselle - 2018",
               "description": "Orthophotographie infrarouge de Moselle - 2015 - 50cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D57-2015",
@@ -472,7 +502,7 @@
               }
             },
 			{
-              "title": "Vue aérienne IRC du Bas-Rhin",
+              "title": "Vue aérienne IRC du Bas-Rhin - 2018",
               "description": "Orthophotographie infrarouge du Bas-Rhin - 2014 - 50cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D88-2014",
@@ -484,7 +514,7 @@
               }
             },
 			{
-              "title": "Vue aérienne IRC du Haut-Rhin",
+              "title": "Vue aérienne IRC du Haut-Rhin - 2018",
               "description": "Orthophotographie infrarouge du Haut-Rhin - 2018 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/e5ae91ad-e49c-4878-b3ed-6f483f864169",
@@ -496,7 +526,7 @@
               }
             },
 			{
-              "title": "Vue aérienne IRC des Vosges",
+              "title": "Vue aérienne IRC des Vosges - 2018",
               "description": "Orthophotographie infrarouge des Vosges - 2018 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D88-2014",
@@ -517,27 +547,28 @@
               "title": "Relief Europe couleurs",
               "description": "Fond de plan relief et surfaces en eau - Europe 2013",
 			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-EUDEM30-TERR-EAU_2013",
-              "type": "wms_layer",
+              "type": "wmts_layer",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/ref/ows",
-                "name": "REF_EUDEM30_COL_2013_TIFLZW_ETRS80",
+                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
+				"tilematrixset_name": "EPSG:2154",
+                "name": "ref:REF_EUDEM30_COL_2013_TIFLZW_ETRS80",
                 "format": "image/jpeg",
-                "srs": "epsg:3857"
+                "srs": "EPSG:2154"
               }
             },
             {
               "title": "Relief Europe niveaux de gris",
               "description": "Fond de plan relief et surfaces en eau - Europe 2013",
 			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-EUDEM30-NB_OP_2013",
-              "type": "wms_layer",
+              "type": "wmts_layer",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/ref/ows",
-                "name": "REF_EUDEM30_NB_2013_TIFLZW_ETRS80",
+                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
+				"tilematrixset_name": "EPSG:2154",
+                "name": "ref:REF_EUDEM30_NB_2013_TIFLZW_ETRS80",
                 "format": "image/jpeg",
-                "srs": "epsg:3857"
+                "srs": "EPSG:2154"
               }
-            }
-          ]
+			}]
     },
     {
       "title": "Limites administratives",
@@ -588,18 +619,6 @@
           }
         },
 		{
-          "title": "Périmètre des SCOT",
-          "description": "Schémas de Cohérence Territoriaux du Grand Est",
-		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search?t=1587020389#/metadata/FR-200052264-SCOT_Grand_Est",
-          "type": "wfs_feature_type",
-          "params": {
-            "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
-            "version": "2.0.0",
-            "name": "region-grand-est:scot",
-            "srs": "epsg:2154"
-          }
-        },
-		{
           "title": "Périmètre des Pays et PETR",
           "description": "Données des Pays et PETR du Grand Est",
 		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-Pays_Grand_Est",
@@ -613,185 +632,447 @@
         }
       ]
     },
+	{
+	"title": "Energies renouvelables",
+	"description": "DREAL Grand Est - Energies renouvelables",
+	"type": "folder",
+	"children": [{
+         "title": "Eoliennes instruites",
+		 "description": "Eoliennes instruites",
+		 "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-f1d59026-07e1-4b18-b4f0-6539190abf3d",
+		 "type": "wfs_feature_type",
+		 "params": {
+            "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/e13407d8-e36d-4f43-b273-fda2a34dcc9b.internet.map",
+			"name": "ms:EolienneICPE_P_R44",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
+          }
+        },
+		{
+         "title": "Parcs éoliens",
+		 "description": "Parcs éoliens de la région Grand Est au 03/06/2020",
+		 "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-baf93563-9b63-45b7-a458-16c011f946b3",
+		 "type": "wfs_feature_type",
+		 "params": {
+            "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/80757b1b-a319-4304-9c65-bccee3420c6e.internet.map",
+			"name": "ms:ParcEolienneICPE_S_R44",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
+          }
+        }]
+	},
     {
-      "title": "Environnement",
-      "description": "Données concernant l'environnement : faune, flore et paysages",
+      "title": "Nature",
+      "description": "DREAL Grand Est - Nature",
       "type": "folder",
       "children": [{
-          "title": "Espaces naturels protégés",
-          "description": "Espaces naturels protégés",
+          "title": "Protections réglementaires",
+          "description": "DREAL - Protections réglementaires",
           "type": "folder",
           "children": [
             {
-              "title": "Réserves biologiques - ONF",
-              "description": "Réserves biologiques - ONF",
+              "title": "Aire de Protection de Biotope",
+              "description": "DREAL - Aire de Protection des Habitats Naturels en (APB) en Grand Est",
+			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-92287056-5d57-401c-8a8b-772d75c712f6",
               "type": "wfs_feature_type",
               "params": {
-                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=%2Fopt%2Fdata%2Fcarto%2Fgeoide-catalogue%2F1.4%2Forg_5443264%2F17e1a6cd-3dd4-4264-a7e7-825311cb4c28.internet.map",
-                "version": "2.0.0",
-                "name": "ms:N_FORET_PROTECTION_S_R44",
-                "srs": "EPSG:3857"
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/7b2d7f69-19c5-4bf4-8d6a-c5391787d61c.internet.map",
+				"name": "ms:N_ENP_APB_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
               }
             },
             {
-              "title": "Parcs naturels régionaux du Grand Est",
-              "description": "Parcs Naturels Régionaux du Grand Est",
+              "title": "Réserves Naturelles Nationales",
+              "description": "DREAL - Région - Réserves Naturelles Régionales",
+			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-670acab6-57b2-4cf7-8080-05fc1f979558",
               "type": "wfs_feature_type",
-              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-be6808be-64f0-44f5-ae33-52f102f62727",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/region-grand-est/wfs",
-                "version": "2.0.0",
-                "name": "region-grand-est:pnr",
-                "srs": "epsg:2154"
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/9e56f357-ebe4-4ca2-8f72-8a929c12d64c.internet.map",
+				"name": "ms:N_ENP_RNN_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
               }
             },
-			{
-              "title": "Coeur du Parc Naturel National des forêts",
-              "description": "Le coeur constitue la vitrine des patrimoines du parc national",
+			 {
+              "title": "Réserves Naturelles Régionales",
+              "description": "Région - Réserves Naturelles Régionales",
+			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-RNR_Grand_Est",
               "type": "wfs_feature_type",
-              "metadata_url": "https://trouver.ternum-bfc.fr/dataset/coeur-du-projet-de-parc-naturel-national-des-forets-de-champagne-et-de-bourgogne",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/test-public/wfs",
-                "version": "2.0.0",
-                "name": "test-public:l_parcnat_gip_forets_d21",
-                "srs": "epsg:2154"
+                "url": "https://www.geograndest.fr:443/geoserver/region-grand-est/ows",
+				"name": "region-grand-est:rnr",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
               }
             },
 			{
-              "title": "Périmètre du Parc national de forêts, en Champagne et Bourgogne ",
-              "description": "Le Parc national de forêts précise les zonages des périmètres de l'Aire Optimale d'Adhésion et de la Zone d'Etude de Coeur",
+              "title": "Réserves biologiques",
+              "description": "DREAL - Réserves biologiques",
+			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-5bde1963-a603-4ee2-b0ff-6b9a245e5410",
               "type": "wfs_feature_type",
-              "metadata_url": "https://trouver.ternum-bfc.fr/dataset/perimetre-du-parc-national-de-forets-en-champagne-et-bourgogne",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/test-public/wfs",
-                "version": "2.0.0",
-                "name": "test-public:l_projet_pnn_fcb_s_r27",
-                "srs": "epsg:2154"
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/8e2f8ba7-fce2-4ce4-af48-9619fd59dd29.internet.map",
+				"name": "ms:N_ENP_RB_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
               }
             },
 			{
-              "title": "Régions naturelles du Grand Est - ODONAT - niveau 1",
-              "description": "Au niveau 1 sont identifiés les grands éléments du relief",
-              "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search;jsessionid=node012wwhm3hxuxjm1otpug7pegzba482082.node0#/metadata/FR-417566924-180706_001",
+              "title": "Réserves de chasse et de faune sauvage",
+              "description": "DREAL - Réserves de chasse et de faune sauvage",
+			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-1d5e220a-f524-4c30-b59e-31492a404d0c",
+              "type": "wfs_feature_type",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
-                "format": "image/png",
-                "name": "Regions_Naturelles_N1_GE_ODONAT_2018",
-                "srs": "epsg:2154"
-              }
-            },
-{
-              "title": "Régions naturelles du Grand Est - ODONAT - niveau 2",
-              "description": "Le niveau 2 subdivise ces éléments avec une logique géologique",
-              "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search;jsessionid=node012wwhm3hxuxjm1otpug7pegzba482082.node0#/metadata/FR-417566924-180706_001",
-              "params": {
-                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
-                "format": "image/png",
-                "name": "Regions_Naturelles_N2_GE_ODONAT_2018",
-                "srs": "epsg:2154"
-              }
-            },
-{
-              "title": "Régions naturelles du Grand Est - ODONAT - niveau 3",
-              "description": "Le niveau 3 identifie une quarantaine de régions naturelles avec un logique géologique plus précise, ainsi que les vallées alluviales principales",
-              "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search;jsessionid=node012wwhm3hxuxjm1otpug7pegzba482082.node0#/metadata/FR-417566924-180706_001",
-              "params": {
-                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
-                "format": "image/png",
-                "name": "Regions_Naturelles_N3_GE_ODONAT_2018",
-                "srs": "epsg:2154"
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/661df794-d2c9-41c2-bc4d-fc6256340a0a.internet.map",
+				"name": "ms:N_ENP_RCFS_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
               }
             },
 			{
-              "title": "Régions naturelles du Grand Est - ODONAT - niveau 4",
-              "description": "Le niveau 4 précise le découpage de certaines unités de niveau 3 et fait la distinction entre les plaines alluviales et le reste de la vallée",
-              "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search;jsessionid=node012wwhm3hxuxjm1otpug7pegzba482082.node0#/metadata/FR-417566924-180706_001",
+              "title": "Réserves nationales de chasse et de faune sauvage",
+              "description": "DREAL - Réserves nationales de chasse et de faune sauvage",
+			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-43c3df33-e2f3-4e51-8640-0a75d78d7149",
+              "type": "wfs_feature_type",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
-                "format": "image/png",
-                "name": "Regions_Naturelles_N4_GE_ODONAT_2018",
-                "srs": "epsg:2154"
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/f2ff3a4f-d4ff-4840-bfc6-f84efcf1f2e1.internet.map",
+				"name": "ms:N_ENP_RNCFS_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
               }
-            }			
+            },
+			{
+              "title": "Aire de Protection des Habitats Naturels en (APHN)",
+              "description": "DREAL - Aire de Protection des Habitats Naturels en (APHN)",
+			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-d90ac948-9e07-47a6-9c1b-471888dbefd4",
+              "type": "wfs_feature_type",
+              "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/c0e5c16c-30ca-475b-b0a2-4220cd28b80f.internet.map",
+				"name": "ms:APHN_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Forêt de protection",
+              "description": "DREAL - Forêt de protection",
+			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-dd5cc576-3cd7-49c1-8bc8-1eec16057bd6",
+              "type": "wfs_feature_type",
+              "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/17e1a6cd-3dd4-4264-a7e7-825311cb4c28.internet.map",
+				"name": "ms:N_FORET_PROTECTION_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            }
+						
           ]
         },
-        {
-          "title": "Inventaires nature-biodiversité",
-          "description": "Inventaires nature-biodiversité",
+		{
+          "title": "Gestions contractuelles",
+          "description": "DREAL - Gestions contractuelles",
           "type": "folder",
           "children": [{
-              "title": "ZNIEFF 1",
-              "description": "Zone Naturelle d'Intérêt Ecologique Faunistique ou Floristique de type 1 (ZNIEFF1) dans le Grand Est",
+              "title": "Natura 2000 - directive Habitat (ZSC)",
+              "description": "DREAL - Natura 2000 - directive Habitat (ZSC)",
               "type": "wfs_feature_type",
-              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-603b8e12-363b-4682-b81a-4449ca60679f",
-              "params": {
-                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/e098f26f-4cf4-437e-99d9-6b2f500eb4f7.internet.map",
-                "version": "2.0.0",
-                "name": "ms:ZNIEFF1_S_R44",
-                "srs": "epsg:2154"
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-5b03142c-ac64-4fae-ab64-fa314062684a",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/773bcbe2-4c5c-4b2c-89b9-d5b802e4a8fd.internet.map",
+				"name": "ms:NATURA2000_ZSC_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
               }
             },
             {
-              "title": "ZNIEFF 2",
-              "description": "Zones Naturelles d'Intérêt Ecologique Faunistique et Floristique de type II (ZNIEFF1) dans le Grand Est",
+              "title": "Natura 2000 - directive Oiseaux (ZPS)",
+              "description": "DREAL - Natura 2000 - directive Oiseaux (ZPS)",
               "type": "wfs_feature_type",
-              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-5d7cf54d-0183-4adc-afbd-38af375832b1",
-              "params": {
-                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/5db9da6f-bab1-4cf0-a5a8-1024b5bd4f9f.internet.map",
-                "version": "2.0.0",
-                "name": "ms:ZNIEFF2_S_R44",
-                "srs": "epsg:2154"
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-75766f10-e7f6-47f5-b7ee-0d6ca1fa5982",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/4f1a3cfc-0fa8-4ff8-ab60-3f66381122f7.internet.map",
+				"name": "ms:NATURA2000_ZPS_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
               }
             },
             {
-              "title": "Zones RAMSAR",
-              "description": "Convention relative aux zones humides d'importance internationale particulièrement comme habitats des oiseaux d'eau (RAMSAR) du Grand Est",
+              "title": "Parcs Naturels Régionaux (PNR)",
+              "description": "DREAL - Parcs Naturels Régionaux (PNR)",
               "type": "wfs_feature_type",
-              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-442401e2-4ec5-43cd-bfa7-5b1efd737e46",
-              "params": {
-                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/f847983a-9d54-4a2e-a916-93c70ed3e09a.internet.map",
-                "version": "2.0.0",
-                "name": "ms:N_ENP_RAMSAR_S_R44",
-                "srs": "epsg:2154"
+              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-PNR_Grand_Est",
+			  "params": {
+                "url": "https://www.geograndest.fr:443/geoserver/region-grand-est/ows",
+				"name": "region-grand-est:pnr",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
               }
             },
-            {
-              "title": "Natura 2000 - ZPS",
-              "description": "Zone de protection spéciale (ZPS) Natura 2000 du Grand Est",
-              "type": "wfs_feature_type",
-              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-032c1815-190f-4914-8b48-297f47d21f4c",
+			{
+              "title": "Parc National de Forêts Champagne et Bourgogne",
+              "description": "INPN - Parc National de Forêts Champagne et Bourgogne",
+              "type": "wms_layer",
+              "metadata_url": "https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ep/pn",
               "params": {
-                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=%2Fopt%2Fdata%2Fcarto%2Fgeoide-catalogue%2F1.4%2Forg_5443264%2F4f1a3cfc-0fa8-4ff8-ab60-3f66381122f7.internet.map",
-                "version": "2.0.0",
-                "name": "ms:NATURA2000_ZPS_S_R44",
-                "srs": "epsg:2154"
+                "url": "http://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+				"name": "Parcs_nationaux",
+				"format": "image/png",
+				"srs": "epsg:2154"
               }
             }]
-        }
-        
+        },
+		{
+          "title": "Engagements internationaux",
+          "description": "DREAL - Engagements internationaux",
+          "type": "folder",
+          "children": [{
+              "title": "Réserves de Biosphère",
+              "description": "Réserves de Biosphère",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-fd74fa0e-faf8-40af-80f8-3243e9dbb8f1",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/f0d532e6-84c1-4319-a66d-f04daf5753e8.internet.map",
+				"name": "ms:N_ENP_MAB_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Zone humide d'importance internationale (convention de Ramsar)",
+              "description": "DREAL - Zone humide d'importance internationale (convention de Ramsar)",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-18f6754f-8ba8-4301-9f95-337de535529e",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/f847983a-9d54-4a2e-a916-93c70ed3e09a.internet.map",
+				"name": "ms:N_ENP_RAMSAR_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            }]
+		},
+		{
+          "title": "Inventaires patrimoniaux",
+          "description": "DREAL - Inventaires patrimoniaux",
+          "type": "folder",
+          "children": [{
+              "title": "ZNIEFF de type 1",
+              "description": "Zone Naturelle d'Intérêt Ecologique Faunistique ou Floristique de type 1 (ZNIEFF 1) dans le Grand Est",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-3ae9caff-9ea8-4f40-8efe-75dd133838c9",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/e098f26f-4cf4-437e-99d9-6b2f500eb4f7.internet.map",
+				"name": "ms:ZNIEFF1_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "ZNIEFF de type 2",
+              "description": "Zone Naturelle d'Intérêt Ecologique Faunistique ou Floristique de type 2 (ZNIEFF 2) dans le Grand Est",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-352d8b8f-1307-49c2-8e9f-2894a1af4837",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/5db9da6f-bab1-4cf0-a5a8-1024b5bd4f9f.internet.map",
+				"name": "ms:ZNIEFF2_S_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            }]
+		},
+		{
+          "title": "Plan National d'Action du Hamster",
+          "description": "DREAL - Plan National d'Action du Hamster",
+          "type": "folder",
+          "children": [{
+              "title": "Zones de protection statique",
+              "description": "Zones de protection statique",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-c2177c5c-3e37-488a-b537-e020dfff4a4f",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/aeffe9dc-4f98-4ed5-a65c-3e1001559a32.internet.map",
+				"name": "ms:X_HAMSTER_ZONE_PROTECTION_STATIQUE_S_ZINF_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Zone d'accompagnement",
+              "description": "DREAL - Zone d'accompagnement",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-0ea0c200-e314-4412-9b2f-d2d12c0db4b4",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/79b84c5e-cda1-4477-bb9b-d000e90c9fe7.internet.map",
+				"name": "ms:X_HAMSTER_ZONE_ACCOMPAGNEMENT_S_ZINF_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Terriers 2019",
+              "description": "DREAL - Terriers 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-d85a8fb0-aa57-4fa9-8bda-d7d0dba1b534",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/be936ce3-6e4e-4f19-8ff7-97b00ab0cc0e.internet.map",
+				"name": "ms:X_HAMSTER_TERRIERS_2019_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Parcelles prospectées 2019",
+              "description": "DREAL - Parcelles prospectées 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-3878c501-83d5-4299-b12a-74ff94f72473",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/72661013-a1f3-4c5a-974e-752501933461.internet.map",
+				"name": "ms:X_HAMSTER_PARCELLES_PROSPECTEES_2019_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Zones de prospections 2019",
+              "description": "DREAL - Zones de prospections 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-47296089-1621-4d55-b700-c02b2e1c9748",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/d277d7a3-9c36-41bf-a459-eeba5a78db8b.internet.map",
+				"name": "ms:X_HAMSTER_PROSPECTIONS_2019_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Terriers 2018",
+              "description": "DREAL - Terriers 2018",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-255eb4a6-f700-479e-9916-474ae5fb5792",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/88d085ce-028f-4505-b74b-23e1e171ab88.internet.map",
+				"name": "ms:X_HAMSTER_TERRIERS_2018_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Parcelles prospectées 2018",
+              "description": "DREAL - Parcelles prospectées 2018",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-efb94508-5c44-420b-8110-4f561c07e0ea",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/afac9d32-5d74-4baf-ab42-603d13881779.internet.map",
+				"name": "ms:X_HAMSTER_PARCELLES_PROSPECTEES_2018_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            },
+			{
+              "title": "Zones de prospection 2018",
+              "description": "DREAL - Zones de prospection 2018",
+              "type": "wfs_feature_type",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-4cfc91c6-9bfe-4a4d-a5cb-339f004c0d7f",
+			  "params": {
+                "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/f7987357-fab3-472b-b760-91a6c1bcf3b8.internet.map",
+				"name": "ms:X_HAMSTER_PROSPECTIONS_2018_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+              }
+            }]
+		}
       ]
     },
     {
-      "title": "Climat, air et énergie",
-      "description": "Données concernant le climat, la qualité de l'air et l'énergie",
+      "title": "Sites et paysages",
+      "description": "DREAL Grand Est - Sites et paysages",
       "type": "folder",
 		"children": [{
-            "title": "Parcs éoliens - Grand Est",
-            "description": "Parc éolien du Grand Est",
+            "title": "Sites inscrits et classés",
+            "description": "DREAL - Sites inscrits et classés - Générateur de servitude d'utilité AC2 dans le Grand Est",
             "type": "wfs_feature_type",
-            "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-fdcf841d-0b1a-4acc-9494-52f3cedb4220",
-            "params": {
-              "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=%2Fopt%2Fdata%2Fcarto%2Fgeoide-catalogue%2F1.4%2Forg_5443264%2Fe13407d8-e36d-4f43-b273-fda2a34dcc9b.internet.map",
-              "version": "2.0.0",
-              "name": "ms:EolienneICPE_P_R44",
-              "srs": "epsg:2154"
+			"metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-a24f4d09-6168-4e04-9383-5690e23b8a5c",
+			"params": {
+              "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/a509e05b-6356-48a8-b326-9e13a5536aee.internet.map",
+				"name": "ms:AC2_GENERATEUR_SUP_S",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
             }
           }
 		]
-      }
+	},
+	{
+      "title": "Aménagement",
+      "description": "DREAL Grand Est - Aménagement",
+      "type": "folder",
+		"children": [{
+            "title": "Périmètre de la Directive Territoriale d''Aménagement (DTA) des Bassins Miniers Nord Lorrains",
+            "description": "DREAL - Périmètre de la Directive Territoriale d''Aménagement (DTA) des Bassins Miniers Nord Lorrains",
+            "type": "wfs_feature_type",
+            "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-801ad4cd-fda8-4e9d-9282-e9d115e3564c",
+			"params": {
+              "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/a5cc241a-166e-47ae-9b39-01e3056e312c.internet.map",
+				"name": "ms:DTA_S_ZSUP_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+            }
+          },
+		  {
+          "title": "Périmètre des SCOT",
+          "description": "Schémas de Cohérence Territoriaux du Grand Est",
+		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search?t=1587020389#/metadata/FR-200052264-SCOT_Grand_Est",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
+            "version": "2.0.0",
+            "name": "region-grand-est:scot",
+            "srs": "epsg:2154"
+          }
+		  },
+		  {
+            "title": "Opération d'Intérêt National (OIN) dite d'Alzette-Belval",
+            "description": "DREAL - Opération d'Intérêt National (OIN) dite d'Alzette-Belval",
+            "type": "wfs_feature_type",
+            "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-479a83ab-ad2b-48d5-a5bd-5efc932972e0",
+			"params": {
+              "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/b0a1ce28-0780-411b-8ddf-41f2d4479de0.internet.map",
+				"name": "ms:N_OIN_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+            }
+          },
+		   {
+            "title": "Périmètre de Massif des Vosges (Datar)",
+            "description": "Donnée du territoire du Massif des Vosges selon la DATAR",
+            "type": "wfs_feature_type",
+            "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-Massif_Grand_Est",
+			"params": {
+              "url": "https://www.geograndest.fr:443/geoserver/region-grand-est/ows",
+				"name": "region-grand-est:massif",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+            }
+          }
+		]
+      },
+	{
+      "title": "Impacts et risques antropiques",
+      "description": "DREAL Grand Est - Données concernant le climat, la qualité de l'air et l'énergie",
+      "type": "folder",
+		"children": [{
+            "title": "ICPE avec surveillance environnementale",
+            "description": "Installations Classées pour la Protection de l'Environnement ayant mis en place une surveillance de leurs effets dans l'environnement",
+            "type": "wfs_feature_type",
+            "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-fbe073b8-893b-44cc-9222-2425e6086b7e",
+			"params": {
+              "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/a9382ad9-a8ad-437e-86eb-8a7b096cb6db.internet.map",
+				"name": "ms:ICPE_SURV_ENV_P_R44",
+				"version": "2.0.0",
+				"srs": "epsg:2154"
+            }
+          }
+		]
+    }
   ]
 }
+
