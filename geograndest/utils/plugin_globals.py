@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import sys
 import os
-from geograndest.utils.singleton import Singleton
+from datagrandest.utils.singleton import Singleton
 from qgis.PyQt.QtCore import QSettings
 
 
@@ -15,9 +14,9 @@ class PluginGlobals:
     plugin_path = None
 
     # Plugin infos
-    # PLUGIN_TAG = u"GéoGrandEst"
-    PLUGIN_TAG = u"geograndest"
-    PLUGIN_VERSION = u"0.9.1"
+    PLUGIN_TAG = u"DataGrandEst"
+    #PLUGIN_TAG = u"indigeo"
+    PLUGIN_VERSION = u"0.1"
     PLUGIN_SOURCE_REPOSITORY = u"https://github.com/geograndest/qgis-plugin"
 
     # Tree nodes types
@@ -35,7 +34,7 @@ class PluginGlobals:
 
     # Images dir
     IMAGES_DIR_NAME = "images"
-    LOGO_FILE_NAME = "geograndest.png"
+    LOGO_FILE_NAME = "datagrandest.png"
 
     ICON_WARN_FILE_NAME = "Icon_Simple_Warn.png"
     ICON_WMS_LAYER_FILE_NAME = "mIconWms.svg"
@@ -47,7 +46,7 @@ class PluginGlobals:
     CONFIG_FILES_DOWNLOAD_AT_STARTUP = True
     CONFIG_DIR_NAME = "config"
     CONFIG_FILE_NAMES = ["config.json"]
-    CONFIG_FILE_URLS = ["https://github.com/geograndest/qgis-plugin/blob/master/geograndest/config/config.json"]
+    CONFIG_FILE_URLS = ["https://www.datagrandest.fr/tools/plugin-qgis-datagrandest/config.json"]
 
     # Hide resources with status = warn
     HIDE_RESOURCES_WITH_WARN_STATUS = True
@@ -94,23 +93,26 @@ class PluginGlobals:
 
         # Read the qgis plugin settings
         s = QSettings()
+        # False by default and u"0" so that parameter is checked the 1st time user opens plugin, else invert
         self.CONFIG_FILES_DOWNLOAD_AT_STARTUP = \
-            True if s.value(
+            False if s.value(
                 u"{0}/config_files_download_at_startup".format(self.PLUGIN_TAG),
-                self.CONFIG_FILES_DOWNLOAD_AT_STARTUP) == u"1" else False
+                self.CONFIG_FILES_DOWNLOAD_AT_STARTUP) == u"0" else True
 
         self.CONFIG_DIR_NAME = s.value(u"{0}/config_dir_name".format(self.PLUGIN_TAG), self.CONFIG_DIR_NAME)
 
         self.CONFIG_FILE_NAMES = s.value(u"{0}/config_file_names".format(self.PLUGIN_TAG), self.CONFIG_FILE_NAMES)
 
         self.CONFIG_FILE_URLS = s.value(u"{0}/config_file_urls".format(self.PLUGIN_TAG), self.CONFIG_FILE_URLS)
-
-        self.HIDE_RESOURCES_WITH_WARN_STATUS = True if s.value(
+        
+        # False by default so that parameter is checked the 1st time user opens plugin, else invert
+        self.HIDE_RESOURCES_WITH_WARN_STATUS = False if s.value(
             u"{0}/hide_resources_with_warn_status".format(self.PLUGIN_TAG),
-            self.HIDE_RESOURCES_WITH_WARN_STATUS) == u"1" else False
-
-        self.HIDE_EMPTY_GROUPS = True if s.value(
-            u"{0}/hide_empty_groups".format(self.PLUGIN_TAG), self.HIDE_EMPTY_GROUPS) == u"1" else False
+            self.HIDE_RESOURCES_WITH_WARN_STATUS) == u"0" else True
+        
+        # False by default so that parameter is checked the 1st time user opens plugin, else invert
+        self.HIDE_EMPTY_GROUPS = False if s.value(
+            u"{0}/hide_empty_groups".format(self.PLUGIN_TAG), self.HIDE_EMPTY_GROUPS) == u"0" else True
 
         self.config_dir_path = os.path.join(self.plugin_path, self.CONFIG_DIR_NAME)
         self.config_file_path = os.path.join(self.config_dir_path, self.CONFIG_FILE_NAMES[0])
@@ -129,7 +131,7 @@ class PluginGlobals:
         s.setValue(u"{0}/config_files_download_at_startup".format(self.PLUGIN_TAG), u"1")#0
         s.setValue(u"{0}/config_file_names".format(self.PLUGIN_TAG), ["config.json"])
         s.setValue(u"{0}/config_file_urls".format(self.PLUGIN_TAG),
-                   ["https://github.com/geograndest/qgis-plugin/blob/master/geograndest/config/config.json"])
+                   ["https://www.datagrandest.fr/tools/plugin-qgis-datagrandest/config.json"])
 
     def get_qgis_setting_default_value(self, setting):
         """
