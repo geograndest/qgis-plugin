@@ -2,8 +2,8 @@
 
 import os
 
-from geograndest.utils.plugin_globals import PluginGlobals
-from geograndest.utils.plugin_icons import PluginIcons
+from datagrandest.utils.plugin_globals import PluginGlobals
+from datagrandest.utils.plugin_icons import PluginIcons
 
 
 class FavoritesTreeNode:
@@ -11,7 +11,7 @@ class FavoritesTreeNode:
     """
 
     def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_FOLDER,
-                 description=None, status=None, metadata_url=None, params=None, parent_node=None):
+                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
         """
         """
 
@@ -21,6 +21,8 @@ class FavoritesTreeNode:
         self.description = description
         self.status = status
         self.metadata_url = metadata_url
+        self.ident = ident
+        self.bounding_boxes = bounding_boxes
         self.children = []
         self.can_be_added_to_map = False
         self.icon = None
@@ -73,11 +75,11 @@ class FolderTreeNode(FavoritesTreeNode):
     """
 
     def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_FOLDER,
-                 description=None, status=None, metadata_url=None, params=None, parent_node=None):
+                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
         """
         """
 
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, params, parent_node)
+        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
 
         # Icon
         plugin_icons = PluginIcons.instance()
@@ -92,10 +94,10 @@ class WmsLayerTreeNode(FavoritesTreeNode):
     """
 
     def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_WMS_LAYER,
-                 description=None, status=None, metadata_url=None, params=None, parent_node=None):
+                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
         """
         """
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, params, parent_node)
+        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
 
         self.service_url = params.get("url")
         self.layer_name = params.get("name")
@@ -142,11 +144,11 @@ class WmsStyleLayerTreeNode(FavoritesTreeNode):
     """
 
     def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_WMS_LAYER_STYLE,
-                 description=None, status=None, metadata_url=None, params=None, parent_node=None):
+                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
         """
         """
 
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, params, parent_node)
+        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
 
         self.layer_style_name = params.get("name")
         self.can_be_added_to_map = True
@@ -195,10 +197,10 @@ class WmtsLayerTreeNode(FavoritesTreeNode):
     """
 
     def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_WMTS_LAYER,
-                 description=None, status=None, metadata_url=None, params=None, parent_node=None):
+                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
         """
         """
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, params, parent_node)
+        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
 
         self.service_url = params.get("url")
         self.layer_tilematrixset_name = params.get("tilematrixset_name")
@@ -248,10 +250,10 @@ class WfsFeatureTypeTreeNode(FavoritesTreeNode):
     """
 
     def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_WFS_FEATURE_TYPE,
-                 description=None, status=None, metadata_url=None, params=None, parent_node=None):
+                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
         """
         """
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, params, parent_node)
+        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
 
         self.service_url = params.get("url")
         self.feature_type_name = params.get("name")
@@ -309,10 +311,10 @@ class WfsFeatureTypeFilterTreeNode(FavoritesTreeNode):
     """
 
     def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_WFS_FEATURE_TYPE_FILTER,
-                 description=None, status=None, metadata_url=None, params=None, parent_node=None):
+                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
         """
         """
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, params, parent_node)
+        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
 
         self.filter = params.get("filter")
         self.can_be_added_to_map = True
@@ -371,10 +373,10 @@ class GdalWmsConfigFileTreeNode(FavoritesTreeNode):
     """
 
     def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_GDAL_WMS_CONFIG_FILE,
-                 description=None, status=None, metadata_url=None, params=None, parent_node=None):
+                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
         """
         """
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, params, parent_node)
+        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
 
         self.gdal_config_file_path = os.path.join(
             PluginGlobals.instance().config_dir_path,
