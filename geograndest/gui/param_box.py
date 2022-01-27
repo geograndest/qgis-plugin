@@ -6,9 +6,9 @@ from qgis.PyQt.QtCore import Qt
 from qgis.core import *
 from qgis.gui import *
 
-from geograndest.utils.plugin_globals import PluginGlobals
-from geograndest.nodes.tree_node_factory import TreeNodeFactory
-from geograndest.nodes.tree_node_factory import download_tree_config_file
+from datagrandest.utils.plugin_globals import PluginGlobals
+from datagrandest.nodes.tree_node_factory import TreeNodeFactory
+from datagrandest.nodes.tree_node_factory import download_tree_config_file
 
 
 class ParamBox(QDialog):
@@ -88,7 +88,7 @@ class ParamBox(QDialog):
         self.button_box.button(QDialogButtonBox.Apply).clicked.connect(self.apply_button_clicked)
 
         # Dialog box title, layout, size and display
-        title = u"Paramétrage de l'extension GéoGrandEst…"
+        title = u"Paramétrage de l'extension DataGrandEst…"
         self.setWindowTitle(title)
         dlg_layout.addWidget(self.button_box)
         self.setLayout(dlg_layout)
