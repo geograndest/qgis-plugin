@@ -1,246 +1,1404 @@
 {
-  "title": "GéoGrandEst - version 07/09/2020",
+  "title": "DataGrandEst - version 4 du 25 Janvier 2022",
   "description": "",
   "type": "folder",
-  "children": [{
+  "children": [
+    {
       "title": "Fonds topographiques IGN / OSM",
       "description": "Fonds cartographique décrivant la nature du terrain",
       "type": "folder",
-      "children": [{
-          "title": "Scan 25 sur l'Alsace - 2005",
-          "description": "Scan25 (version topographique) de l'IGN de l'Alsace",
-          "type": "wms_layer",
-          "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-SCAN25-2005-CIGAL",
-          "params": {
-            "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-            "name": "CIGAL_SCAN25_2006_ALSACE_TIFA_CC48",
-            "format": "image/png",
-            "srs": "epsg:2154"
-          }
-        },
-		{
-          "title": "Scan 1000",
+      "children": [
+        {
+          "ident": "fea15bfe-dd43-4981-a0f6-1aa324d3d492",
+          "title": "Scan 1000 IGN",
           "description": "Scan 1000 sur la France -IGN",
           "type": "wms_layer",
-          "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-18006701900430-IGNF_SCAN1000r_2-0",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-18006701900430-IGNF_SCAN1000r_2-0",
           "params": {
-            "url": "https://www.geograndest.fr/geoserver/ref/ows",
+            "url": "https://www.datagrandest.fr/geoserver/ref/ows",
             "name": "IGN_SCAN1000_TIF_L93",
             "format": "image/png",
             "srs": "epsg:2154"
           }
         },
-		{
-          "title": "OpenStreetMap - style standard",
-          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style Standard",
-		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+        {
+          "ident": "cf57c3bb-8b12-4344-907c-793c8c9c749f",
+          "title": "Plan IGN v2",
+          "description": "Cartographie multi-échelles sur le territoire national, issue des bases de données vecteur de l’IGN, mis à jour régulièrement et réalisée selon un processus entièrement automatisé",
           "type": "wms_layer",
+          "metadata_url": "https://geoservices.ign.fr/blog/2021/01/29/Maj_Cles_Geoservices.html",
           "params": {
-            "url": "https://osm.geograndest.fr/maps/osm-default",
-            "name": "default",
+            "url": "https://wxs.ign.fr/choisirgeoportail/geoportail/r/wms?",
+            "name": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
             "format": "image/png",
             "srs": "epsg:2154"
-			
           }
         },
         {
-          "title": "OpenStreetMap - style Google Maps",
-          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style Google Maps",
-		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "ident": "c1b91719-4288-44c8-b7d0-37161a382156",
+          "title": "OpenStreetMap - OSM style Bright",
+          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - OSM style Standard",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
-            "url": "https://osm.geograndest.fr/maps/osm-google",
+            "url": "https://osm.datagrandest.fr/maps/osm-default",
             "name": "default",
             "format": "image/png",
             "srs": "epsg:2154"
           }
         },
-		{
-          "title": "OpenStreetMap - style MapBox",
-          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - style MapBox",
-		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+        {
+          "ident": "60d32222-59e7-45cd-ad84-aaa911374b40",
+          "title": "OpenStreetMap - OSM style Google Maps",
+          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - OSM style Google Maps",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
-            "url": "https://osm.geograndest.fr/maps/magnacarto",
+            "url": "https://osm.datagrandest.fr/maps/osm-google",
+            "name": "default",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "ident": "b85f6f0f-a150-4a5d-b1cd-41ee566b7708",
+          "title": "OpenStreetMap - OSM style MapBox",
+          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - OSM style MapBox OSM",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.datagrandest.fr/maps/magnacarto",
             "name": "map",
             "format": "image/png",
-            "srs": "epsg:3857"
+            "srs": "epsg:2154"
           }
-        }]
-	},
-	{
-      "title": "Occupation du sol",
+        },
+        {
+          "ident": "6625a2cb-ceba-4e51-8955-d9f535b973e3",
+          "title": "OpenStreetMap - OSM style Relief",
+          "description": "Fond de carte OpenStreetMap avec représentation du relief OSM",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.datagrandest.fr/mapcache",
+            "name": "relief",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "ident": "d80b1551-b1ec-43d5-9e1f-49f6afa946fa",
+          "title": "OpenStreetMap - OSM style Naturaliste",
+          "description": "Fond de carte OpenStreetMap avec informations naturalistes OSM",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.datagrandest.fr/mapcache",
+            "name": "naturaliste",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "ident": "5bff9e08-c7bd-43b4-acaf-555bd6d19e63",
+          "title": "OpenStreetMap - OSM style Désaturé",
+          "description": "Fond de carte OpenStreetMap style Faded OSM",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.datagrandest.fr/mapcache",
+            "name": "faded",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "ident": "20e4b622-f138-4b87-93a3-88f13224a93a",
+          "title": "OpenStreetMap - OSM style noir et blanc",
+          "description": "Fond de carte OpenStreetMap style Faded OSM",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.datagrandest.fr/mapcache",
+            "name": "grey",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "ident": "4afd5426-17cf-40a2-b4b5-44d1051db21d",
+          "title": "OpenStreetMap - OSM Sans toponymes",
+          "description": "Fond de carte OpenStreetMap style Faded OSM",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.datagrandest.fr/mapcache",
+            "name": "pure",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "ident": "0632365f-522d-446e-9b4c-afafb1ad7f7f",
+          "title": "OpenStreetMap - OSM Toponymes seuls",
+          "description": "Fond de carte OpenStreetMap style Faded OSM",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.datagrandest.fr/mapcache",
+            "name": "overlay",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Occupation du Sol",
       "description": "Données concernant l'occupation et l'usage des sols",
       "type": "folder",
-      "children": [{
-          "title": "Occupation du sol Alsace",
-          "description": "Base de données d'occupation du sol CIGAL 2000 v2",
-          "type": "wms_layer",
-		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-BdOCS2000-CIGAL-V2",
-          "params": {
-            "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-            "name": "CIGAL_BD_OCS_V2_2000_ALSACE",
-            "format": "image/png",
-            "srs": "epsg:2154"
-          }
-        },
-		{
-          "title": "Corine Land Cover 1990",
-          "description": "Occupation biophysique des sols CLC 1990",
-          "type": "wms_layer",
-		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
-          "params": {
-            "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
-            "name": "LANDCOVER.CLC90_FR",
-            "format": "image/png",
-            "srs": "epsg:2154"
-          }
-        },
-		{
-          "title": "Corine Land Cover 2000",
-          "description": "Occupation biophysique des sols CLC 2000 révisée",
-          "type": "wms_layer",
-		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
-          "params": {
-            "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
-            "name": "LANDCOVER.CLC00_FR",
-            "format": "image/png",
-            "srs": "epsg:2154"
-          }
-        },
-		{
-          "title": "Corine Land Cover 2006",
-          "description": "Occupation biophysique des sols CLC 2006 révisée",
-          "type": "wms_layer",
-		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
-          "params": {
-            "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
-            "name": "LANDCOVER.CLC06R_FR",
-            "format": "image/png",
-            "srs": "epsg:2154"
-          }
-        },
-		{
-          "title": "Corine Land Cover 2012",
-          "description": "Occupation biophysique des sols CLC 2012",
-          "type": "wms_layer",
-		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
-          "params": {
-            "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
-            "name": "LANDCOVER.CLC12_FR",
-            "format": "image/png",
-            "srs": "epsg:2154"
-          }
-        },
-		{
-          "title": "Corine Land Cover 2018",
-          "description": "Occupation biophysique des sols CLC 2018",
-          "type": "wms_layer",
-		  "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
-          "params": {
-            "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
-            "name": "LANDCOVER.CLC18_FR",
-            "format": "image/png",
-            "srs": "epsg:2154"
-          }
-        },
-		{
-              "title": "Régions naturelles du Grand Est - ODONAT - niveau 1",
-              "description": "Au niveau 1 sont identifiés les grands éléments du relief",
-              "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+      "children": [
+        {
+          "title": "OCSGE2-2010",
+          "description": "Occupation du sol 2010 dans le Grand Est",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "1e5e48a2-1527-4f9c-a4d3-60e3474bba65",
+              "title": "Occupation du sol 2010 dans le Grand Est",
+              "description": "Agrégat des Occupations du Sols 2010 dans le Grand Est",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D67",
+              "type": "wmts_layer",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs2010",
                 "format": "image/png",
-                "name": "Regions_Naturelles_N1_GE_ODONAT_2018",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "2fba0fc3-a92b-47b8-945c-4339048cf20a",
+              "title": "Occupation du sol 2010 - Département 08 Ardennes",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 08 Ardennes",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D08",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d08_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ],
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "09102fa4-c3ba-4914-b4c0-890c4f4e4b7f",
+              "title": "Occupation du sol 2010 - Département 10 Aube",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 10 Aube",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D10",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d10_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ],
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "f69f3e6b-1394-444f-afc5-7b377b78bf26",
+              "title": "Occupation du sol 2010 - Département 51 Marne",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 51 Marne",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D51",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d51_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  729098.0,
+                  6824200.0,
+                  849294.0,
+                  6923531.0
+                ],
+                [
+                  729098.0,
+                  6824200.0,
+                  849294.0,
+                  6923531.0
+                ]
+              ]
+            },
+            {
+              "ident": "550ff339-e99d-47e3-9b63-fa493e999c29",
+              "title": "Occupation du sol 2010 - Département 52 Haute-Marne",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 52 Haute-Marne",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D52",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d52_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  820248.0,
+                  6721998.0,
+                  915914.0,
+                  6845059.0
+                ],
+                [
+                  820248.0,
+                  6721998.0,
+                  915914.0,
+                  6845059.0
+                ]
+              ]
+            },
+            {
+              "ident": "44b17d6d-d7f0-4dc9-b469-2eedb31be0f2",
+              "title": "Occupation du sol 2010 - Département 54 Meurthe-et-Moselle",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 54 Meurthe-et-Moselle",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D54",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d54_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  875820.0,
+                  6809573.0,
+                  1004385.0,
+                  6943963.0
+                ],
+                [
+                  875820.0,
+                  6809573.0,
+                  1004385.0,
+                  6943963.0
+                ]
+              ]
+            },
+            {
+              "ident": "38ece3bd-e831-4d1e-9aed-e59d8cd51972",
+              "title": "Occupation du sol 2010 - Département 55 Meuse",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 55 Meuse",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D55",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_D55_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  838677.0,
+                  6815017.0,
+                  908702.0,
+                  6949057.0
+                ],
+                [
+                  838677.0,
+                  6815017.0,
+                  908702.0,
+                  6949057.0
+                ]
+              ]
+            },
+            {
+              "ident": "1637daf4-0380-492e-8ec6-6e24a6c67414",
+              "title": "Occupation du sol 2010 - Département 57 Moselle",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 57 Moselle",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D57",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d57_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  909507.0,
+                  6833204.0,
+                  1039003.0,
+                  6939842.0
+                ],
+                [
+                  909507.0,
+                  6833204.0,
+                  1039003.0,
+                  6939842.0
+                ]
+              ]
+            },
+            {
+              "ident": "de8c4c28-f2f4-4963-bd3d-02a0ad2e0338",
+              "title": "Occupation du sol 2010 - Département 67 Bas-Rhin",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 67 Bas-Rhin",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D67",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d67_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ],
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
+            },
+            {
+              "ident": "27b998e4-5dbe-47f4-b714-4de927f72c4c",
+              "title": "Occupation du sol 2010 - Département 68 Haut-Rhin",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 68 Haut-Rhin",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D68",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d68_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ],
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ]
+              ]
+            },
+            {
+              "ident": "92ddbac3-f313-4448-b0b3-c5fba652bb75",
+              "title": "Occupation du sol 2010 - Département 88 Vosges",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 88 Vosges",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D88",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d88_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ],
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "OCSGE2-2019",
+          "description": "Occupation du sol 2019 dans le Grand Est",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "40719bde-a39a-4906-9d11-e4543f8a9302",
+              "title": "Occupation du sol 2019 dans le Grand Est",
+              "description": "Agrégat des Occupations du Sols 2019 dans le Grand Est",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D67",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "48a34466-8019-45ec-8fd0-d7f685a6e742",
+              "title": "Occupation du sol 2019 - Département 08 Ardennes",
+              "description": "Occupation du sol 2019 à Grande Echelle- Département 08 Ardennes",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D08",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d08_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "4d886942-6c22-4786-8b69-1c79d0823e9a",
+              "title": "Occupation du sol 2019 - Département 10 Aube",
+              "description": "Occupation du sol 2019 à Grande Echelle- Département 10 Aube",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D10",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d10_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "9476824a-68ac-480b-bb28-1cde87f24803",
+              "title": "Occupation du sol 2019 - Département 51 Marne",
+              "description": "Occupation du sol 2019 à Grande Echelle- Département 51 Marne",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D51",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d51_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  729098.0,
+                  6824200.0,
+                  849294.0,
+                  6923531.0
+                ]
+              ]
+            },
+            {
+              "ident": "116ca7db-8601-4903-b4dc-977ba65d7bd1",
+              "title": "Occupation du sol 2019 - Département 52 Haute-Marne",
+              "description": "Occupation du sol 2019 à Grande Echelle- Département 10 Haute-Marne",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D52",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d52_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  820248.0,
+                  6721998.0,
+                  915914.0,
+                  6845059.0
+                ]
+              ]
+            },
+            {
+              "ident": "fad8220c-faf4-445d-84ce-056e7bbc05a4",
+              "title": "Occupation du sol 2019 - Département 54 Meurthe-et-Moselle",
+              "description": "Occupation du sol 2019 à Grande Echelle- Département 54 Meurthe-et-Moselle",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D54",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d54_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  875820.0,
+                  6809573.0,
+                  1004385.0,
+                  6943963.0
+                ]
+              ]
+            },
+            {
+              "ident": "1ba1ef23-e44f-43f3-9d51-d92295142f6d",
+              "title": "Occupation du sol 2019 - Département 55 Meuse",
+              "description": "Occupation du sol 2019 à Grande Echelle- Département 55 Meuse",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D55",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d55_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  838677.0,
+                  6815017.0,
+                  908702.0,
+                  6949057.0
+                ]
+              ]
+            },
+            {
+              "ident": "1c2d353c-3003-463c-b272-d9b1accb7874",
+              "title": "Occupation du sol 2019 - Département 57 Moselle",
+              "description": "Occupation du sol 2019 à Grande Echelle- Département 57 Moselle",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D57",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d57_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  909507.0,
+                  6833204.0,
+                  1039003.0,
+                  6939842.0
+                ]
+              ]
+            },
+            {
+              "ident": "ac6b487e-6bc4-4086-b4c1-ec0277f71c2b",
+              "title": "Occupation du sol 2019 - Département 67 Bas-Rhin",
+              "description": "Occupation du sol 2010 à Grande Echelle- Département 67 Bas-Rhin",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D67",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d67_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
+            },
+            {
+              "ident": "ac6b487e-6bc4-4086-b4c1-ec0277f71c2b",
+              "title": "Occupation du sol 2019 - Département 68 Haut-Rhin",
+              "description": "Occupation du sol 2019 à Grande Echelle- Département 68 Haut-Rhin",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D68",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d68_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ]
+              ]
+            },
+            {
+              "ident": "c2cb0a40-2f7a-4d62-a783-8b1b045b8b76",
+              "title": "Occupation du sol 2019 - Département 88 Vosges",
+              "description": "Occupation du sol 2019 à Grande Echelle- Département 88 Vosges",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D88",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d88_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "BD-EA 2019",
+          "description": "Base de Données des Emprises d'Activités - 2019",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "5f1038c7-0e4b-4fbd-9a89-b389b8a4fe8b",
+              "title": "BD-EA 2019 - Département 08 Ardennes",
+              "description": "Base de Données des Emprises d'Activités - 08 Ardennes 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-D08-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_d08",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "2b5b772a-ae4a-47e4-8a5a-6e62c3290f04",
+              "title": "BD-EA 2019 - Département 10 Aube",
+              "description": "Base de Données des Emprises d'Activités - 10 Aube 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-D10-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_d10",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "bde01917-2cf0-4ec6-968b-dea90a82fb80",
+              "title": "BD-EA 2019 - Département 51 Marne",
+              "description": "Base de Données des Emprises d'Activités - 51 Marne 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-D51-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_d51",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  729098.0,
+                  6824200.0,
+                  849294.0,
+                  6923531.0
+                ]
+              ]
+            },
+            {
+              "ident": "abf2d259-ddbc-488d-b437-208fec235c9d",
+              "title": "BD-EA 2019 - Département 52 Haute-Marne",
+              "description": "Base de Données des Emprises d'Activités - 52 Haute-Marne 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-D52-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_d52",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  820248.0,
+                  6721998.0,
+                  915914.0,
+                  6845059.0
+                ]
+              ]
+            },
+            {
+              "ident": "b511364b-729c-4bb2-84ae-12a4b1c4c001",
+              "title": "BD-EA 2019 - Département 54 Meurthe-et-Moselle",
+              "description": "Base de Données des Emprises d'Activités - 54 Meurthe-et-Moselle 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-D54-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_d54",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  875820.0,
+                  6809573.0,
+                  1004385.0,
+                  6943963.0
+                ]
+              ]
+            },
+            {
+              "ident": "b143a2de-2591-4e00-9b48-c4da245d6ec8",
+              "title": "BD-EA 2019 - Département 55 Meuse",
+              "description": "Base de Données des Emprises d'Activités - 55 Meuse 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-D55-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_d55",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  838677.0,
+                  6815017.0,
+                  908702.0,
+                  6949057.0
+                ]
+              ]
+            },
+            {
+              "ident": "1f42bbd3-1ea6-4134-87e0-249c1d16a77a",
+              "title": "BD-EA 2019 - Département 57 Moselle",
+              "description": "Base de Données des Emprises d'Activités - 57 Moselle 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-D57-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_d57",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  909507.0,
+                  6833204.0,
+                  1039003.0,
+                  6939842.0
+                ]
+              ]
+            },
+            {
+              "ident": "4077cbb3-8638-4efa-b92b-d82fa034a8aa",
+              "title": "BD-EA 2019 - Département 67 Bas-Rhin",
+              "description": "Base de Données des Emprises d'Activités - 67 Bas-Rhin 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-D67-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_d67",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
+            },
+            {
+              "ident": "06b7d4f9-df1c-42f6-a25a-38363feba945",
+              "title": "BD-EA 2019 - Département 68 Haut-Rhin",
+              "description": "Base de Données des Emprises d'Activités - 68 Haut-Rhin 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-D68-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_d68",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ]
+              ]
+            },
+            {
+              "ident": "15fb860e-0044-4005-8883-40c139b7d471",
+              "title": "BD-EA 2019 - Département 88 Vosges",
+              "description": "Base de Données des Emprises d'Activités - 88 Vosges 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-D88-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_d88",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "BD-EA+ 2019",
+          "description": "OCS - BD-EA+",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "b87a5607-d7cf-4dc0-83cd-e8c55f170c4c",
+              "title": "BD-EA+ 2019 - Département 08 Ardennes",
+              "description": "Base de Données des Emprises d'Activités Enrichie - 08 Ardennes 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-PLUS-D08-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_plus_d08",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "41a83fb8-7a82-4673-b885-761ae9efa495",
+              "title": "BD-EA+ 2019 - Département 10 Aube",
+              "description": "Base de Données des Emprises d'Activités Enrichie - 10 Aube 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-PLUS-D10-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_plus_d10",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "011c9521-7847-4ad6-b062-9472c7dc459a",
+              "title": "BD-EA+ 2019 - Département 51 Marne",
+              "description": "Base de Données des Emprises d'Activités Enrichie - 51 Marne 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-PLUS-D51-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_plus_d51",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  729098.0,
+                  6824200.0,
+                  849294.0,
+                  6923531.0
+                ]
+              ]
+            },
+            {
+              "ident": "bbecf191-6878-427d-8aa2-28cfa5d5c421",
+              "title": "BD-EA+ 2019 - Département 52 Haute-Marne",
+              "description": "Base de Données des Emprises d'Activités Enrichie - 52 Haute-Marne 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-PLUS-D52-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_plus_d52",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  820248.0,
+                  6721998.0,
+                  915914.0,
+                  6845059.0
+                ]
+              ]
+            },
+            {
+              "ident": "bc6dbd76-e5a3-4903-88bf-43b9a2cde7b9",
+              "title": "BD-EA+ 2019 - Département 54 Meurthe-et-Moselle",
+              "description": "Base de Données des Emprises d'Activités Enrichie - 54 Meurthe-et-Moselle 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-PLUS-D54-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_plus_d54",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  875820.0,
+                  6809573.0,
+                  1004385.0,
+                  6943963.0
+                ]
+              ]
+            },
+            {
+              "ident": "dc7abca8-732f-4b16-bffc-155930e2965c",
+              "title": "BD-EA+ 2019 - Département 55 Meuse",
+              "description": "Base de Données des Emprises d'Activités Enrichie - 55 Meuse 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-PLUS-D55-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_plus_d55",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  838677.0,
+                  6815017.0,
+                  908702.0,
+                  6949057.0
+                ]
+              ]
+            },
+            {
+              "ident": "32262530-e0c3-4f3a-90db-67db982a4795",
+              "title": "BD-EA+ 2019 - Département 57 Moselle",
+              "description": "Base de Données des Emprises d'Activités Enrichie - 57 Moselle 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-PLUS-D57-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_plus_d57",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  909507.0,
+                  6833204.0,
+                  1039003.0,
+                  6939842.0
+                ]
+              ]
+            },
+            {
+              "ident": "22df5e19-73fe-433a-bf49-e919706d2758",
+              "title": "BD-EA+ 2019 - Département 67 Bas-Rhin",
+              "description": "Base de Données des Emprises d'Activités Enrichie - 67 Bas-Rhin 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-PLUS-D67-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_plus_d67",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
+            },
+            {
+              "ident": "78b24cc9-285d-4d5d-80d8-3dbfb36337d0",
+              "title": "BD-EA+ 2019 - Département 68 Haut-Rhin",
+              "description": "Base de Données des Emprises d'Activités Enrichie - 68 Haut-Rhin 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-PLUS-D68-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_plus_d68",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ]
+              ]
+            },
+            {
+              "ident": "051ea507-62ee-4d6e-b4a8-ea113f272a78",
+              "title": "BD-EA+ 2019 - Département 88 Vosges",
+              "description": "Base de Données des Emprises d'Activités Enrichie - 88 Vosges 2019",
+              "type": "wfs_feature_type",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-BD-EA-PLUS-D88-2019",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "geograndest:bdea_plus_d88",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Corine Land Cover",
+          "description": "Corine Land Cover",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "4df67985-2536-4f63-9f83-06a658986ce7",
+              "title": "Corine Land Cover 1990",
+              "description": "Occupation biophysique des sols CLC 1990",
+              "type": "wms_layer",
+              "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+              "params": {
+                "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+                "name": "LANDCOVER.CLC90_FR",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             },
-			{
-              "title": "Régions naturelles du Grand Est - ODONAT - niveau 2",
-              "description": "Le niveau 2 subdivise ces éléments avec une logique géologique",
+            {
+              "ident": "a2e18e32-2509-4f40-ad67-28834f148b49",
+              "title": "Corine Land Cover 2000",
+              "description": "Occupation biophysique des sols CLC 2000 révisée",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
+                "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+                "name": "LANDCOVER.CLC00_FR",
                 "format": "image/png",
-                "name": "Regions_Naturelles_N2_GE_ODONAT_2018",
                 "srs": "epsg:2154"
               }
             },
-			{
-              "title": "Régions naturelles du Grand Est - ODONAT - niveau 3",
-              "description": "Le niveau 3 identifie une quarantaine de régions naturelles avec un logique géologique plus précise, ainsi que les vallées alluviales principales",
+            {
+              "ident": "7dc77914-d232-41f4-9132-75c6ae66b559",
+              "title": "Corine Land Cover 2006",
+              "description": "Occupation biophysique des sols CLC 2006 révisée",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
+                "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+                "name": "LANDCOVER.CLC06R_FR",
                 "format": "image/png",
-                "name": "Regions_Naturelles_N3_GE_ODONAT_2018",
                 "srs": "epsg:2154"
               }
             },
-			{
-              "title": "Régions naturelles du Grand Est - ODONAT - niveau 4",
-              "description": "Le niveau 4 précise le découpage de certaines unités de niveau 3 et fait la distinction entre les plaines alluviales et le reste de la vallée",
+            {
+              "ident": "ff5af363-2fdf-4016-8e7d-a48755f4d78d",
+              "title": "Corine Land Cover 2012",
+              "description": "Occupation biophysique des sols CLC 2012",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/odonat/ows",
+                "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+                "name": "LANDCOVER.CLC12_FR",
                 "format": "image/png",
-                "name": "Regions_Naturelles_N4_GE_ODONAT_2018",
+                "srs": "epsg:2154"
+              }
+            },
+            {
+              "ident": "d52753d1-1026-4a4c-bd5c-f684b0dc6811",
+              "title": "Corine Land Cover 2018",
+              "description": "Occupation biophysique des sols CLC 2018",
+              "type": "wms_layer",
+              "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+              "params": {
+                "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+                "name": "LANDCOVER.CLC18_FR",
+                "format": "image/png",
                 "srs": "epsg:2154"
               }
             }
-	]
+          ]
+        },
+        {
+          "title": "ODONAT",
+          "description": "Régions Naturelles ODONAT GE",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "6d87c0a4-54bb-4d67-8c06-49f90faaa79c",
+              "title": "Régions naturelles du Grand Est - ODONAT - niveau 1",
+              "description": "Au niveau 1 sont identifiés les grands éléments du relief",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/odonat/ows",
+                "format": "image/png",
+                "name": "Regions_Naturelles_N1_GE_ODONAT_2018",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "0bbfa93a-e47f-443a-abcf-fe606b94f9f3",
+              "title": "Régions naturelles du Grand Est - ODONAT - niveau 2",
+              "description": "Le niveau 2 subdivise ces éléments avec une logique géologique",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/odonat/ows",
+                "format": "image/png",
+                "name": "Regions_Naturelles_N2_GE_ODONAT_2018",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "f381741c-5deb-49b4-acdd-6bee0f1a40f9",
+              "title": "Régions naturelles du Grand Est - ODONAT - niveau 3",
+              "description": "Le niveau 3 identifie une quarantaine de régions naturelles avec un logique géologique plus précise, ainsi que les vallées alluviales principales",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/odonat/ows",
+                "format": "image/png",
+                "name": "Regions_Naturelles_N3_GE_ODONAT_2018",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "879f2755-044d-4c86-b48e-6f648a553104",
+              "title": "Régions naturelles du Grand Est - ODONAT - niveau 4",
+              "description": "Le niveau 4 précise le découpage de certaines unités de niveau 3 et fait la distinction entre les plaines alluviales et le reste de la vallée",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-417566924-180706_001",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/odonat/ows",
+                "format": "image/png",
+                "name": "Regions_Naturelles_N4_GE_ODONAT_2018",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
+            }
+          ]
+        }
+      ]
     },
-	{
+    {
       "title": "Cadastre",
       "description": "Données concernant le cadastre",
       "type": "folder",
-      "children": [{
-          "title": "Communes",
-          "description": "Communes du PCI-vecteur 2018",
+      "children": [
+        {
+          "ident": "e771203b-7bc0-4342-a906-6ddda893cb78",
+          "title": "Cadastre - Communes PCI",
+          "description": "Cadastre - Communes du PCI-vecteur 2018",
           "type": "wms_layer",
           "params": {
-            "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
+            "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
             "name": "commune_pci",
             "format": "image/png",
             "srs": "epsg:2154"
-          }
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
         },
         {
-          "title": "Sections (visible du 1:4.000 au 1:30.000)",
-          "description": "Section du PCI vecteur 2018 (visible du 1:4.000 au 1:30.000)",
+          "ident": "c3a21d05-e6cb-4101-9594-9bb8ce39ae15",
+          "title": "Cadastre - Sections PCI(visible du 1:4.000 au 1:30.000)",
+          "description": "Cadastre - Section du PCI vecteur 2018 (visible du 1:4.000 au 1:30.000)",
           "type": "wms_layer",
           "params": {
-            "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
+            "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
             "name": "section",
             "format": "image/png",
             "srs": "epsg:2154"
-          }
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
         },
         {
-          "title": "Parcelle (visible <1:10.000)",
-          "description": "Parcelles du PCI vecteur 2018 (visible <1:10.000)",
+          "ident": "def427ed-a6cd-4e40-b1c1-cfdc3587b50f",
+          "title": "Cadastre - Parcelle PCI (visible <1:10.000)",
+          "description": "Cadastre - Cadastre - Parcelles du PCI vecteur 2018 (visible <1:10.000)",
           "type": "wms_layer",
           "params": {
-          "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
-          "name": "parcelle",
-          "format": "image/png",
-          "srs": "epsg:2154"
-          }
+            "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
+            "name": "parcelle",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
         },
         {
-          "title": "Bâti (visible <1:10.000)",
-          "description": "Bâti du PCI vecteur 2018 (visible <1:10.000)",
+          "ident": "22d7c7b2-4be4-45cc-bee1-a475a11d7a94",
+          "title": "Cadastre - Bâti PCI (visible <1:10.000)",
+          "description": "Cadastre - Bâti du PCI vecteur 2018 (visible <1:10.000)",
           "type": "wms_layer",
           "params": {
-          "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
-          "name": "batiment",
-          "format": "image/png",
-          "srs": "epsg:2154"
-          }
+            "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
+            "name": "batiment",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
         }
       ]
     },
@@ -248,831 +1406,1815 @@
       "title": "Vues aériennes",
       "description": "Photographies aériennes",
       "type": "folder",
-      "children": [{
-          "title": "Vues aériennes récentes - RVB",
-          "description": "Photographies aériennes prises dans le domaine visible depuis 2014",
+      "children": [
+        {
+          "ident": "02f566e1-a8a9-4d9f-a3a7-d368dca75d9a",
+          "title": "Zones Interdites à la Prise de Vue Aérienne",
+          "description": "Zones Interdites à la Prise de Vue Aérienne",
+          "type": "wfs_feature_type",
+          "metadata_url": "https://www.data.gouv.fr/fr/datasets/zones-interdites-a-la-prise-de-vue-aerienne-1/",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+            "version": "2.0.0",
+            "name": "geograndest:ZIPVA",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        },
+        {
+          "title": "Vues aériennes 2018-2019 - RVB",
+          "description": "Photographies aériennes prises dans le domaine visible entre 2018 et 2019",
           "type": "folder",
           "children": [
-			{
-              "title": "Vue aérienne RVB complète du Grand Est",
-              "description": "Agrégat des dernières orthophotographies RVB faites par l'IGN.",
-			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0129-0000",
-              "type": "wmts_layer", 
+            {
+              "ident": "880959ff-3fc8-4591-8b7a-bb83d9f5d711",
+              "title": "Vue aérienne RVB 2018-2019 complète du Grand Est",
+              "description": "Agrégat des dernières orthophotographies RVB de la BD ORTHO HR de l'IGN",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0129-0000",
+              "type": "wmts_layer",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
-				"tilematrixset_name": "EPSG:2154",
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
                 "name": "geograndest:GGE_ORTHO_RVB_ACTUELLE",
                 "format": "image/png",
                 "srs": "EPSG:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne des Ardennes - 2019",
-              "description": "Orthophotographie des Ardennes - 2019 - 20cm",
+            {
+              "ident": "0e7a18c7-587c-4d7e-be98-9551cd58d2bd",
+              "title": "Vue aérienne des Ardennes 08 - 2019",
+              "description": "Orthophotographie des Ardennes  08- 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D08-2019",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2019_08_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2019_08_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne de l'Aube - 2019",
-              "description": "Orthophotographie de l'Aube - 2019 - 20cm",
+            {
+              "ident": "83cf83fd-254c-40d9-ab89-fbc89b43c2fe",
+              "title": "Vue aérienne de l'Aube 10 - 2019",
+              "description": "Orthophotographie de l'Aube 10 - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2019_10_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2019_10_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2019_10_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne de la Marne - 2019",
-              "description": "Orthophotographie de la Marne - 2016 - 20cm",
+            {
+              "ident": "32cfec47-f8af-43a6-8087-deb7d285c2df",
+              "title": "Vue aérienne de la Marne 51 - 2019",
+              "description": "Orthophotographie de la Marne 51 - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D51-2016",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2019_51_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-                "name": "GGE_ORTHORVB_2016_51_TIF_L93",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2019_51_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  729098.0,
+                  6824200.0,
+                  849294.0,
+                  6923531.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne de la Haute-Marne - 2019",
-              "description": "Orthophotographie de la Haute-Marne - 2019 - 20cm",
+            {
+              "ident": "562da790-a3e6-408c-a26e-4a60261d4f0f",
+              "title": "Vue aérienne de la Haute-Marne 52 - 2019",
+              "description": "Orthophotographie de la Haute-Marne 52 - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2019_52_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2019_52_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2019_52_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  820248.0,
+                  6721998.0,
+                  915914.0,
+                  6845059.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne de Meurthe-et-Moselle - 2018",
-              "description": "Orthophotographie de Meurthe-et-Moselle - 2018 - 20cm",
+            {
+              "ident": "255c2591-4222-4141-bd08-774418cca8e2",
+              "title": "Vue aérienne de Meurthe-et-Moselle 54 - 2018",
+              "description": "Orthophotographie de Meurthe-et-Moselle 54 - 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2018_54_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2018_54_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_54_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  875820.0,
+                  6809573.0,
+                  1004385.0,
+                  6943963.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne de Meuse - 2018",
-              "description": "Orthophotographie de Meuse - 2018 - 20cm",
+            {
+              "ident": "d76e7c1d-db81-4d96-8a3a-2c0201c3d94d",
+              "title": "Vue aérienne de Meuse 55 - 2018",
+              "description": "Orthophotographie de Meuse 55 - 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_55_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_55_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_55_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  838677.0,
+                  6815017.0,
+                  908702.0,
+                  6949057.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne de Moselle - 2018",
-              "description": "Orthophotographie de Moselle - 2018 - 20cm",
+            {
+              "ident": "9d0026de-fb60-45ce-ae5a-3e726bfda9ed",
+              "title": "Vue aérienne de Moselle 57 - 2018",
+              "description": "Orthophotographie de Moselle 57 - 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_57_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_57_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_57_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  909507.0,
+                  6833204.0,
+                  1039003.0,
+                  6939842.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne du Bas-Rhin - 2018",
-              "description": "Orthophotographie du Bas-Rhin - 2018 - 20cm",
+            {
+              "ident": "f5bfcf41-162f-4777-9ee0-adf01f026e51",
+              "title": "Vue aérienne du Bas-Rhin 67 - 2018",
+              "description": "Orthophotographie du Bas-Rhin 67 - 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_67_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_67_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_67_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne du Haut-Rhin - 2018",
-              "description": "Orthophotographie du Haut-Rhin - 2018 - 20cm",
+            {
+              "ident": "35205967-308b-4236-93aa-a1918f07ee5f",
+              "title": "Vue aérienne du Haut-Rhin 68 - 2018",
+              "description": "Orthophotographie du Haut-Rhin 68 - 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_68_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_68_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_68_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne des Vosges - 2018",
-              "description": "Orthophotographie des Vosges - 2018 - 20cm",
+            {
+              "ident": "baf59094-9792-402a-949a-26b4825d721b",
+              "title": "Vue aérienne des Vosges 88 - 2018",
+              "description": "Orthophotographie des Vosges 88 - 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_88_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHORVB_2018_88_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHORVB_2018_88_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
-            },
-			{
-          "title": "Zone Interdite à la Prise de Vue Aérienne",
-          "description": "Zone Interdite à la Prise de Vue Aérienne",
-          "type": "wfs_feature_type",
-		  "metadata_url": "https://www.data.gouv.fr/fr/datasets/zones-interdites-a-la-prise-de-vue-aerienne-1/",
-          "params": {
-            "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-            "version": "2.0.0",
-            "name": "geograndest:GGE_ZONES_INTERDITES_PVA_R44",
-            "srs": "epsg:2154"
-				}
-			}]
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
         },
         {
-          "title": "Vues aériennes récentes - Infrarouge",
-          "description": "Photographies aériennes prises dans le domaine infrarouge depuis 2016",
+          "title": "Vues aériennes 2018-2019 - Infrarouge",
+          "description": "Photographies aériennes prises dans le domaine infrarouge entre 2018-2019",
           "type": "folder",
           "children": [
-			{
+            {
+              "ident": "b9c9f30c-87cb-4204-93bc-0ff77a7f4d9e",
               "title": "Vue aérienne IRC complète du Grand Est",
-              "description": "Agrégat des dernières orthophotographies IRC faites par l'IGN.",
-			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0130-0000",
-              "type": "wmts_layer", 
+              "description": "Agrégat des dernières orthophotographies IRC de la BD ORTHO HR de l'IGN",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0130-0000",
+              "type": "wmts_layer",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
-				"tilematrixset_name": "EPSG:2154",
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
                 "name": "geograndest:GGE_ORTHO_IRC_ACTUELLE",
                 "format": "image/png",
                 "srs": "EPSG:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne IRC des Ardennes - 2019",
-              "description": "Orthophotographie infrarouge des Ardennes - 2019 - 20cm",
+            {
+              "ident": "3cf26631-92a6-44df-9a46-ea3e1179c6c6",
+              "title": "Vue aérienne IRC des Ardennes 08 - 2019",
+              "description": "Orthophotographie infrarouge des Ardennes 08 - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHOIRC_2019_08_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHOIRC_2019_08_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHOIRC_2019_08_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne IRC de l'Aube - 2019",
-              "description": "Orthophotographie infrarouge de l'Aube - 2019 - 20cm",
+            {
+              "ident": "44781340-c6b8-485c-a937-b7453b9d45bc",
+              "title": "Vue aérienne IRC de l'Aube 10 - 2019",
+              "description": "Orthophotographie infrarouge de l'Aube 10 - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHOIRC_2019_10_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHOIRC_2019_10_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHOIRC_2019_10_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne IRC de la Marne - 2019",
-              "description": "Orthophotographie infrarouge de la Marne - 2019 - 20cm",
+            {
+              "ident": "b81996d6-9bde-427d-92df-ab49ac67f7a5",
+              "title": "Vue aérienne IRC de la Marne 51 - 2019",
+              "description": "Orthophotographie infrarouge de la Marne  51- 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D51-2016",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHOIRC_2019_51_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
-                "name": "GGE_ORTHOIRC_2016_51_TIF_L93",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHOIRC_2019_51_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  729098.0,
+                  6824200.0,
+                  849294.0,
+                  6923531.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne IRC de la Haute-Marne - 2019",
-              "description": "Orthophotographie infrarouge de la Haute-Marne - 2019 - 20cm",
+            {
+              "ident": "017ca9c3-bbc4-4291-ad0e-2d29aba29ad1",
+              "title": "Vue aérienne IRC de la Haute-Marne 52 - 2019",
+              "description": "Orthophotographie infrarouge de la Haute-Marne 52 - 2019 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHOIRC_2019_52_TIF_L93",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_ORTHOIRC_2019_52_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHOIRC_2019_52_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  820248.0,
+                  6721998.0,
+                  915914.0,
+                  6845059.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne IRC de Meurthe-et-Moselle - 2018",
-              "description": "Orthophotographie infrarouge de Meurthe-et-Moselle - 2015 - 50cm",
+            {
+              "ident": "b223d526-c481-44d7-ac52-e30dcf04437b",
+              "title": "Vue aérienne IRC de Meurthe-et-Moselle 54 - 2018",
+              "description": "Orthophotographie infrarouge de Meurthe-et-Moselle 54 - 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D54-2015",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHOIRC_2018_54_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHOIRC_2018_54_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  875820.0,
+                  6809573.0,
+                  1004385.0,
+                  6943963.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne IRC de Meuse - 2018",
-              "description": "Orthophotographie infrarouge de Meuse - 2014 - 50cm",
+            {
+              "ident": "e2e4667f-ddc2-4386-97a8-e54fd1ddb4e1",
+              "title": "Vue aérienne IRC de Meuse 55 - 2018",
+              "description": "Orthophotographie infrarouge de Meuse 55 - 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D55-2014",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHOIRC_2018_55_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHOIRC_2018_55_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  838677.0,
+                  6815017.0,
+                  908702.0,
+                  6949057.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne IRC de Moselle - 2018",
-              "description": "Orthophotographie infrarouge de Moselle - 2015 - 50cm",
+            {
+              "ident": "f7cbde5c-3f80-43ae-8cf8-ec004a7123b2",
+              "title": "Vue aérienne IRC de Moselle 57 - 2018",
+              "description": "Orthophotographie infrarouge de Moselle 57- 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D57-2015",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHOIRC_2018_57_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHOIRC_2018_57_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  909507.0,
+                  6833204.0,
+                  1039003.0,
+                  6939842.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne IRC du Bas-Rhin - 2018",
-              "description": "Orthophotographie infrarouge du Bas-Rhin - 2014 - 50cm",
+            {
+              "ident": "2dfa2728-700b-475d-a03a-27cba241aa83",
+              "title": "Vue aérienne IRC du Bas-Rhin 67 - 2018",
+              "description": "Orthophotographie infrarouge du Bas-Rhin 67- 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D88-2014",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHOIRC_2018_67_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHOIRC_2018_67_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne IRC du Haut-Rhin - 2018",
-              "description": "Orthophotographie infrarouge du Haut-Rhin - 2018 - 20cm",
+            {
+              "ident": "237397b9-d43a-43ff-a220-217e84366a9b",
+              "title": "Vue aérienne IRC du Haut-Rhin 68 - 2018",
+              "description": "Orthophotographie infrarouge du Haut-Rhin 68 - 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/e5ae91ad-e49c-4878-b3ed-6f483f864169",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHOIRC_2018_68_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHOIRC_2018_68_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
+              },
+              "bounding_boxes": [
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ]
+              ]
             },
-			{
-              "title": "Vue aérienne IRC des Vosges - 2018",
-              "description": "Orthophotographie infrarouge des Vosges - 2018 - 20cm",
+            {
+              "ident": "854e9159-6272-4146-abea-d40f6f94744e",
+              "title": "Vue aérienne IRC des Vosges 88 - 2018",
+              "description": "Orthophotographie infrarouge des Vosges 88 - 2018 - 20cm",
               "type": "wms_layer",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHOIRC_D88-2014",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2010_08_TIF_L93",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
                 "name": "GGE_ORTHOIRC_2018_88_TIF_L93",
                 "format": "image/png",
                 "srs": "epsg:2154"
-              }
-            }]
-        }]
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Vues aériennes 2014-2016 - RVB",
+          "description": "Photographies aériennes prises dans le domaine visible entre 2014 et 2016",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "2d1511d9-bab4-4af9-84c3-6ab804ef0bb4",
+              "title": "Vue aérienne RVB 2014-2016 complète du Grand Est",
+              "description": "Agrégat des orthophotographies RVB 2014-2016 de la BD ORTHO HR de l'IGN",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0131-0000",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ORTHO_2014_2016_GRAND_EST",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "56d67c48-5956-4a84-937e-52bab2746c76",
+              "title": "Vue aérienne RVB des Ardennes 08 - 2016",
+              "description": "Orthophotographie RVB des Ardennes 08- 2016 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D08-2016",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2016_08_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "80133d4d-1d31-416f-8938-d448d60da9f9",
+              "title": "Vue aérienne RVB de l'Aube 10 - 2016",
+              "description": "Orthophotographie RVB de l'Aube 10 - 2016 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D10-2016",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2016_10_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "e27bde5e-9bac-4aa7-ad5d-206062ab5986",
+              "title": "Vue aérienne RVB de la Marne 51 - 2016",
+              "description": "Orthophotographie RVB de la Marne 51 - 2016 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D51-2016",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2016_51_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "a2e32588-ed2e-4f95-bff8-f244a989ccef",
+              "title": "Vue aérienne RVB de la Haute-Marne 52 - 2016",
+              "description": "Orthophotographie RVB de la Haute-Marne 52 - 2016 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_IGNF_BDORTHORVB_D52-2016",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2016_52_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "0630868b-84d8-4a78-8821-704cd92f7f73",
+              "title": "Vue aérienne RVB de Meurthe-et-Moselle 54 - 2015",
+              "description": "Orthophotographie RVB de Meurthe-et-Moselle 54 - 2015 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_OHR_RVB_0M20_D54-2015",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "CRL_ORTHORVB_2015_54_TIFA_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  875820.0,
+                  6809573.0,
+                  1004385.0,
+                  6943963.0
+                ]
+              ]
+            },
+            {
+              "ident": "445a958a-2cbb-42bc-851f-931fdc5c6a59",
+              "title": "Vue aérienne RVB de Meuse 55 - 2014",
+              "description": "Orthophotographie RVB de Meuse 55 - 2014 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_OHR_RVB_0M20_D55-2014",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "CRL_ORTHORVB_2014_55_TIFA_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  838677.0,
+                  6815017.0,
+                  908702.0,
+                  6949057.0
+                ]
+              ]
+            },
+            {
+              "ident": "60d5929d-1718-4c10-86ef-41178c3c8f2b",
+              "title": "Vue aérienne RVB de Moselle 57 - 2015",
+              "description": "Orthophotographie RVB de Moselle 57 - 2015 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_OHR_RVB_0M20_D57-2015",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "CRL_ORTHORVB_2015_57_TIFA_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  909507.0,
+                  6833204.0,
+                  1039003.0,
+                  6939842.0
+                ]
+              ]
+            },
+            {
+              "ident": "b639ff47-2827-4686-ac9d-e08580e67d28",
+              "title": "Vue aérienne RVB de l'Alsace 67 68 - 2015",
+              "description": "Orthophotographie RVB du Bas-Rhin 67 68 - 2015 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-180067019_IGNF_ORTHOHR_RVB_CIGAL_2015",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "CIGAL_ORTHORVB_2015_ALSACE_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
+            },
+            {
+              "ident": "54a263d5-bc82-4c23-963f-c4a47bd1e485",
+              "title": "Vue aérienne RVB des Vosges 88 - 2014",
+              "description": "Orthophotographie RVB des Vosges 88 - 2014 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_OHR_RVB_0M20_D88-2014",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "CRL_ORTHORVB_2014_88_TIFA_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Vues aériennes 2007-2010 - RVB",
+          "description": "Photographies aériennes prises dans le domaine visible entre 2007 et 2010",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "860f1620-6abf-44e3-afbd-4b57acffa390",
+              "title": "Vue aérienne RVB 2007-2010 complète du Grand Est",
+              "description": "Agrégat des orthophotographies RVB 2007-2010 de la BD ORTHO HR de l'IGN",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0132-0000",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ORTHO_2007_2010_GRAND_EST",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "74137850-0074-4c3e-970b-6a2f5c62ff08",
+              "title": "Vue aérienne RVB des Ardennes 08 - 2010",
+              "description": "Orthophotographie RVB des Ardennes 08 - 2010 - 50cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2010_08_TIF_L93",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2010_08_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "a805e4a6-407f-4165-a89f-3cfd3012b337",
+              "title": "Vue aérienne RVB de l'Aube 10 - 2009",
+              "description": "Orthophotographie RVB de l'Aube 10- 2009 - 50cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2009_10_TIF_L93",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2009_10_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "90a2296e-1e3e-4710-bf1c-8213d8e034cc",
+              "title": "Vue aérienne RVB de la Marne 51 - 2008",
+              "description": "Orthophotographie RVB de la Marne 51 - 2008 - 50cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2008_51_TIF_L93",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2008_51_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "f0392d14-e471-4ca6-ada8-eed5ae65dbe0",
+              "title": "Vue aérienne RVB de la Haute-Marne 52 - 2010",
+              "description": "Orthophotographie RVB de la Haute-Marne 52 - 2010 - 50cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2010_52_TIF_L93",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2010_52_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "4a54463d-8704-4aee-b6dd-b4619795fc2f",
+              "title": "Vue aérienne RVB de Meurthe-et-Moselle 54 - 2010",
+              "description": "Orthophotographie RVB de Meurthe-et-Moselle 54 - 2010 - 30cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2010_54_TIF_L93",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2010_54_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  875820.0,
+                  6809573.0,
+                  1004385.0,
+                  6943963.0
+                ]
+              ]
+            },
+            {
+              "ident": "410d00b7-2853-4c9f-ab01-09c78ca25d9c",
+              "title": "Vue aérienne RVB de Meuse 55 - 2007",
+              "description": "Orthophotographie RVB de Meuse 55 - 2007 - 50cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2007_55_TIF_L93",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2007_55_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  838677.0,
+                  6815017.0,
+                  908702.0,
+                  6949057.0
+                ]
+              ]
+            },
+            {
+              "ident": "491762d1-5c85-425e-bbba-ff5c0be9b13b",
+              "title": "Vue aérienne RVB de Moselle 57 - 2010",
+              "description": "Orthophotographie RVB de Moselle 57 - 2010 - 30cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2010_57_TIF_L93",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2010_57_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  909507.0,
+                  6833204.0,
+                  1039003.0,
+                  6939842.0
+                ]
+              ]
+            },
+            {
+              "ident": "852afbeb-b824-4d26-bbb0-ef890b896f43",
+              "title": "Vue aérienne RVB du Bas-Rhin 67 - 2007",
+              "description": "Orthophotographie RVB du Bas-Rhin 67 - 2007 - 50cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2007_67_TIF_L93",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2007_67_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
+            },
+            {
+              "ident": "ee5e9bc4-0515-4300-82e7-f7e874de8da2",
+              "title": "Vue aérienne RVB du Haut-Rhin 68 - 2007",
+              "description": "Orthophotographie RVB du Haut-Rhin 68 - 2007 - 30cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2007_68_TIF_L93",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2007_68_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ]
+              ]
+            },
+            {
+              "ident": "c3084376-ab79-42c0-b938-a485c8f82c76",
+              "title": "Vue aérienne RVB des Vosges 88 - 2010",
+              "description": "Orthophotographie RVB des Vosges 88 - 2010 - 50cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE_ORTHORVB_2010_88_TIF_L93",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "GGE_ORTHORVB_2010_88_TIF_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "Relief",
       "description": "Données altimétriques",
       "type": "folder",
-      "children": [{
-              "title": "Relief Europe couleurs",
-              "description": "Fond de plan relief et surfaces en eau - Europe 2013",
-			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-EUDEM30-TERR-EAU_2013",
-              "type": "wmts_layer",
-              "params": {
-                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
-				"tilematrixset_name": "EPSG:2154",
-                "name": "ref:REF_EUDEM30_COL_2013_TIFLZW_ETRS80",
-                "format": "image/jpeg",
-                "srs": "EPSG:2154"
-              }
-            },
-            {
-              "title": "Relief Europe niveaux de gris",
-              "description": "Fond de plan relief et surfaces en eau - Europe 2013",
-			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-EUDEM30-NB_OP_2013",
-              "type": "wmts_layer",
-              "params": {
-                "url": "https://www.geograndest.fr/geoserver/gwc/service/wmts",
-				"tilematrixset_name": "EPSG:2154",
-                "name": "ref:REF_EUDEM30_NB_2013_TIFLZW_ETRS80",
-                "format": "image/jpeg",
-                "srs": "EPSG:2154"
-              }
-			}]
+      "children": [
+        {
+          "ident": "0e682b7f-e0ca-4998-ac69-7e6557d218cb",
+          "title": "Relief Europe couleurs",
+          "description": "Fond de plan relief et surfaces en eau - Europe 2013",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-EUDEM30-TERR-EAU_2013",
+          "type": "wmts_layer",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+            "tilematrixset_name": "EPSG:2154",
+            "name": "ref:REF_EUDEM30_COL_2013_TIFLZW_ETRS80",
+            "format": "image/jpeg",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "ident": "8647ed37-5ceb-4ef0-bcea-bb77bd5671da",
+          "title": "Relief Europe niveaux de gris",
+          "description": "Fond de plan relief et surfaces en eau - Europe 2013",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-236700019-EUDEM30-NB_OP_2013",
+          "type": "wmts_layer",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+            "tilematrixset_name": "EPSG:2154",
+            "name": "ref:REF_EUDEM30_NB_2013_TIFLZW_ETRS80",
+            "format": "image/jpeg",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
+          "ident": "f562cdef-6003-4f83-b055-e738a4595542",
+          "title": "Courbes de niveaux 10m - Grand Est - WMS",
+          "description": "Courbes de niveaux 10m - Grand Est - WMS réalisée à partir de la BD Alti IGN à 25m",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_CN_10M",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/geograndest/wms",
+            "name": "CN",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        },
+        {
+          "ident": "ba6bb709-6a24-42db-8a18-d920973fa84f",
+          "title": "Courbes de niveaux 10m - Grand Est - WFS",
+          "description": "Courbes de niveaux 10m - Grand Est - WFS réalisée à partir de la BD Alti IGN à 25m",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_CN_10M",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+            "version": "2.0.0",
+            "name": "geograndest:CN",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        },
+        {
+          "ident": "f6b08617-bcf9-490e-990e-46f36d70fa52",
+          "title": "Inventaire des données Altimétriques Grand Est",
+          "description": "",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264_GGE_INVENTAIRE_ALTI",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+            "name": "GGE_INVENTAIRE_ALTI",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        }
+      ]
     },
     {
       "title": "Limites administratives",
       "description": "Données concernant les limites administratives",
       "type": "folder",
-      "children": [{
+      "children": [
+        {
+          "ident": "b7ac7b24-8033-42b9-91c5-4443347984bf",
           "title": "Région Grand Est",
           "description": "Périmètre régional du Grand Est",
           "type": "wfs_feature_type",
           "params": {
-            "url": "https://www.geograndest.fr/geoserver/geograndest/ows",
+            "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
             "version": "2.0.0",
             "name": "geograndest:GGE_LIMITES_GRANDEST_FRONTIERES",
             "srs": "epsg:2154"
           }
         },
-		{
+        {
+          "ident": "3148c7ff-9ac9-4a4e-a5c5-0179e154ab99",
           "title": "Departements",
           "description": "Limites des départements basées sur la base de données GEOFLA de l'IGN",
           "type": "wfs_feature_type",
           "params": {
-            "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
+            "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
             "version": "2.0.0",
             "name": "region-grand-est:departement",
             "srs": "epsg:2154"
-          }
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
         },
         {
+          "ident": "0e5373fe-f88c-490b-8ff3-f04c0c091c4f",
           "title": "EPCI",
           "description": "Limites des EPCI à fiscalité propre basées sur la BD Admin Express de l'IGN",
           "type": "wfs_feature_type",
           "params": {
-            "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
+            "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
             "version": "2.0.0",
             "name": "region-grand-est:epci",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        },
+        {
+          "ident": "adc905a1-3bbf-4012-b3c1-6b7fcfa4f5de",
+          "title": "Communes",
+          "description": "Limites des communes basées sur la BD Admin Express de l'IGN",
+          "type": "wfs_feature_type",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-Commune_Grand_Est",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
+            "version": "2.0.0",
+            "name": "region-grand-est:commune_actuelle",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        },
+        {
+          "ident": "3c0f26b3-0ed1-4a80-9f30-e7d97b3be56a",
+          "title": "Périmètre des Pays et PETR",
+          "description": "Données des Pays et PETR du Grand Est",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-Pays_Grand_Est",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
+            "version": "2.0.0",
+            "name": "region-grand-est:pays",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Energies renouvelables",
+      "description": "DREAL Grand Est - Energies renouvelables",
+      "type": "folder",
+      "children": [
+        {
+          "ident": "d6fc4804-3c7d-46ae-b6b7-903eb0216666",
+          "title": "Eoliennes instruites",
+          "description": "Eoliennes instruites",
+          "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-f1d59026-07e1-4b18-b4f0-6539190abf3d",
+          "type": "wfs_feature_type",
+          "params": {
+            "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/e13407d8-e36d-4f43-b273-fda2a34dcc9b.internet.map",
+            "name": "ms:EolienneICPE_P_R44",
+            "version": "2.0.0",
             "srs": "epsg:2154"
           }
         },
         {
-          "title": "Communes",
-          "description": "Limites des communes basées sur la BD Admin Express de l'IGN",
+          "ident": "4271311e-455e-45a1-9cd3-18bd9003cff0",
+          "title": "Parcs éoliens",
+          "description": "Parcs éoliens de la région Grand Est au 03/06/2020",
+          "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-baf93563-9b63-45b7-a458-16c011f946b3",
           "type": "wfs_feature_type",
           "params": {
-            "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
+            "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/80757b1b-a319-4304-9c65-bccee3420c6e.internet.map",
+            "name": "ms:ParcEolienneICPE_S_R44",
             "version": "2.0.0",
-            "name": "region-grand-est:commune_actuelle",
-            "srs": "epsg:2154"
-          }
-        },
-		{
-          "title": "Périmètre des Pays et PETR",
-          "description": "Données des Pays et PETR du Grand Est",
-		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-Pays_Grand_Est",
-          "type": "wfs_feature_type",
-          "params": {
-            "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
-            "version": "2.0.0",
-            "name": "region-grand-est:pays",
             "srs": "epsg:2154"
           }
         }
       ]
     },
-	{
-	"title": "Energies renouvelables",
-	"description": "DREAL Grand Est - Energies renouvelables",
-	"type": "folder",
-	"children": [{
-         "title": "Eoliennes instruites",
-		 "description": "Eoliennes instruites",
-		 "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-f1d59026-07e1-4b18-b4f0-6539190abf3d",
-		 "type": "wfs_feature_type",
-		 "params": {
-            "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/e13407d8-e36d-4f43-b273-fda2a34dcc9b.internet.map",
-			"name": "ms:EolienneICPE_P_R44",
-            "version": "2.0.0",
-            "srs": "epsg:2154"
-          }
-        },
-		{
-         "title": "Parcs éoliens",
-		 "description": "Parcs éoliens de la région Grand Est au 03/06/2020",
-		 "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-baf93563-9b63-45b7-a458-16c011f946b3",
-		 "type": "wfs_feature_type",
-		 "params": {
-            "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/80757b1b-a319-4304-9c65-bccee3420c6e.internet.map",
-			"name": "ms:ParcEolienneICPE_S_R44",
-            "version": "2.0.0",
-            "srs": "epsg:2154"
-          }
-        }]
-	},
     {
       "title": "Nature",
       "description": "DREAL Grand Est - Nature",
       "type": "folder",
-      "children": [{
+      "children": [
+        {
           "title": "Protections réglementaires",
           "description": "DREAL - Protections réglementaires",
           "type": "folder",
           "children": [
             {
+              "ident": "c9d7fc2b-aa7e-4121-a663-fce67d9b3096",
               "title": "Aire de Protection de Biotope",
               "description": "DREAL - Aire de Protection des Habitats Naturels en (APB) en Grand Est",
-			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-92287056-5d57-401c-8a8b-772d75c712f6",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-92287056-5d57-401c-8a8b-772d75c712f6",
               "type": "wfs_feature_type",
               "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/7b2d7f69-19c5-4bf4-8d6a-c5391787d61c.internet.map",
-				"name": "ms:N_ENP_APB_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:N_ENP_APB_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
             {
+              "ident": "dcf54dc9-010f-4628-9ec5-b3032cf03b79",
               "title": "Réserves Naturelles Nationales",
               "description": "DREAL - Région - Réserves Naturelles Régionales",
-			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-670acab6-57b2-4cf7-8080-05fc1f979558",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-670acab6-57b2-4cf7-8080-05fc1f979558",
               "type": "wfs_feature_type",
               "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/9e56f357-ebe4-4ca2-8f72-8a929c12d64c.internet.map",
-				"name": "ms:N_ENP_RNN_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:N_ENP_RNN_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			 {
+            {
+              "ident": "496b0af3-4a4c-4b12-b2bd-a19839c15e4d",
               "title": "Réserves Naturelles Régionales",
               "description": "Région - Réserves Naturelles Régionales",
-			  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-RNR_Grand_Est",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-RNR_Grand_Est",
               "type": "wfs_feature_type",
               "params": {
-                "url": "https://www.geograndest.fr:443/geoserver/region-grand-est/ows",
-				"name": "region-grand-est:rnr",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "url": "https://www.datagrandest.fr:443/geoserver/region-grand-est/ows",
+                "name": "region-grand-est:rnr",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "175ee96b-f8ec-48c9-b11e-1a90ff64695d",
               "title": "Réserves biologiques",
               "description": "DREAL - Réserves biologiques",
-			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-5bde1963-a603-4ee2-b0ff-6b9a245e5410",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-5bde1963-a603-4ee2-b0ff-6b9a245e5410",
               "type": "wfs_feature_type",
               "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/8e2f8ba7-fce2-4ce4-af48-9619fd59dd29.internet.map",
-				"name": "ms:N_ENP_RB_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:N_ENP_RB_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "ea4ab504-92ec-428b-800d-e174371a120a",
               "title": "Réserves de chasse et de faune sauvage",
               "description": "DREAL - Réserves de chasse et de faune sauvage",
-			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-1d5e220a-f524-4c30-b59e-31492a404d0c",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-1d5e220a-f524-4c30-b59e-31492a404d0c",
               "type": "wfs_feature_type",
               "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/661df794-d2c9-41c2-bc4d-fc6256340a0a.internet.map",
-				"name": "ms:N_ENP_RCFS_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:N_ENP_RCFS_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "8326bf41-9c6e-4086-9a91-934d8a4d19c5",
               "title": "Réserves nationales de chasse et de faune sauvage",
               "description": "DREAL - Réserves nationales de chasse et de faune sauvage",
-			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-43c3df33-e2f3-4e51-8640-0a75d78d7149",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-43c3df33-e2f3-4e51-8640-0a75d78d7149",
               "type": "wfs_feature_type",
               "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/f2ff3a4f-d4ff-4840-bfc6-f84efcf1f2e1.internet.map",
-				"name": "ms:N_ENP_RNCFS_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:N_ENP_RNCFS_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "d92579bd-49e5-4f52-9e94-704267d9bba2",
               "title": "Aire de Protection des Habitats Naturels en (APHN)",
               "description": "DREAL - Aire de Protection des Habitats Naturels en (APHN)",
-			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-d90ac948-9e07-47a6-9c1b-471888dbefd4",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-d90ac948-9e07-47a6-9c1b-471888dbefd4",
               "type": "wfs_feature_type",
               "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/c0e5c16c-30ca-475b-b0a2-4220cd28b80f.internet.map",
-				"name": "ms:APHN_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:APHN_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "a7ef63bd-67ed-4da8-b602-71dc1939bfd5",
               "title": "Forêt de protection",
               "description": "DREAL - Forêt de protection",
-			  "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-dd5cc576-3cd7-49c1-8bc8-1eec16057bd6",
+              "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-dd5cc576-3cd7-49c1-8bc8-1eec16057bd6",
               "type": "wfs_feature_type",
               "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/17e1a6cd-3dd4-4264-a7e7-825311cb4c28.internet.map",
-				"name": "ms:N_FORET_PROTECTION_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:N_FORET_PROTECTION_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             }
-						
           ]
         },
-		{
+        {
           "title": "Gestions contractuelles",
           "description": "DREAL - Gestions contractuelles",
           "type": "folder",
-          "children": [{
+          "children": [
+            {
+              "ident": "882efc4e-13a3-4c38-877c-99f27328b058",
               "title": "Natura 2000 - directive Habitat (ZSC)",
               "description": "DREAL - Natura 2000 - directive Habitat (ZSC)",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-5b03142c-ac64-4fae-ab64-fa314062684a",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/773bcbe2-4c5c-4b2c-89b9-d5b802e4a8fd.internet.map",
-				"name": "ms:NATURA2000_ZSC_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:NATURA2000_ZSC_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
             {
+              "ident": "b003d32c-2515-494e-b3f7-9ea09a01deae",
               "title": "Natura 2000 - directive Oiseaux (ZPS)",
               "description": "DREAL - Natura 2000 - directive Oiseaux (ZPS)",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-75766f10-e7f6-47f5-b7ee-0d6ca1fa5982",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/4f1a3cfc-0fa8-4ff8-ab60-3f66381122f7.internet.map",
-				"name": "ms:NATURA2000_ZPS_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:NATURA2000_ZPS_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
             {
+              "ident": "c4dc3e12-d076-4e3a-822a-584c76d22ee4",
               "title": "Parcs Naturels Régionaux (PNR)",
               "description": "DREAL - Parcs Naturels Régionaux (PNR)",
               "type": "wfs_feature_type",
-              "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-PNR_Grand_Est",
-			  "params": {
-                "url": "https://www.geograndest.fr:443/geoserver/region-grand-est/ows",
-				"name": "region-grand-est:pnr",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-PNR_Grand_Est",
+              "params": {
+                "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows?",
+                "name": "region-grand-est:pnr",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "999ed560-d354-458e-80e8-c5e9eae91585",
               "title": "Parc National de Forêts Champagne et Bourgogne",
               "description": "INPN - Parc National de Forêts Champagne et Bourgogne",
               "type": "wms_layer",
               "metadata_url": "https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ep/pn",
               "params": {
                 "url": "http://ws.carmencarto.fr/WMS/119/fxx_inpn?",
-				"name": "Parcs_nationaux",
-				"format": "image/png",
-				"srs": "epsg:2154"
+                "name": "Parcs_nationaux",
+                "format": "image/png",
+                "srs": "epsg:2154"
               }
-            }]
+            }
+          ]
         },
-		{
+        {
           "title": "Engagements internationaux",
           "description": "DREAL - Engagements internationaux",
           "type": "folder",
-          "children": [{
+          "children": [
+            {
+              "ident": "8c1635f0-708c-465b-adb7-582716f1bcf3",
               "title": "Réserves de Biosphère",
               "description": "Réserves de Biosphère",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-fd74fa0e-faf8-40af-80f8-3243e9dbb8f1",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/f0d532e6-84c1-4319-a66d-f04daf5753e8.internet.map",
-				"name": "ms:N_ENP_MAB_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:N_ENP_MAB_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "4dcdf6a8-0648-4d22-800c-d427edcfa76b",
               "title": "Zone humide d'importance internationale (convention de Ramsar)",
               "description": "DREAL - Zone humide d'importance internationale (convention de Ramsar)",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-18f6754f-8ba8-4301-9f95-337de535529e",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/f847983a-9d54-4a2e-a916-93c70ed3e09a.internet.map",
-				"name": "ms:N_ENP_RAMSAR_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:N_ENP_RAMSAR_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
-            }]
-		},
-		{
+            }
+          ]
+        },
+        {
           "title": "Inventaires patrimoniaux",
           "description": "DREAL - Inventaires patrimoniaux",
           "type": "folder",
-          "children": [{
+          "children": [
+            {
+              "ident": "b5426f4d-5f3b-471b-b87c-8f38562ccd2f",
               "title": "ZNIEFF de type 1",
               "description": "Zone Naturelle d'Intérêt Ecologique Faunistique ou Floristique de type 1 (ZNIEFF 1) dans le Grand Est",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-3ae9caff-9ea8-4f40-8efe-75dd133838c9",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/e098f26f-4cf4-437e-99d9-6b2f500eb4f7.internet.map",
-				"name": "ms:ZNIEFF1_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:ZNIEFF1_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "924bb448-26a8-4331-9df8-64a9d6743c2d",
               "title": "ZNIEFF de type 2",
               "description": "Zone Naturelle d'Intérêt Ecologique Faunistique ou Floristique de type 2 (ZNIEFF 2) dans le Grand Est",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-352d8b8f-1307-49c2-8e9f-2894a1af4837",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/5db9da6f-bab1-4cf0-a5a8-1024b5bd4f9f.internet.map",
-				"name": "ms:ZNIEFF2_S_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:ZNIEFF2_S_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
-            }]
-		},
-		{
+            }
+          ]
+        },
+        {
           "title": "Plan National d'Action du Hamster",
           "description": "DREAL - Plan National d'Action du Hamster",
           "type": "folder",
-          "children": [{
+          "children": [
+            {
+              "ident": "ef015ea0-d5cc-4f45-a832-df75c5b52d91",
               "title": "Zones de protection statique",
               "description": "Zones de protection statique",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-c2177c5c-3e37-488a-b537-e020dfff4a4f",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/aeffe9dc-4f98-4ed5-a65c-3e1001559a32.internet.map",
-				"name": "ms:X_HAMSTER_ZONE_PROTECTION_STATIQUE_S_ZINF_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:X_HAMSTER_ZONE_PROTECTION_STATIQUE_S_ZINF_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "5d3621f8-29b9-4fda-b578-7a894f19b105",
               "title": "Zone d'accompagnement",
               "description": "DREAL - Zone d'accompagnement",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-0ea0c200-e314-4412-9b2f-d2d12c0db4b4",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/79b84c5e-cda1-4477-bb9b-d000e90c9fe7.internet.map",
-				"name": "ms:X_HAMSTER_ZONE_ACCOMPAGNEMENT_S_ZINF_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:X_HAMSTER_ZONE_ACCOMPAGNEMENT_S_ZINF_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "6ca9faac-94e5-4d08-832c-e4f35b94d4b6",
               "title": "Terriers 2019",
               "description": "DREAL - Terriers 2019",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-d85a8fb0-aa57-4fa9-8bda-d7d0dba1b534",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/be936ce3-6e4e-4f19-8ff7-97b00ab0cc0e.internet.map",
-				"name": "ms:X_HAMSTER_TERRIERS_2019_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:X_HAMSTER_TERRIERS_2019_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "f6ac860c-e845-45f0-83ed-ddacda4edf30",
               "title": "Parcelles prospectées 2019",
               "description": "DREAL - Parcelles prospectées 2019",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-3878c501-83d5-4299-b12a-74ff94f72473",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/72661013-a1f3-4c5a-974e-752501933461.internet.map",
-				"name": "ms:X_HAMSTER_PARCELLES_PROSPECTEES_2019_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:X_HAMSTER_PARCELLES_PROSPECTEES_2019_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "d48a0216-0d66-46ae-b588-381707fb62aa",
               "title": "Zones de prospections 2019",
               "description": "DREAL - Zones de prospections 2019",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-47296089-1621-4d55-b700-c02b2e1c9748",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/d277d7a3-9c36-41bf-a459-eeba5a78db8b.internet.map",
-				"name": "ms:X_HAMSTER_PROSPECTIONS_2019_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:X_HAMSTER_PROSPECTIONS_2019_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "407cb415-8a93-489d-8879-5508970e2727",
               "title": "Terriers 2018",
               "description": "DREAL - Terriers 2018",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-255eb4a6-f700-479e-9916-474ae5fb5792",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/88d085ce-028f-4505-b74b-23e1e171ab88.internet.map",
-				"name": "ms:X_HAMSTER_TERRIERS_2018_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:X_HAMSTER_TERRIERS_2018_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "b2c39605-4b44-4618-9274-186edbdcfbea",
               "title": "Parcelles prospectées 2018",
               "description": "DREAL - Parcelles prospectées 2018",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-efb94508-5c44-420b-8110-4f561c07e0ea",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/afac9d32-5d74-4baf-ab42-603d13881779.internet.map",
-				"name": "ms:X_HAMSTER_PARCELLES_PROSPECTEES_2018_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:X_HAMSTER_PARCELLES_PROSPECTEES_2018_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
             },
-			{
+            {
+              "ident": "7df18fbc-8cdf-443b-bed3-a3499107369f",
               "title": "Zones de prospection 2018",
               "description": "DREAL - Zones de prospection 2018",
               "type": "wfs_feature_type",
               "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-4cfc91c6-9bfe-4a4d-a5cb-339f004c0d7f",
-			  "params": {
+              "params": {
                 "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/f7987357-fab3-472b-b760-91a6c1bcf3b8.internet.map",
-				"name": "ms:X_HAMSTER_PROSPECTIONS_2018_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
+                "name": "ms:X_HAMSTER_PROSPECTIONS_2018_R44",
+                "version": "2.0.0",
+                "srs": "epsg:2154"
               }
-            }]
-		}
+            }
+          ]
+        }
       ]
     },
     {
       "title": "Sites et paysages",
       "description": "DREAL Grand Est - Sites et paysages",
       "type": "folder",
-		"children": [{
-            "title": "Sites inscrits et classés",
-            "description": "DREAL - Sites inscrits et classés - Générateur de servitude d'utilité AC2 dans le Grand Est",
-            "type": "wfs_feature_type",
-			"metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-a24f4d09-6168-4e04-9383-5690e23b8a5c",
-			"params": {
-              "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/a509e05b-6356-48a8-b326-9e13a5536aee.internet.map",
-				"name": "ms:AC2_GENERATEUR_SUP_S",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
-            }
+      "children": [
+        {
+          "ident": "9fcf255b-59ac-4f4e-9ddb-c4621c2b20c0",
+          "title": "Sites inscrits et classés",
+          "description": "DREAL - Sites inscrits et classés - Générateur de servitude d'utilité AC2 dans le Grand Est",
+          "type": "wfs_feature_type",
+          "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-a24f4d09-6168-4e04-9383-5690e23b8a5c",
+          "params": {
+            "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/a509e05b-6356-48a8-b326-9e13a5536aee.internet.map",
+            "name": "ms:AC2_GENERATEUR_SUP_S",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
           }
-		]
-	},
-	{
+        }
+      ]
+    },
+    {
       "title": "Aménagement",
       "description": "DREAL Grand Est - Aménagement",
       "type": "folder",
-		"children": [{
-            "title": "Périmètre de la Directive Territoriale d''Aménagement (DTA) des Bassins Miniers Nord Lorrains",
-            "description": "DREAL - Périmètre de la Directive Territoriale d''Aménagement (DTA) des Bassins Miniers Nord Lorrains",
-            "type": "wfs_feature_type",
-            "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-801ad4cd-fda8-4e9d-9282-e9d115e3564c",
-			"params": {
-              "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/a5cc241a-166e-47ae-9b39-01e3056e312c.internet.map",
-				"name": "ms:DTA_S_ZSUP_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
-            }
-          },
-		  {
+      "children": [
+        {
+          "ident": "48691c9b-1e50-48b1-baff-982ccf4cf57d",
+          "title": "Périmètre de la Directive Territoriale d''Aménagement (DTA) des Bassins Miniers Nord Lorrains",
+          "description": "DREAL - Périmètre de la Directive Territoriale d''Aménagement (DTA) des Bassins Miniers Nord Lorrains",
+          "type": "wfs_feature_type",
+          "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-801ad4cd-fda8-4e9d-9282-e9d115e3564c",
+          "params": {
+            "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/a5cc241a-166e-47ae-9b39-01e3056e312c.internet.map",
+            "name": "ms:DTA_S_ZSUP_R44",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "ident": "16bddefe-3d24-4a95-802e-c08c9a5c9004",
           "title": "Périmètre des SCOT",
           "description": "Schémas de Cohérence Territoriaux du Grand Est",
-		  "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search?t=1587020389#/metadata/FR-200052264-SCOT_Grand_Est",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search?t=1587020389#/metadata/FR-200052264-SCOT_Grand_Est",
           "type": "wfs_feature_type",
           "params": {
-            "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows",
+            "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
             "version": "2.0.0",
             "name": "region-grand-est:scot",
             "srs": "epsg:2154"
           }
-		  },
-		  {
-            "title": "Opération d'Intérêt National (OIN) dite d'Alzette-Belval",
-            "description": "DREAL - Opération d'Intérêt National (OIN) dite d'Alzette-Belval",
-            "type": "wfs_feature_type",
-            "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-479a83ab-ad2b-48d5-a5bd-5efc932972e0",
-			"params": {
-              "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/b0a1ce28-0780-411b-8ddf-41f2d4479de0.internet.map",
-				"name": "ms:N_OIN_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
-            }
-          },
-		   {
-            "title": "Périmètre de Massif des Vosges (Datar)",
-            "description": "Donnée du territoire du Massif des Vosges selon la DATAR",
-            "type": "wfs_feature_type",
-            "metadata_url": "https://www.geograndest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-Massif_Grand_Est",
-			"params": {
-              "url": "https://www.geograndest.fr:443/geoserver/region-grand-est/ows",
-				"name": "region-grand-est:massif",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
-            }
+        },
+        {
+          "ident": "21b7693c-9ccc-4d79-a208-86caf8b7aedb",
+          "title": "Opération d'Intérêt National (OIN) dite d'Alzette-Belval",
+          "description": "DREAL - Opération d'Intérêt National (OIN) dite d'Alzette-Belval",
+          "type": "wfs_feature_type",
+          "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-479a83ab-ad2b-48d5-a5bd-5efc932972e0",
+          "params": {
+            "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/b0a1ce28-0780-411b-8ddf-41f2d4479de0.internet.map",
+            "name": "ms:N_OIN_R44",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
           }
-		]
-      },
-	{
+        },
+        {
+          "ident": "6ac23d75-deb7-4162-bc95-ceef14fe0dc0",
+          "title": "Périmètre de Massif des Vosges (Datar)",
+          "description": "Donnée du territoire du Massif des Vosges selon la DATAR",
+          "type": "wfs_feature_type",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-Massif_Grand_Est",
+          "params": {
+            "url": "https://www.datagrandest.fr:443/geoserver/region-grand-est/ows",
+            "name": "region-grand-est:massif",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
+          }
+        }
+      ]
+    },
+    {
       "title": "Impacts et risques antropiques",
       "description": "DREAL Grand Est - Données concernant le climat, la qualité de l'air et l'énergie",
       "type": "folder",
-		"children": [{
-            "title": "ICPE avec surveillance environnementale",
-            "description": "Installations Classées pour la Protection de l'Environnement ayant mis en place une surveillance de leurs effets dans l'environnement",
-            "type": "wfs_feature_type",
-            "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-fbe073b8-893b-44cc-9222-2425e6086b7e",
-			"params": {
-              "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/a9382ad9-a8ad-437e-86eb-8a7b096cb6db.internet.map",
-				"name": "ms:ICPE_SURV_ENV_P_R44",
-				"version": "2.0.0",
-				"srs": "epsg:2154"
-            }
+      "children": [
+        {
+          "ident": "d81a72e1-4249-41a4-8da7-deca487723ee",
+          "title": "ICPE avec surveillance environnementale",
+          "description": "Installations Classées pour la Protection de l'Environnement ayant mis en place une surveillance de leurs effets dans l'environnement",
+          "type": "wfs_feature_type",
+          "metadata_url": "http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search#/metadata/fr-120066022-jdd-fbe073b8-893b-44cc-9222-2425e6086b7e",
+          "params": {
+            "url": "http://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_5443264/a9382ad9-a8ad-437e-86eb-8a7b096cb6db.internet.map",
+            "name": "ms:ICPE_SURV_ENV_P_R44",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
           }
-		]
+        }
+      ]
+    },
+    {
+      "title": "Forêts et Agriculture",
+      "description": "ONF",
+      "type": "folder",
+      "children": [
+        {
+          "ident": "5b18de7b-921d-4b1d-a889-a65163f54d3a",
+          "title": "ONF - Forêts Publiques - Champagne-Ardenne",
+          "description": "ONF - Forêts Publiques",
+          "type": "wfs_feature_type",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/fac934f5b6934af22dc56b1651e02f5dbda782c6",
+          "params": {
+            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "name": "ms:FOR_PUBL_FR",
+            "version": "2.0.0",
+            "srs": "epsg:2154",
+            "filter": "cinse_dep LIKE '08' OR cinse_dep LIKE '10' OR cinse_dep LIKE '51' OR cinse_dep LIKE '52'"
+          }
+        },
+        {
+          "ident": "a4138b78-7861-43c9-b077-d6d3e8533505",
+          "title": "ONF - Forêts Publiques - Lorraine",
+          "description": "ONF - Forêts Publiques",
+          "type": "wfs_feature_type",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/fac934f5b6934af22dc56b1651e02f5dbda782c6",
+          "params": {
+            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "name": "ms:FOR_PUBL_FR",
+            "version": "2.0.0",
+            "srs": "epsg:2154",
+            "filter": "cinse_dep LIKE '54' OR cinse_dep LIKE '55' OR cinse_dep LIKE '57' OR cinse_dep LIKE '88'"
+          }
+        },
+        {
+          "ident": "ec44dd48-5c22-4b9f-9e2e-289baccbb376",
+          "title": "ONF - Forêts Publiques - Alsace",
+          "description": "ONF - Forêts Publiques",
+          "type": "wfs_feature_type",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/fac934f5b6934af22dc56b1651e02f5dbda782c6",
+          "params": {
+            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "name": "ms:FOR_PUBL_FR",
+            "version": "2.0.0",
+            "srs": "epsg:2154",
+            "filter": "cinse_dep LIKE '67' OR cinse_dep LIKE '68'"
+          }
+        },
+        {
+          "ident": "33c6ec66-cee9-4919-b91c-9376a2e64876",
+          "title": "ONF - Parcelles Forestières",
+          "description": "ONF - Parcelles Forestières",
+          "type": "wfs_feature_type",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/80ae3ad8d114ea35b08270e1a01caaa2727618cf",
+          "params": {
+            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "name": "ms:PARC_PUBL_FR",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "ident": "5f739cc9-71fd-400d-84d9-509e2550cd81",
+          "title": "ONF - Directions Terrioriales",
+          "description": "ONF - Parcelles Forestières",
+          "type": "wfs_feature_type",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/b2db6517197b7b2e3ca3e39c7d4d8ffc3907e586",
+          "params": {
+            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "name": "ms:DT_FR",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "ident": "cad8ad67-d601-484b-b060-e33302c9f1cf",
+          "title": "ONF - Agences Terrioriales",
+          "description": "ONF - Parcelles Forestières",
+          "type": "wfs_feature_type",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/041a6dcc5c63407d6b9da4894a255370de27403b",
+          "params": {
+            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "name": "ms:ATE_FR",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "ident": "9623c27e-8d21-46e6-a35a-f84e6a2f2a28",
+          "title": "ONF - Points de Rencontre des Secours",
+          "description": "ONF - Points de Rencontre des Secours",
+          "type": "wfs_feature_type",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/5db4e3b5d2f9d6c1b6f1f8f621047c089d623f22",
+          "params": {
+            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "name": "ms:PRS_FR",
+            "version": "2.0.0",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "ident": "31da6d15-47a7-4f2f-a913-56770af100bc",
+          "title": "DRAAF - Petite Région Agricole",
+          "description": "DRAAF - Petite Région Agricole",
+          "type": "wms_layer",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-130006711-001-DG-2021-PRA",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/draaf/wms?",
+            "name": "R44_PRA2017_2021",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "ident": "4ff0a04e-e7bf-453b-9d50-89c077da71e3",
+          "title": "DRAAF - Registre Parcellaire Graphique 2015",
+          "description": "DRAAF - Registre Parcellaire Graphique 2015",
+          "type": "wms_layer",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-130006711-001-DG-2015-RPG",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/draaf/wms?",
+            "name": "R44_RPG_2015",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "ident": "6b31fd8b-4070-4473-8e7c-f199c9dfa0b1",
+          "title": "DRAAF - Registre Parcellaire Graphique 2016",
+          "description": "DRAAF - Registre Parcellaire Graphique 2016",
+          "type": "wms_layer",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-130006711-001-DG-2016-RPG",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/draaf/wms?",
+            "name": "R44_RPG2016",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "ident": "369137bc-fe2a-44f3-8b54-2d00afaa53ed",
+          "title": "DRAAF - Registre Parcellaire Graphique 2018",
+          "description": "DRAAF - Registre Parcellaire Graphique 2018",
+          "type": "wms_layer",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-130006711-001-DG-2018-RPG",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/draaf/wms?",
+            "name": "R44_RPG2018",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        },
+        {
+          "ident": "d79e9c16-ba7f-4c2e-b9f8-0a35ca034cd2",
+          "title": "DRAAF - Registre Parcellaire Graphique 2019",
+          "description": "DRAAF - Registre Parcellaire Graphique 2019",
+          "type": "wms_layer",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-130006711-001-DG-2019-RPG",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/draaf/wms?",
+            "name": "R44_RPG2019",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        }
+      ]
     }
   ]
 }
-
