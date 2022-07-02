@@ -1322,8 +1322,9 @@
       "children": [
         {
           "ident": "e771203b-7bc0-4342-a906-6ddda893cb78",
-          "title": "Cadastre - Communes PCI",
-          "description": "Cadastre - Communes du PCI-vecteur 2018",
+          "title": "Cadastre - Communes PCI (à partir du 1:300.000)",
+          "description": "Cadastre - Communes du PCI-vecteur 2018 (à partir du 1:300.000)",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0097-0000",
           "type": "wms_layer",
           "params": {
             "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
@@ -1344,6 +1345,7 @@
           "ident": "c3a21d05-e6cb-4101-9594-9bb8ce39ae15",
           "title": "Cadastre - Sections PCI(visible du 1:4.000 au 1:30.000)",
           "description": "Cadastre - Section du PCI vecteur 2018 (visible du 1:4.000 au 1:30.000)",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0096-0000",
           "type": "wms_layer",
           "params": {
             "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
@@ -1364,6 +1366,7 @@
           "ident": "def427ed-a6cd-4e40-b1c1-cfdc3587b50f",
           "title": "Cadastre - Parcelle PCI (visible <1:10.000)",
           "description": "Cadastre - Cadastre - Parcelles du PCI vecteur 2018 (visible <1:10.000)",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0094-0000",
           "type": "wms_layer",
           "params": {
             "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
@@ -1384,6 +1387,7 @@
           "ident": "22d7c7b2-4be4-45cc-bee1-a475a11d7a94",
           "title": "Cadastre - Bâti PCI (visible <1:10.000)",
           "description": "Cadastre - Bâti du PCI vecteur 2018 (visible <1:10.000)",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0095-0000",
           "type": "wms_layer",
           "params": {
             "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
@@ -3170,7 +3174,7 @@
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-130006711-001-DG-2015-RPG",
           "params": {
             "url": "https://www.datagrandest.fr/geoserver/draaf/wms?",
-            "name": "R44_RPG_2015",
+            "name": "r44_rpg_2015",
             "format": "image/png",
             "srs": "epsg:2154"
           }
@@ -3183,7 +3187,7 @@
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-130006711-001-DG-2016-RPG",
           "params": {
             "url": "https://www.datagrandest.fr/geoserver/draaf/wms?",
-            "name": "R44_RPG2016",
+            "name": "r44_rpg_2016",
             "format": "image/png",
             "srs": "epsg:2154"
           }
@@ -3196,7 +3200,7 @@
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-130006711-001-DG-2018-RPG",
           "params": {
             "url": "https://www.datagrandest.fr/geoserver/draaf/wms?",
-            "name": "R44_RPG2018",
+            "name": "r44_rpg_2018",
             "format": "image/png",
             "srs": "epsg:2154"
           }
@@ -3209,7 +3213,7 @@
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-130006711-001-DG-2019-RPG",
           "params": {
             "url": "https://www.datagrandest.fr/geoserver/draaf/wms?",
-            "name": "R44_RPG2019",
+            "name": "r44_rpg_2019",
             "format": "image/png",
             "srs": "epsg:2154"
           }
