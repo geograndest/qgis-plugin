@@ -16,7 +16,7 @@ class PluginGlobals:
     # Plugin infos
     PLUGIN_TAG = u"DataGrandEst"
     #PLUGIN_TAG = u"indigeo"
-    PLUGIN_VERSION = u"0.1"
+    PLUGIN_VERSION = u"2.01"
     PLUGIN_SOURCE_REPOSITORY = u"https://github.com/geograndest/qgis-plugin"
 
     # Tree nodes types
