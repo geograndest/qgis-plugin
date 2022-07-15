@@ -23,7 +23,9 @@ class SimpleAccessPlugin:
         self.iface = iface
         self.dock = None
 
-        PluginGlobals.instance().set_plugin_path(os.path.dirname(os.path.abspath(__file__)))
+        PluginGlobals.instance().set_plugin_path(
+            os.path.dirname(os.path.abspath(__file__))
+        )
         PluginGlobals.instance().set_plugin_iface(self.iface)
         PluginGlobals.instance().reload_globals_from_qgis_settings()
 
@@ -35,7 +37,9 @@ class SimpleAccessPlugin:
             download_tree_config_file(PluginGlobals.instance().CONFIG_FILE_URLS[0])
 
         # Read the resources tree file and update the GUI
-        self.ressources_tree = TreeNodeFactory(PluginGlobals.instance().config_file_path).root_node
+        self.ressources_tree = TreeNodeFactory(
+            PluginGlobals.instance().config_file_path
+        ).root_node
 
     def need_download_tree_config_file(self):
         """
@@ -45,8 +49,10 @@ class SimpleAccessPlugin:
         - the file is currently missing
         """
 
-        return (PluginGlobals.instance().CONFIG_FILES_DOWNLOAD_AT_STARTUP > 0 or
-                not os.path.isfile(PluginGlobals.instance().config_file_path))
+        return (
+            PluginGlobals.instance().CONFIG_FILES_DOWNLOAD_AT_STARTUP > 0
+            or not os.path.isfile(PluginGlobals.instance().config_file_path)
+        )
 
     def initGui(self):
         """
@@ -71,15 +77,17 @@ class SimpleAccessPlugin:
         self.plugin_menu = QMenu(u"DataGrandEst", plugin_menu)
         plugin_menu.addMenu(self.plugin_menu)
 
-        show_panel_action = QAction(u'Afficher le panneau latéral', self.iface.mainWindow())
+        show_panel_action = QAction(
+            u"Afficher le panneau latéral", self.iface.mainWindow()
+        )
         show_panel_action.triggered.connect(self.showPanelMenuTriggered)
         self.plugin_menu.addAction(show_panel_action)
 
-        param_action = QAction(u'Paramétrer le plugin…', self.iface.mainWindow())
+        param_action = QAction(u"Paramétrer le plugin…", self.iface.mainWindow())
         param_action.triggered.connect(self.paramMenuTriggered)
         self.plugin_menu.addAction(param_action)
 
-        about_action = QAction(u'À propos…', self.iface.mainWindow())
+        about_action = QAction(u"À propos…", self.iface.mainWindow())
         about_action.triggered.connect(self.aboutMenuTriggered)
         self.plugin_menu.addAction(about_action)
 

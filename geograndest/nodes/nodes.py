@@ -7,13 +7,21 @@ from datagrandest.utils.plugin_icons import PluginIcons
 
 
 class FavoritesTreeNode:
-    """
-    """
+    """ """
 
-    def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_FOLDER,
-                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
-        """
-        """
+    def __init__(
+        self,
+        title,
+        node_type=PluginGlobals.instance().NODE_TYPE_FOLDER,
+        description=None,
+        status=None,
+        metadata_url=None,
+        ident=None,
+        params=None,
+        bounding_boxes=None,
+        parent_node=None,
+    ):
+        """ """
 
         self.parent_node = parent_node
         self.node_type = node_type
@@ -34,17 +42,19 @@ class FavoritesTreeNode:
         """
 
         qgis_layer_details = self.get_qgis_layer_details()
-        mime_data = ':'.join([
-            qgis_layer_details["type"],
-            qgis_layer_details["provider"],
-            qgis_layer_details["title"].replace(":", "\\:"),
-            qgis_layer_details["uri"].replace(":", "\\:")])
+        mime_data = ":".join(
+            [
+                qgis_layer_details["type"],
+                qgis_layer_details["provider"],
+                qgis_layer_details["title"].replace(":", "\\:"),
+                qgis_layer_details["uri"].replace(":", "\\:"),
+            ]
+        )
 
         return mime_data
 
     def run_add_to_map_action(self):
-        """
-        """
+        """ """
 
         pass
 
@@ -54,6 +64,7 @@ class FavoritesTreeNode:
         """
 
         import webbrowser
+
         if self.metadata_url:
             webbrowser.open_new_tab(self.metadata_url)
 
@@ -69,17 +80,38 @@ class FavoritesTreeNode:
 
 # Subclasses of FavoritesTreeNode
 
+
 class FolderTreeNode(FavoritesTreeNode):
     """
     Tree node for a folder containing other nodes
     """
 
-    def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_FOLDER,
-                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
-        """
-        """
+    def __init__(
+        self,
+        title,
+        node_type=PluginGlobals.instance().NODE_TYPE_FOLDER,
+        description=None,
+        status=None,
+        metadata_url=None,
+        ident=None,
+        params=None,
+        bounding_boxes=None,
+        parent_node=None,
+    ):
+        """ """
 
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
+        FavoritesTreeNode.__init__(
+            self,
+            title,
+            node_type,
+            description,
+            status,
+            metadata_url,
+            ident,
+            params,
+            bounding_boxes,
+            parent_node,
+        )
 
         # Icon
         plugin_icons = PluginIcons.instance()
@@ -93,11 +125,31 @@ class WmsLayerTreeNode(FavoritesTreeNode):
     Tree node for a WMS layer
     """
 
-    def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_WMS_LAYER,
-                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
-        """
-        """
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
+    def __init__(
+        self,
+        title,
+        node_type=PluginGlobals.instance().NODE_TYPE_WMS_LAYER,
+        description=None,
+        status=None,
+        metadata_url=None,
+        ident=None,
+        params=None,
+        bounding_boxes=None,
+        parent_node=None,
+    ):
+        """ """
+        FavoritesTreeNode.__init__(
+            self,
+            title,
+            node_type,
+            description,
+            status,
+            metadata_url,
+            ident,
+            params,
+            bounding_boxes,
+            parent_node,
+        )
 
         self.service_url = params.get("url")
         self.layer_name = params.get("name")
@@ -122,7 +174,12 @@ class WmsLayerTreeNode(FavoritesTreeNode):
             "provider": "wms",
             "title": self.title,
             "uri": u"crs={}&featureCount=10&format={}&layers={}&maxHeight=256&maxWidth=256&styles={}&url={}".format(
-                self.layer_srs, self.layer_format, self.layer_name, self.layer_style_name, self.service_url)
+                self.layer_srs,
+                self.layer_format,
+                self.layer_name,
+                self.layer_style_name,
+                self.service_url,
+            ),
         }
 
         return qgis_layer_uri_details
@@ -135,7 +192,8 @@ class WmsLayerTreeNode(FavoritesTreeNode):
         PluginGlobals.instance().iface.addRasterLayer(
             qgis_layer_details["uri"],
             qgis_layer_details["title"],
-            qgis_layer_details["provider"])
+            qgis_layer_details["provider"],
+        )
 
 
 class WmsStyleLayerTreeNode(FavoritesTreeNode):
@@ -143,12 +201,32 @@ class WmsStyleLayerTreeNode(FavoritesTreeNode):
     Tree node for a WMS layer with a specific style
     """
 
-    def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_WMS_LAYER_STYLE,
-                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
-        """
-        """
+    def __init__(
+        self,
+        title,
+        node_type=PluginGlobals.instance().NODE_TYPE_WMS_LAYER_STYLE,
+        description=None,
+        status=None,
+        metadata_url=None,
+        ident=None,
+        params=None,
+        bounding_boxes=None,
+        parent_node=None,
+    ):
+        """ """
 
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
+        FavoritesTreeNode.__init__(
+            self,
+            title,
+            node_type,
+            description,
+            status,
+            metadata_url,
+            ident,
+            params,
+            bounding_boxes,
+            parent_node,
+        )
 
         self.layer_style_name = params.get("name")
         self.can_be_added_to_map = True
@@ -172,8 +250,12 @@ class WmsStyleLayerTreeNode(FavoritesTreeNode):
             "provider": "wms",
             "title": self.title,
             "uri": u"crs={}&featureCount=10&format={}&layers={}&maxHeight=256&maxWidth=256&styles={}&url={}".format(
-                self.parent_node.layer_srs, self.parent_node.layer_format, self.parent_node.layer_name,
-                self.layer_style_name, self.parent_node.service_url)
+                self.parent_node.layer_srs,
+                self.parent_node.layer_format,
+                self.parent_node.layer_name,
+                self.layer_style_name,
+                self.parent_node.service_url,
+            ),
         }
 
         return qgis_layer_uri_details
@@ -188,7 +270,8 @@ class WmsStyleLayerTreeNode(FavoritesTreeNode):
             PluginGlobals.instance().iface.addRasterLayer(
                 qgis_layer_details["uri"],
                 qgis_layer_details["title"],
-                qgis_layer_details["provider"])
+                qgis_layer_details["provider"],
+            )
 
 
 class WmtsLayerTreeNode(FavoritesTreeNode):
@@ -196,11 +279,31 @@ class WmtsLayerTreeNode(FavoritesTreeNode):
     Tree node for a WMTS layer
     """
 
-    def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_WMTS_LAYER,
-                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
-        """
-        """
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
+    def __init__(
+        self,
+        title,
+        node_type=PluginGlobals.instance().NODE_TYPE_WMTS_LAYER,
+        description=None,
+        status=None,
+        metadata_url=None,
+        ident=None,
+        params=None,
+        bounding_boxes=None,
+        parent_node=None,
+    ):
+        """ """
+        FavoritesTreeNode.__init__(
+            self,
+            title,
+            node_type,
+            description,
+            status,
+            metadata_url,
+            ident,
+            params,
+            bounding_boxes,
+            parent_node,
+        )
 
         self.service_url = params.get("url")
         self.layer_tilematrixset_name = params.get("tilematrixset_name")
@@ -226,8 +329,13 @@ class WmtsLayerTreeNode(FavoritesTreeNode):
             "provider": "wms",
             "title": self.title,
             "uri": u"tileMatrixSet={}&crs={}&featureCount=10&format={}&layers={}&maxHeight=256&maxWidth=256&styles={}&url={}".format(
-                self.layer_tilematrixset_name, self.layer_srs, self.layer_format, self.layer_name,
-                self.layer_style_name, self.service_url)
+                self.layer_tilematrixset_name,
+                self.layer_srs,
+                self.layer_format,
+                self.layer_name,
+                self.layer_style_name,
+                self.service_url,
+            ),
         }
 
         return qgis_layer_uri_details
@@ -241,7 +349,8 @@ class WmtsLayerTreeNode(FavoritesTreeNode):
             PluginGlobals.instance().iface.addRasterLayer(
                 qgis_layer_details["uri"],
                 qgis_layer_details["title"],
-                qgis_layer_details["provider"])
+                qgis_layer_details["provider"],
+            )
 
 
 class WfsFeatureTypeTreeNode(FavoritesTreeNode):
@@ -249,11 +358,31 @@ class WfsFeatureTypeTreeNode(FavoritesTreeNode):
     Tree node for a WFS feature type
     """
 
-    def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_WFS_FEATURE_TYPE,
-                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
-        """
-        """
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
+    def __init__(
+        self,
+        title,
+        node_type=PluginGlobals.instance().NODE_TYPE_WFS_FEATURE_TYPE,
+        description=None,
+        status=None,
+        metadata_url=None,
+        ident=None,
+        params=None,
+        bounding_boxes=None,
+        parent_node=None,
+    ):
+        """ """
+        FavoritesTreeNode.__init__(
+            self,
+            title,
+            node_type,
+            description,
+            status,
+            metadata_url,
+            ident,
+            params,
+            bounding_boxes,
+            parent_node,
+        )
 
         self.service_url = params.get("url")
         self.feature_type_name = params.get("name")
@@ -274,12 +403,17 @@ class WfsFeatureTypeTreeNode(FavoritesTreeNode):
         This dictionary is used by the run_add_to_map_action and layerMimeData methods.
         """
 
-        first_param_prefix = '?'
-        if '?' in self.service_url:
-            first_param_prefix = '&'
+        first_param_prefix = "?"
+        if "?" in self.service_url:
+            first_param_prefix = "&"
 
         uri = u"{}{}SERVICE=WFS&VERSION={}&REQUEST=GetFeature&TYPENAME={}&SRSNAME={}".format(
-            self.service_url, first_param_prefix, self.wfs_version, self.feature_type_name, self.layer_srs)
+            self.service_url,
+            first_param_prefix,
+            self.wfs_version,
+            self.feature_type_name,
+            self.layer_srs,
+        )
 
         if self.filter:
             uri += "&Filter={}".format(self.filter)
@@ -288,7 +422,7 @@ class WfsFeatureTypeTreeNode(FavoritesTreeNode):
             "type": "vector",
             "provider": "WFS",
             "title": self.title,
-            "uri": uri
+            "uri": uri,
         }
 
         return qgis_layer_uri_details
@@ -302,7 +436,8 @@ class WfsFeatureTypeTreeNode(FavoritesTreeNode):
             PluginGlobals.instance().iface.addVectorLayer(
                 qgis_layer_details["uri"],
                 qgis_layer_details["title"],
-                qgis_layer_details["provider"])
+                qgis_layer_details["provider"],
+            )
 
 
 class WfsFeatureTypeFilterTreeNode(FavoritesTreeNode):
@@ -310,11 +445,31 @@ class WfsFeatureTypeFilterTreeNode(FavoritesTreeNode):
     Tree node for a WFS feature type filter
     """
 
-    def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_WFS_FEATURE_TYPE_FILTER,
-                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
-        """
-        """
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
+    def __init__(
+        self,
+        title,
+        node_type=PluginGlobals.instance().NODE_TYPE_WFS_FEATURE_TYPE_FILTER,
+        description=None,
+        status=None,
+        metadata_url=None,
+        ident=None,
+        params=None,
+        bounding_boxes=None,
+        parent_node=None,
+    ):
+        """ """
+        FavoritesTreeNode.__init__(
+            self,
+            title,
+            node_type,
+            description,
+            status,
+            metadata_url,
+            ident,
+            params,
+            bounding_boxes,
+            parent_node,
+        )
 
         self.filter = params.get("filter")
         self.can_be_added_to_map = True
@@ -334,13 +489,17 @@ class WfsFeatureTypeFilterTreeNode(FavoritesTreeNode):
         if self.parent_node is None:
             return None
 
-        first_param_prefix = '?'
-        if '?' in self.parent_node.service_url:
-            first_param_prefix = '&'
+        first_param_prefix = "?"
+        if "?" in self.parent_node.service_url:
+            first_param_prefix = "&"
 
         uri = u"{}{}SERVICE=WFS&VERSION={}&REQUEST=GetFeature&TYPENAME={}&SRSNAME={}".format(
-            self.parent_node.service_url, first_param_prefix, self.parent_node.wfs_version,
-            self.parent_node.feature_type_name, self.parent_node.layer_srs)
+            self.parent_node.service_url,
+            first_param_prefix,
+            self.parent_node.wfs_version,
+            self.parent_node.feature_type_name,
+            self.parent_node.layer_srs,
+        )
 
         if self.filter:
             uri += "&Filter={}".format(self.filter)
@@ -349,7 +508,7 @@ class WfsFeatureTypeFilterTreeNode(FavoritesTreeNode):
             "type": "vector",
             "provider": "WFS",
             "title": self.title,
-            "uri": uri
+            "uri": uri,
         }
 
         return qgis_layer_uri_details
@@ -364,7 +523,8 @@ class WfsFeatureTypeFilterTreeNode(FavoritesTreeNode):
             PluginGlobals.instance().iface.addVectorLayer(
                 qgis_layer_details["uri"],
                 qgis_layer_details["title"],
-                qgis_layer_details["provider"])
+                qgis_layer_details["provider"],
+            )
 
 
 class GdalWmsConfigFileTreeNode(FavoritesTreeNode):
@@ -372,15 +532,35 @@ class GdalWmsConfigFileTreeNode(FavoritesTreeNode):
     Tree node for a GDAL WMS config file
     """
 
-    def __init__(self, title, node_type=PluginGlobals.instance().NODE_TYPE_GDAL_WMS_CONFIG_FILE,
-                 description=None, status=None, metadata_url=None, ident=None, params=None, bounding_boxes=None, parent_node=None):
-        """
-        """
-        FavoritesTreeNode.__init__(self, title, node_type, description, status, metadata_url, ident, params, bounding_boxes, parent_node)
+    def __init__(
+        self,
+        title,
+        node_type=PluginGlobals.instance().NODE_TYPE_GDAL_WMS_CONFIG_FILE,
+        description=None,
+        status=None,
+        metadata_url=None,
+        ident=None,
+        params=None,
+        bounding_boxes=None,
+        parent_node=None,
+    ):
+        """ """
+        FavoritesTreeNode.__init__(
+            self,
+            title,
+            node_type,
+            description,
+            status,
+            metadata_url,
+            ident,
+            params,
+            bounding_boxes,
+            parent_node,
+        )
 
         self.gdal_config_file_path = os.path.join(
-            PluginGlobals.instance().config_dir_path,
-            params.get("file_path"))
+            PluginGlobals.instance().config_dir_path, params.get("file_path")
+        )
         self.can_be_added_to_map = True
 
         # Icon
@@ -398,7 +578,7 @@ class GdalWmsConfigFileTreeNode(FavoritesTreeNode):
             "type": "raster",
             "provider": "gdal",
             "title": self.title,
-            "uri": self.gdal_config_file_path.replace("\\", "/")
+            "uri": self.gdal_config_file_path.replace("\\", "/"),
         }
 
         return qgis_layer_uri_details
@@ -411,5 +591,5 @@ class GdalWmsConfigFileTreeNode(FavoritesTreeNode):
         qgis_layer_details = self.get_qgis_layer_details()
         if qgis_layer_details is not None:
             PluginGlobals.instance().iface.addRasterLayer(
-                qgis_layer_details["uri"],
-                qgis_layer_details["title"])
+                qgis_layer_details["uri"], qgis_layer_details["title"]
+            )
