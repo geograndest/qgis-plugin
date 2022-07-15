@@ -48,7 +48,7 @@ class ParamBox(QDialog):
         # URL of the file
         self.config_file_url_label = QLabel(u"URL du fichier", self)
         self.config_file_url_edit = QLineEdit(self)
-        self.config_file_url_edit.editingFinished.connect(self.config_file_url_changed)
+        self.config_file_url_edit.textEdited.connect(self.config_file_url_changed)
         config_file_groupbox_layout.addRow(
             self.config_file_url_label, self.config_file_url_edit
         )
@@ -147,7 +147,7 @@ class ParamBox(QDialog):
         self.download_cb.setChecked(
             PluginGlobals.instance().CONFIG_FILES_DOWNLOAD_AT_STARTUP
         )
-        self.download_cb.blockSignals(True)
+        self.download_cb.blockSignals(False)
 
         # Hide resources with a warn flag
         self.hide_resources_with_warn_status_cb.blockSignals(True)
