@@ -1407,6 +1407,76 @@
       ]
     },
     {
+      "title": "Géoportail de l'urbanisme",
+      "description": "Données concernant les documents d'urbanisme et les servitudes d'utilité publique",
+      "type": "folder",
+      "children": [
+        {
+          "ident": "40b93573-a46f-42b1-8a7a-ad84b9d7d92a",
+          "title": "Documents d'urbanisme",
+          "description": "Agrégation des couches du GPU suivantes : documents d'urbanisme et emprises des documents d'urbanisme.",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/e8f4a265-2511-4a5b-939a-4a4e49471e39",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/gpu/ows",
+            "name": "GPU_documents_emprise",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        },
+        {
+          "ident": "47c63d52-a795-4fee-8a86-f13fc6b92de3",
+          "title": "Zonages des documents d'urbanisme",
+          "description": "Agrégation des couches du GPU suivantes : zonages des documents d'urbanisme et emprises des documents d'urbanisme.",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/e8f4a265-2511-4a5b-939a-4a4e49471e39",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/gpu/ows",
+            "name": "GPU_zonage_emprise",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        },
+        {
+          "ident": "50d4b6c5-516c-43e8-879e-b9aca311b61a",
+          "title": "Zonages des documents d'urbanisme et communes soumises au RNU",
+          "description": "Agrégation des couches du GPU suivantes : documents d'urbanisme, emprises des documents d'urbanisme et des communes soumises au RNU.",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/e8f4a265-2511-4a5b-939a-4a4e49471e39",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/gpu/ows",
+            "name": "GPU_zonage_rnu_emprise",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
       "title": "Vues aériennes",
       "description": "Photographies aériennes",
       "type": "folder",
