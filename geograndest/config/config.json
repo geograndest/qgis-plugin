@@ -1151,6 +1151,55 @@
           ]
         },
         {
+          "title": "Imperméabilisation",
+          "description": "OCS - Imperméabilisation",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "7f2d3823-c250-46ce-92b0-e47294f78870",
+              "title": "Imperméabilisation 2010 - Grand Est",
+              "description": "Couche représentant l'imperméabilisation des sols en Grand Est - 2010",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:Impermeabilisation_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "1d74d373-3575-442c-97ad-84e328f20f81",
+              "title": "Imperméabilisation 2019 - Grand Est",
+              "description": "Couche représentant l'imperméabilisation des sols en Grand Est - 2019",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:Impermeabilisation_2019",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
           "title": "Corine Land Cover",
           "description": "Corine Land Cover",
           "type": "folder",
