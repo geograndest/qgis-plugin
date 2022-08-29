@@ -1547,8 +1547,8 @@
           ]
         },
         {
-          "title": "Vues aériennes 2021 - RVB",
-          "description": "Photographies aériennes prises dans le domaine visible en 2021",
+          "title": "Vues aériennes 2021-2022 - RVB",
+          "description": "Photographies aériennes prises dans le domaine visible entre 2021 et 2022",
           "type": "folder",
           "children": [
             {
@@ -1617,8 +1617,8 @@
           ]
         },
         {
-          "title": "Vues aériennes 2021 - IRC",
-          "description": "Photographies aériennes prises dans le domaine infrarouge en 2021",
+          "title": "Vues aériennes 2021-2022 - IRC",
+          "description": "Photographies aériennes prises dans le domaine infrarouge entre 2021 et 2022",
           "type": "folder",
           "children": [
             {
