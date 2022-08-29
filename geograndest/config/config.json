@@ -1503,20 +1503,203 @@
           ]
         },
         {
+          "ident": "880959ff-3fc8-4591-8b7a-bb83d9f5d711",
+          "title": "Vue aérienne RVB actuelle complète du Grand Est",
+          "description": "Agrégat des dernières orthophotographies RVB de la BD ORTHO HR de l'IGN",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0129-0000",
+          "type": "wmts_layer",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+            "tilematrixset_name": "EPSG:2154",
+            "name": "geograndest:GGE_ORTHO_RVB_ACTUELLE",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        },
+        {
+          "ident": "b9c9f30c-87cb-4204-93bc-0ff77a7f4d9e",
+          "title": "Vue aérienne IRC actuelle complète du Grand Est",
+          "description": "Agrégat des dernières orthophotographies IRC de la BD ORTHO HR de l'IGN",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0130-0000",
+          "type": "wmts_layer",
+          "params": {
+            "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+            "tilematrixset_name": "EPSG:2154",
+            "name": "geograndest:GGE_ORTHO_IRC_ACTUELLE",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          },
+          "bounding_boxes": [
+            [
+              728328.0,
+              6710814.0,
+              1082898.0,
+              7009400.0
+            ]
+          ]
+        },
+        {
+          "title": "Vues aériennes 2021 - RVB",
+          "description": "Photographies aériennes prises dans le domaine visible en 2021",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "380af582-093b-4624-b015-d1f72a05d021",
+              "title": "Vue aérienne du Bas-Rhin 67 - 2021",
+              "description": "Orthophotographie du Bas-Rhin 67 - 2021 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_RVB_LAMB93_D67_2021",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHORVB_2021_67_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
+            },
+            {
+              "ident": "a5d064a8-6f22-4d08-a396-11d935315987",
+              "title": "Vue aérienne du Haut-Rhin 68 - 2021",
+              "description": "Orthophotographie du Haut-Rhin 68 - 2021 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_RVB_LAMB93_D68_2021",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHORVB_2021_68_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ]
+              ]
+            },
+            {
+              "ident": "1fa1742a-62c6-4891-9a33-927933517a10",
+              "title": "Vue aérienne des Vosges 88 - 2021",
+              "description": "Orthophotographie des Vosges 88 - 2021 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_RVB_LAMB93_D88_2021",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHORVB_2021_88_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Vues aériennes 2021 - IRC",
+          "description": "Photographies aériennes prises dans le domaine infrarouge en 2021",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "2dfa2728-700b-475d-a03a-27cba241aa83",
+              "title": "Vue aérienne IRC du Bas-Rhin 67 - 2021",
+              "description": "Orthophotographie infrarouge du Bas-Rhin 67- 2021 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_IRC_LAMB93_D67_2021",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHOIRC_2021_67_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
+            },
+            {
+              "ident": "237397b9-d43a-43ff-a220-217e84366a9b",
+              "title": "Vue aérienne IRC du Haut-Rhin 68 - 2021",
+              "description": "Orthophotographie infrarouge du Haut-Rhin 68 - 2021 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_IRC_LAMB93_D68_2021",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHOIRC_2021_68_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ]
+              ]
+            },
+            {
+              "ident": "854e9159-6272-4146-abea-d40f6f94744e",
+              "title": "Vue aérienne IRC des Vosges 88 - 2021",
+              "description": "Orthophotographie infrarouge des Vosges 88 - 2021 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_IRC_LAMB93_D88_2021",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHOIRC_2021_88_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
           "title": "Vues aériennes 2018-2019 - RVB",
           "description": "Photographies aériennes prises dans le domaine visible entre 2018 et 2019",
           "type": "folder",
           "children": [
             {
-              "ident": "880959ff-3fc8-4591-8b7a-bb83d9f5d711",
+              "ident": "b52bf1b7-dacb-4783-97f9-144f3e893b71",
               "title": "Vue aérienne RVB 2018-2019 complète du Grand Est",
-              "description": "Agrégat des dernières orthophotographies RVB de la BD ORTHO HR de l'IGN",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0129-0000",
+              "description": "Agrégat des orthophotographies RVB 2018-2019 de la BD ORTHO HR de l'IGN",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:GGE_ORTHO_RVB_ACTUELLE",
+                "name": "geograndest:GGE_ORTHO_RVB_2018_2019",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -1742,20 +1925,19 @@
           ]
         },
         {
-          "title": "Vues aériennes 2018-2019 - Infrarouge",
+          "title": "Vues aériennes 2018-2019 - IRC",
           "description": "Photographies aériennes prises dans le domaine infrarouge entre 2018-2019",
           "type": "folder",
           "children": [
             {
-              "ident": "b9c9f30c-87cb-4204-93bc-0ff77a7f4d9e",
-              "title": "Vue aérienne IRC complète du Grand Est",
-              "description": "Agrégat des dernières orthophotographies IRC de la BD ORTHO HR de l'IGN",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-A0130-0000",
+              "ident": "c2528ef2-f62f-4da0-a16e-5c4efb1b842e",
+              "title": "Vue aérienne IRC 2018-2019 complète du Grand Est",
+              "description": "Agrégat des orthophotographies IRC 2018-2019 de la BD ORTHO HR de l'IGN",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:GGE_ORTHO_IRC_ACTUELLE",
+                "name": "geograndest:GGE_ORTHO_IRC_2018_2019",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
