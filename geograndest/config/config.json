@@ -1537,9 +1537,9 @@
           "type": "wfs_feature_type",
           "metadata_url": "https://www.data.gouv.fr/fr/datasets/zones-interdites-a-la-prise-de-vue-aerienne-1/",
           "params": {
-            "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+            "url": "https://wxs.ign.fr/ortho/geoportail/wfs?",
             "version": "2.0.0",
-            "name": "geograndest:ZIPVA",
+            "name": "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS:arrete",
             "srs": "epsg:2154"
           },
           "bounding_boxes": [
