@@ -5,12 +5,12 @@ from qgis.PyQt.QtCore import Qt
 
 import os.path
 
-from datagrandest.utils.plugin_globals import PluginGlobals
-from datagrandest.gui.dock import DockWidget
-from datagrandest.gui.about_box import AboutBox
-from datagrandest.gui.param_box import ParamBox
-from datagrandest.nodes.tree_node_factory import TreeNodeFactory
-from datagrandest.nodes.tree_node_factory import download_tree_config_file
+from geograndest.utils.plugin_globals import PluginGlobals
+from geograndest.gui.dock import DockWidget
+from geograndest.gui.about_box import AboutBox
+from geograndest.gui.param_box import ParamBox
+from geograndest.nodes.tree_node_factory import TreeNodeFactory
+from geograndest.nodes.tree_node_factory import download_tree_config_file
 
 
 class SimpleAccessPlugin:

@@ -11,7 +11,7 @@ from qgis.PyQt.QtWidgets import (
 )
 from qgis.utils import iface
 
-from datagrandest.gui.tree_widget import TreeWidget
+from geograndest.gui.tree_widget import TreeWidget
 
 
 class DockWidget(QDockWidget):

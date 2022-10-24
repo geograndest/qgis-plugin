@@ -10,7 +10,7 @@ from qgis.PyQt.QtWidgets import (
 )
 from qgis.PyQt.QtGui import QPixmap
 
-from datagrandest.utils.plugin_globals import PluginGlobals
+from geograndest.utils.plugin_globals import PluginGlobals
 
 
 class AboutBox(QDialog):
