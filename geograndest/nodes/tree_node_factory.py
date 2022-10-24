@@ -2,9 +2,16 @@
 
 import os
 import json
-import requests
 
-from qgis.core import Qgis, QgsMessageLog
+from qgis.core import (
+    Qgis,
+    QgsMessageLog,
+    QgsNetworkAccessManager,
+    QgsNetworkReplyContent,
+)
+from qgis.PyQt.QtNetwork import QNetworkRequest, QNetworkReply
+from qgis.PyQt.QtCore import QUrl
+
 
 from geograndest.utils.plugin_globals import PluginGlobals
 from .nodes import (
@@ -27,18 +34,30 @@ def download_tree_config_file(file_url):
     try:
         # replace content of local config file by content of online config file
         with open(PluginGlobals.instance().config_file_path, "w") as local_config_file:
-            data = requests.get(file_url, verify=False).json()
+
+            request = QNetworkRequest(QUrl(file_url))
+            manager = QgsNetworkAccessManager.instance()
+            response: QgsNetworkReplyContent = manager.blockingGet(
+                request, forceRefresh=True
+            )
+
+            if response.error() != QNetworkReply.NoError:
+                raise Exception(f"{response.error()} - {response.errorString()}")
+
+            data_raw_string = bytes(response.content()).decode("utf-8")
+            data = json.loads(data_raw_string)
+
             json.dump(data, local_config_file, ensure_ascii=False, indent=2)
 
     except Exception as e:
-        short_message = u"Le téléchargement du fichier de configuration du plugin {0} a échoué.".format(
+        short_message = "Le téléchargement du fichier de configuration du plugin {0} a échoué.".format(
             PluginGlobals.instance().PLUGIN_TAG
         )
         PluginGlobals.instance().iface.messageBar().pushMessage(
             "Erreur", short_message, level=Qgis.Critical
         )
 
-        long_message = u"{0}\nUrl du fichier : {1}\n{2}\n{3}".format(
+        long_message = "{0}\nUrl du fichier : {1}\n{2}\n{3}".format(
             short_message, file_url, e.__doc__, e
         )
         QgsMessageLog.logMessage(
@@ -56,7 +75,7 @@ class TreeNodeFactory:
         self.root_node = None
 
         if not os.path.isfile(self.file_path):
-            message = u"Le fichier de configuration du plugin {0} n'a pas pu être trouvé.".format(
+            message = "Le fichier de configuration du plugin {0} n'a pas pu être trouvé.".format(
                 PluginGlobals.instance().PLUGIN_TAG
             )
             PluginGlobals.instance().iface.messageBar().pushMessage(
@@ -78,14 +97,14 @@ class TreeNodeFactory:
                 self.root_node = self.build_tree(config_struct)
 
         except Exception as e:
-            short_message = u"La lecture du fichier de configuration du plugin {0} a produit des erreurs.".format(
+            short_message = "La lecture du fichier de configuration du plugin {0} a produit des erreurs.".format(
                 PluginGlobals.instance().PLUGIN_TAG
             )
             PluginGlobals.instance().iface.messageBar().pushMessage(
                 "Erreur", short_message, level=Qgis.Critical
             )
 
-            long_message = u"{0}\n{1}\n{2}".format(short_message, e.__doc__, e)
+            long_message = "{0}\n{1}\n{2}".format(short_message, e.__doc__, e)
             QgsMessageLog.logMessage(
                 long_message,
                 tag=PluginGlobals.instance().PLUGIN_TAG,
