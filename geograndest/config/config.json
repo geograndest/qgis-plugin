@@ -3107,6 +3107,39 @@
                 "version": "2.0.0",
                 "srs": "epsg:2154"
               }
+            },
+            {
+              "title": "RBT Vosges du Nord-Pfälzerwald",
+              "description": "Réserve de biosphère transfrontière Vosges du Nord-Pfälzerwald",
+              "type": "folder",
+              "children": [
+                {
+                  "ident": "8c1635f0-708c-465b-adb7-582716f1bcf3",
+                  "title": "Périmètre de la réserve (2022-2032)",
+                  "description": "Périmètre mis à jour à l'occasion de l'examen périodique décennal de 2021,<br>de la Réserve de biosphère transfrontière Vosges du Nord-Pfälzerwald.",
+                  "type": "wfs_feature_type",
+                  "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-25670069100015-210601-perimetre_rbtvnp_2022-PNRVN",
+                  "params": {
+                    "url": "https://www.datagrandest.fr/geoserver/sycoparc/wfs",
+                    "name": "sycoparc:_2022_limite_de_la_reserve_de_biosphere_transfrontiere_vosges_du_nord_pfaelzerwald",
+                    "version": "2.0.0",
+                    "srs": "epsg:2154"
+                  }
+                },
+                {
+                  "ident": "8c1635f0-708c-465b-adb7-582716f1bcf3",
+                  "title": "Zonage de la réserve (2022-2032)",
+                  "description": "Zonage mis à jour à l'occasion de l'examen périodique décennal de 2021,<br>de la Réserve de biosphère transfrontière Vosges du Nord-Pfälzerwald.",
+                  "type": "wfs_feature_type",
+                  "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-25670069100015-170622-zonage_rbtvnp_2022-PNRVN",
+                  "params": {
+                    "url": "https://www.datagrandest.fr/geoserver/sycoparc/wfs",
+                    "name": "sycoparc:_2022_zonage_de_la_Reserve_de_biosphere_transfrontiere_Vosges_du_Nord_Pfaelzerwald",
+                    "version": "2.0.0",
+                    "srs": "epsg:2154"
+                  }
+                }
+              ]
             }
           ]
         },
