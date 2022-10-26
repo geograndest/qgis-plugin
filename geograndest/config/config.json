@@ -2945,7 +2945,7 @@
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-RNR_Grand_Est",
               "type": "wfs_feature_type",
               "params": {
-                "url": "https://www.datagrandest.fr:443/geoserver/region-grand-est/ows",
+                "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
                 "name": "region-grand-est:rnr",
                 "version": "2.0.0",
                 "srs": "epsg:2154"
@@ -3056,7 +3056,7 @@
               "type": "wfs_feature_type",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-PNR_Grand_Est",
               "params": {
-                "url": "https://www.geograndest.fr/geoserver/region-grand-est/ows?",
+                "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows?",
                 "name": "region-grand-est:pnr",
                 "version": "2.0.0",
                 "srs": "epsg:2154"
@@ -3360,7 +3360,7 @@
           "type": "wfs_feature_type",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-Massif_Grand_Est",
           "params": {
-            "url": "https://www.datagrandest.fr:443/geoserver/region-grand-est/ows",
+            "url": "https://www.datagrandest.fr/geoserver/region-grand-est/ows",
             "name": "region-grand-est:massif",
             "version": "2.0.0",
             "srs": "epsg:2154"
