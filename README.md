@@ -25,11 +25,11 @@ opérations suivantes :
 ## Auteurs
 
 Auteurs :
-* Benjamin Chartier
-* Julie Pierson
+* Benjamin Chartier (Région Picardie, Région Hauts-de-France, Neogeo Technologies puis en tant qu'indépendant)
+* Julie Pierson (UMR LETG)
 
 Source d'inspiration :
-* Nicolas Damiens
+* Nicolas Damiens (Picardie Nature)
 
 Autres remerciements :
 * Auteurs des icônes de QGIS, reprises dans l'arbre des ressources
