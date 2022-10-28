@@ -13,7 +13,7 @@ from qgis.PyQt.QtNetwork import QNetworkRequest, QNetworkReply
 from qgis.PyQt.QtCore import QUrl
 
 
-from geograndest.utils.plugin_globals import PluginGlobals
+from datagrandest.utils.plugin_globals import PluginGlobals
 from .nodes import (
     WmsLayerTreeNode,
     WmsStyleLayerTreeNode,

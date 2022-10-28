@@ -16,8 +16,8 @@ from qgis.core import (
 )
 from qgis.utils import iface
 
-from geograndest.gui.tree_items import TreeWidgetItem
-from geograndest.utils.plugin_globals import PluginGlobals
+from datagrandest.gui.tree_items import TreeWidgetItem
+from datagrandest.utils.plugin_globals import PluginGlobals
 
 
 class TreeWidget(QTreeWidget):
