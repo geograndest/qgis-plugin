@@ -41,10 +41,10 @@
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
-            "url": "https://osm.datagrandest.fr/maps/osm-default",
-            "name": "default",
+            "url": "https://osm.datagrandest.fr/mapcache",
+            "name": "osm-default",
             "format": "image/png",
-            "srs": "epsg:2154"
+            "srs": "EPSG:2154"
           }
         },
         {
@@ -54,23 +54,10 @@
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
-            "url": "https://osm.datagrandest.fr/maps/osm-google",
-            "name": "default",
+            "url": "https://osm.datagrandest.fr/mapcache",
+            "name": "osm_google",
             "format": "image/png",
-            "srs": "epsg:2154"
-          }
-        },
-        {
-          "ident": "b85f6f0f-a150-4a5d-b1cd-41ee566b7708",
-          "title": "OpenStreetMap - OSM style MapBox",
-          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - OSM style MapBox OSM",
-          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
-          "type": "wms_layer",
-          "params": {
-            "url": "https://osm.datagrandest.fr/maps/magnacarto",
-            "name": "map",
-            "format": "image/png",
-            "srs": "epsg:2154"
+            "srs": "EPSG:2154"
           }
         },
         {
@@ -2711,7 +2698,7 @@
           "type": "wms_layer",
           "params": {
             "url": "https://www.datagrandest.fr/geoserver/geograndest/wms",
-            "name": "CN",
+            "name": "IGN_COURBES_NIVEAU_10M",
             "format": "image/png",
             "srs": "epsg:2154"
           },
@@ -2733,7 +2720,7 @@
           "params": {
             "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
             "version": "2.0.0",
-            "name": "geograndest:CN",
+            "name": "geograndest:IGN_COURBES_NIVEAU_10M",
             "srs": "epsg:2154"
           },
           "bounding_boxes": [
