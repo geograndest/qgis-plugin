@@ -1649,6 +1649,27 @@
                   6831654.0
                 ]
               ]
+            },
+            {
+              "ident": "a0f65902-9599-456d-a22f-c15323553777",
+              "title": "Vue aérienne de la Marne 51 - 2022",
+              "description": "Orthophotographie des Vosges 88 - 2021 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_RVB_LAMB93_D51_2022",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHORVB_2022_51_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  725000.0,
+                  6820000.0,
+                  850000.0,
+                  6925000.0
+                ]
+              ]
             }
           ]
         },
