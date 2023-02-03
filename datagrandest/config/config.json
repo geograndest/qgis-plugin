@@ -1588,9 +1588,30 @@
           "type": "folder",
           "children": [
             {
+              "ident": "0b1f063d-a6b7-476a-81c7-f0af3a9cf19d",
+              "title": "Vue aérienne de l'Aube 10 - 2022",
+              "description": "Orthophotographie de l'Aube - 2022 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_RVB_LAMB93_D10_2022",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHORVB_2022_10_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  725000.0,
+                  6755000.0,
+                  840000.0,
+                  6850000.0
+                ]
+              ]
+            },
+            {
               "ident": "a0f65902-9599-456d-a22f-c15323553777",
               "title": "Vue aérienne de la Marne 51 - 2022",
-              "description": "Orthophotographie des Vosges 88 - 2021 - 20cm",
+              "description": "Orthophotographie de la Marne 51 - 2022 - 20cm",
               "type": "wms_layer",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_RVB_LAMB93_D51_2022",
               "params": {
@@ -1608,7 +1629,49 @@
                 ]
               ]
             },
-			{
+            {
+              "ident": "6834576d-9ca4-4b55-b87e-8d96c2c9f4a4",
+              "title": "Vue aérienne de la Meurthe-et-Moselle 54 - 2022",
+              "description": "Orthophotographie de la Meurth-et-Moselle 54 - 2022 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_RVB_LAMB93_D54_2022",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHORVB_2022_54_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  875000.0,
+                  6805000.0,
+                  1005000.0,
+                  6945000.0
+                ]
+              ]
+            },
+            {
+              "ident": "df0ce8e3-e445-419c-b7f5-91ff724e5375",
+              "title": "Vue aérienne de la Moselle 57 - 2022",
+              "description": "Orthophotographie de la Moselle 57 - 2022 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_RVB_LAMB93_D57_2022",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHORVB_2022_57_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  905000.0,
+                  6830000.0,
+                  1040000.0,
+                  6945000.0
+                ]
+              ]
+            },
+            {
               "ident": "380af582-093b-4624-b015-d1f72a05d021",
               "title": "Vue aérienne du Bas-Rhin 67 - 2021",
               "description": "Orthophotographie du Bas-Rhin 67 - 2021 - 20cm",
@@ -1670,7 +1733,7 @@
                   6831654.0
                 ]
               ]
-            }  
+            }
           ]
         },
         {
@@ -1678,6 +1741,90 @@
           "description": "Photographies aériennes prises dans le domaine infrarouge entre 2021 et 2022",
           "type": "folder",
           "children": [
+            {
+              "ident": "55c55d2b-7587-4234-84e3-eaa06857c6c4",
+              "title": "Vue aérienne IRC de l'Aube 10 - 2022",
+              "description": "Orthophotographie infrarouge de l'Aube - 2022 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_IRC_LAMB93_D10_2022",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHOIRC_2022_10_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  725000.0,
+                  6755000.0,
+                  840000.0,
+                  6850000.0
+                ]
+              ]
+            },
+            {
+              "ident": "55c55d2b-7587-4234-84e3-eaa06857c6c4",
+              "title": "Vue aérienne IRC de la Marne 51 - 2022",
+              "description": "Orthophotographie infrarouge de la Marne 51 - 2022 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_IRC_LAMB93_D51_2022",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHOIRC_2022_51_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  725000.0,
+                  6820000.0,
+                  850000.0,
+                  6925000.0
+                ]
+              ]
+            },
+            {
+              "ident": "e29321bb-3745-43d2-8702-ccfbc0f52ccf",
+              "title": "Vue aérienne IRC de la Meurthe-et-Moselle 54 - 2022",
+              "description": "Orthophotographie infrarouge de la Meurthe-et-Moselle 54 - 2022 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_IRC_LAMB93_D54_2022",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHOIRC_2022_54_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  875000.0,
+                  6805000.0,
+                  1005000.0,
+                  6945000.0
+                ]
+              ]
+            },
+            {
+              "ident": "00bd78c3-2a77-4a1b-97a4-4bb997b3db0b",
+              "title": "Vue aérienne IRC de la Moselle 57 - 2022",
+              "description": "Orthophotographie infrarouge de la Moselle 57 - 2022 - 20cm",
+              "type": "wms_layer",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-IGNF_ORTHOHR_IRC_LAMB93_D57_2022",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/geograndest/ows",
+                "name": "DGE_ORTHOIRC_2022_57_COG_L93",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  905000.0,
+                  6830000.0,
+                  1040000.0,
+                  6945000.0
+                ]
+              ]
+            },
             {
               "ident": "2dfa2728-700b-475d-a03a-27cba241aa83",
               "title": "Vue aérienne IRC du Bas-Rhin 67 - 2021",
