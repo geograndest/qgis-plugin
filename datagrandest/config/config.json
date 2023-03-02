@@ -1,5 +1,5 @@
 {
-  "title": "DataGrandEst - version 4 du 25 Janvier 2022",
+  "title": "DataGrandEst - version du 02 mars 2023",
   "description": "",
   "type": "folder",
   "children": [
@@ -36,8 +36,8 @@
         },
         {
           "ident": "c1b91719-4288-44c8-b7d0-37161a382156",
-          "title": "OpenStreetMap - OSM style Bright",
-          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - OSM style Standard",
+          "title": "OpenStreetMap - OSM style Standard",
+          "description": "Fond de plan OpenStreetMap avec un style inspiré de la cartographie OpenStreetMap classique",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
@@ -49,8 +49,8 @@
         },
         {
           "ident": "60d32222-59e7-45cd-ad84-aaa911374b40",
-          "title": "OpenStreetMap - OSM style Google Maps",
-          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - OSM style Google Maps",
+          "title": "OpenStreetMap - OSM style Google",
+          "description": "Fond de plan OpenStreetMap avec un style inspiré de la cartographie Google Maps",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
@@ -61,9 +61,22 @@
           }
         },
         {
+          "ident": "60d32222-59e7-45cd-ad84-aaa911374b40",
+          "title": "OpenStreetMap - OSM style Mapbox",
+          "description": "Fond de plan OpenStreetMap avec un style inspiré de la cartographie MapBox",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "type": "wms_layer",
+          "params": {
+            "url": "https://osm.datagrandest.fr/mapcache",
+            "name": "bright",
+            "format": "image/png",
+            "srs": "EPSG:2154"
+          }
+        },
+        {
           "ident": "6625a2cb-ceba-4e51-8955-d9f535b973e3",
           "title": "OpenStreetMap - OSM style Relief",
-          "description": "Fond de carte OpenStreetMap avec représentation du relief OSM",
+          "description": "Fond de carte OpenStreetMap contenant une représentation du relief",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
@@ -76,7 +89,7 @@
         {
           "ident": "d80b1551-b1ec-43d5-9e1f-49f6afa946fa",
           "title": "OpenStreetMap - OSM style Naturaliste",
-          "description": "Fond de carte OpenStreetMap avec informations naturalistes OSM",
+          "description": "Fond de carte OpenStreetMap avec un carroyage et les lignes à haute tension",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
@@ -89,7 +102,7 @@
         {
           "ident": "5bff9e08-c7bd-43b4-acaf-555bd6d19e63",
           "title": "OpenStreetMap - OSM style Désaturé",
-          "description": "Fond de carte OpenStreetMap style Faded OSM",
+          "description": "Fond de carte OpenStreetMap proposant une teinte neutre",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
@@ -101,8 +114,8 @@
         },
         {
           "ident": "20e4b622-f138-4b87-93a3-88f13224a93a",
-          "title": "OpenStreetMap - OSM style noir et blanc",
-          "description": "Fond de carte OpenStreetMap style Faded OSM",
+          "title": "OpenStreetMap - OSM style Noir et blanc",
+          "description": "Fond de carte OpenStreetMap entièrement composé de nuances de gris",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
@@ -114,8 +127,8 @@
         },
         {
           "ident": "4afd5426-17cf-40a2-b4b5-44d1051db21d",
-          "title": "OpenStreetMap - OSM Sans toponymes",
-          "description": "Fond de carte OpenStreetMap style Faded OSM",
+          "title": "OpenStreetMap - OSM style Sans toponymes",
+          "description": "Fond de carte OpenStreetMap ne comportant aucune étiquette ou élément textuel",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
@@ -127,8 +140,8 @@
         },
         {
           "ident": "0632365f-522d-446e-9b4c-afafb1ad7f7f",
-          "title": "OpenStreetMap - OSM Toponymes seuls",
-          "description": "Fond de carte OpenStreetMap style Faded OSM",
+          "title": "OpenStreetMap - OSM style Toponymes seuls",
+          "description": "Fond de carte OpenStreetMap ne comportant que des éléments textuels et des éléments linéaires à superposer à d'autres fonds topographiques",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
           "type": "wms_layer",
           "params": {
