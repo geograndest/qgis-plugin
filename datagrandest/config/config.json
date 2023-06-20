@@ -3237,7 +3237,7 @@
               "type": "wms_layer",
               "metadata_url": "https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ep/pn",
               "params": {
-                "url": "http://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+                "url": "https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
                 "name": "Parcs_nationaux",
                 "format": "image/png",
                 "srs": "epsg:2154"
@@ -3568,7 +3568,7 @@
           "type": "wfs_feature_type",
           "metadata_url": "https://geo.data.gouv.fr/fr/datasets/fac934f5b6934af22dc56b1651e02f5dbda782c6",
           "params": {
-            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "url": "https://ws.carmencarto.fr/WFS/105/ONF_Forets?",
             "name": "ms:FOR_PUBL_FR",
             "version": "2.0.0",
             "srs": "epsg:2154",
@@ -3582,7 +3582,7 @@
           "type": "wfs_feature_type",
           "metadata_url": "https://geo.data.gouv.fr/fr/datasets/fac934f5b6934af22dc56b1651e02f5dbda782c6",
           "params": {
-            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "url": "https://ws.carmencarto.fr/WFS/105/ONF_Forets?",
             "name": "ms:FOR_PUBL_FR",
             "version": "2.0.0",
             "srs": "epsg:2154",
@@ -3596,7 +3596,7 @@
           "type": "wfs_feature_type",
           "metadata_url": "https://geo.data.gouv.fr/fr/datasets/fac934f5b6934af22dc56b1651e02f5dbda782c6",
           "params": {
-            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "url": "https://ws.carmencarto.fr/WFS/105/ONF_Forets?",
             "name": "ms:FOR_PUBL_FR",
             "version": "2.0.0",
             "srs": "epsg:2154",
@@ -3610,7 +3610,7 @@
           "type": "wfs_feature_type",
           "metadata_url": "https://geo.data.gouv.fr/fr/datasets/80ae3ad8d114ea35b08270e1a01caaa2727618cf",
           "params": {
-            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "url": "https://ws.carmencarto.fr/WFS/105/ONF_Forets?",
             "name": "ms:PARC_PUBL_FR",
             "version": "2.0.0",
             "srs": "epsg:2154"
@@ -3623,7 +3623,7 @@
           "type": "wfs_feature_type",
           "metadata_url": "https://geo.data.gouv.fr/fr/datasets/b2db6517197b7b2e3ca3e39c7d4d8ffc3907e586",
           "params": {
-            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "url": "https://ws.carmencarto.fr/WFS/105/ONF_Forets?",
             "name": "ms:DT_FR",
             "version": "2.0.0",
             "srs": "epsg:2154"
@@ -3636,7 +3636,7 @@
           "type": "wfs_feature_type",
           "metadata_url": "https://geo.data.gouv.fr/fr/datasets/041a6dcc5c63407d6b9da4894a255370de27403b",
           "params": {
-            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "url": "https://ws.carmencarto.fr/WFS/105/ONF_Forets?",
             "name": "ms:ATE_FR",
             "version": "2.0.0",
             "srs": "epsg:2154"
@@ -3649,7 +3649,7 @@
           "type": "wfs_feature_type",
           "metadata_url": "https://geo.data.gouv.fr/fr/datasets/5db4e3b5d2f9d6c1b6f1f8f621047c089d623f22",
           "params": {
-            "url": "http://ws.carmencarto.fr/WFS/105/ONF_Forets?",
+            "url": "https://ws.carmencarto.fr/WFS/105/ONF_Forets?",
             "name": "ms:PRS_FR",
             "version": "2.0.0",
             "srs": "epsg:2154"
