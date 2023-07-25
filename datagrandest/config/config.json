@@ -3358,8 +3358,8 @@
             },
             {
               "ident": "999ed560-d354-458e-80e8-c5e9eae91585",
-              "title": "Parc National de Forêts Champagne et Bourgogne",
-              "description": "INPN - Parc National de Forêts Champagne et Bourgogne",
+              "title": "Parcs nationaux",
+              "description": "INPN - Parcs nationaux",
               "type": "wms_layer",
               "metadata_url": "https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ep/pn",
               "params": {
@@ -3689,7 +3689,7 @@
       "children": [
         {
           "ident": "5b18de7b-921d-4b1d-a889-a65163f54d3a",
-          "title": "ONF - Forêts Publiques - Champagne-Ardenne",
+          "title": "ONF - Forêts Publiques",
           "description": "ONF - Forêts Publiques",
           "type": "wfs_feature_type",
           "metadata_url": "https://geo.data.gouv.fr/fr/datasets/fac934f5b6934af22dc56b1651e02f5dbda782c6",
@@ -3697,36 +3697,7 @@
             "url": "https://ws.carmencarto.fr/WFS/105/ONF_Forets?",
             "name": "ms:FOR_PUBL_FR",
             "version": "2.0.0",
-            "srs": "epsg:2154",
-            "filter": "cinse_dep LIKE '08' OR cinse_dep LIKE '10' OR cinse_dep LIKE '51' OR cinse_dep LIKE '52'"
-          }
-        },
-        {
-          "ident": "a4138b78-7861-43c9-b077-d6d3e8533505",
-          "title": "ONF - Forêts Publiques - Lorraine",
-          "description": "ONF - Forêts Publiques",
-          "type": "wfs_feature_type",
-          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/fac934f5b6934af22dc56b1651e02f5dbda782c6",
-          "params": {
-            "url": "https://ws.carmencarto.fr/WFS/105/ONF_Forets?",
-            "name": "ms:FOR_PUBL_FR",
-            "version": "2.0.0",
-            "srs": "epsg:2154",
-            "filter": "cinse_dep LIKE '54' OR cinse_dep LIKE '55' OR cinse_dep LIKE '57' OR cinse_dep LIKE '88'"
-          }
-        },
-        {
-          "ident": "ec44dd48-5c22-4b9f-9e2e-289baccbb376",
-          "title": "ONF - Forêts Publiques - Alsace",
-          "description": "ONF - Forêts Publiques",
-          "type": "wfs_feature_type",
-          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/fac934f5b6934af22dc56b1651e02f5dbda782c6",
-          "params": {
-            "url": "https://ws.carmencarto.fr/WFS/105/ONF_Forets?",
-            "name": "ms:FOR_PUBL_FR",
-            "version": "2.0.0",
-            "srs": "epsg:2154",
-            "filter": "cinse_dep LIKE '67' OR cinse_dep LIKE '68'"
+            "srs": "epsg:2154"
           }
         },
         {
