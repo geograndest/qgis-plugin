@@ -1,5 +1,5 @@
 {
-  "title": "DataGrandEst - version du 02 mars 2023",
+  "title": "DataGrandEst - version du 9 août 2023",
   "description": "",
   "type": "folder",
   "children": [
@@ -1209,9 +1209,9 @@
               "title": "Corine Land Cover 1990",
               "description": "Occupation biophysique des sols CLC 1990",
               "type": "wms_layer",
-              "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+              "metadata_url": "https://geoservices.ign.fr/services-web-experts-clc",
               "params": {
-                "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+                "url": "https://wxs.ign.fr/clc/geoportail/r/wmss",
                 "name": "LANDCOVER.CLC90_FR",
                 "format": "image/png",
                 "srs": "epsg:2154"
@@ -1222,9 +1222,9 @@
               "title": "Corine Land Cover 2000",
               "description": "Occupation biophysique des sols CLC 2000 révisée",
               "type": "wms_layer",
-              "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+              "metadata_url": "https://geoservices.ign.fr/services-web-experts-clc",
               "params": {
-                "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+                "url": "https://wxs.ign.fr/clc/geoportail/r/wms",
                 "name": "LANDCOVER.CLC00_FR",
                 "format": "image/png",
                 "srs": "epsg:2154"
@@ -1235,9 +1235,9 @@
               "title": "Corine Land Cover 2006",
               "description": "Occupation biophysique des sols CLC 2006 révisée",
               "type": "wms_layer",
-              "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+              "metadata_url": "https://geoservices.ign.fr/services-web-experts-clc",
               "params": {
-                "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+                "url": "https://wxs.ign.fr/clc/geoportail/r/wms",
                 "name": "LANDCOVER.CLC06R_FR",
                 "format": "image/png",
                 "srs": "epsg:2154"
@@ -1248,9 +1248,9 @@
               "title": "Corine Land Cover 2012",
               "description": "Occupation biophysique des sols CLC 2012",
               "type": "wms_layer",
-              "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+              "metadata_url": "https://geoservices.ign.fr/services-web-experts-clc",
               "params": {
-                "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+                "url": "https://wxs.ign.fr/clc/geoportail/r/wms",
                 "name": "LANDCOVER.CLC12_FR",
                 "format": "image/png",
                 "srs": "epsg:2154"
@@ -1261,9 +1261,9 @@
               "title": "Corine Land Cover 2018",
               "description": "Occupation biophysique des sols CLC 2018",
               "type": "wms_layer",
-              "metadata_url": "https://geoservices.ign.fr/blog/2018/04/10/corine_land_cover.html",
+              "metadata_url": "https://geoservices.ign.fr/services-web-experts-clc",
               "params": {
-                "url": "http://wxs.ign.fr/corinelandcover/geoportail/r/wms",
+                "url": "https://wxs.ign.fr/clc/geoportail/r/wms",
                 "name": "LANDCOVER.CLC18_FR",
                 "format": "image/png",
                 "srs": "epsg:2154"
