@@ -1,5 +1,5 @@
 {
-  "title": "DataGrandEst - version du 9 août 2023",
+  "title": "DataGrandEst - version du 15 août 2023",
   "description": "",
   "type": "folder",
   "children": [
@@ -2957,6 +2957,76 @@
                   6752778.0,
                   1011125.0,
                   6831654.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Vues aériennes locales",
+          "description": "Autres photographies aériennes prises à l'échelle locale",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "d8e2010e-1157-4ee3-b34f-20ce8c6e85c2",
+              "title": "Agglomération de Haguenau - 2023",
+              "description": "Orthophotographie couleur à une résolution de 5cm sur la Communauté d’Agglomération de Haguenau - 2023",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/Haguenau_5cm_2023_CC48",
+              "type": "wms_layer",
+              "params": {
+                "url": "https://websig.agglo-haguenau.fr/mapserver/public/FLUX_WMS_ORTHO_CAH_2023.map",
+                "name": "CAH-ORTHO_PCRS_JUIN_2023",
+                "format": "image/png",
+                "srs": "epsg:3857"
+              },
+              "bounding_boxes": [
+                [
+                  837587.0,
+                  6219135.0,
+                  892376.0,
+                  6260806.0
+                ]
+              ]
+            },
+            {
+              "ident": "416c4a69-73cd-44dd-afa9-242809471c18",
+              "title": "Agglomération de Haguenau - 2022",
+              "description": "Orthophotographie couleur à une résolution de 5cm sur la Communauté d’Agglomération de Haguenau - 2022",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/Haguenau_5cm_2023_CC48",
+              "type": "wms_layer",
+              "params": {
+                "url": "https://websig.agglo-haguenau.fr/mapserver/public/FLUX_WMS_ORTHO_CAH_2022.map",
+                "name": "CAH-ORTHO_PCRS_MARS_2022",
+                "format": "image/png",
+                "srs": "epsg:3857"
+              },
+              "bounding_boxes": [
+                [
+                  837587.0,
+                  6219135.0,
+                  892376.0,
+                  6260806.0
+                ]
+              ]
+            },
+            {
+              "ident": "a0edb9ed-0429-4da1-8d5d-342f9dab80be",
+              "title": "Agglomération de Haguenau - 2019",
+              "description": "Orthophotographie couleur à une résolution de 5cm sur la Communauté d’Agglomération de Haguenau - 2019",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/Haguenau_5cm_2023_CC48",
+              "type": "wms_layer",
+              "params": {
+                "url": "https://websig.agglo-haguenau.fr/mapserver/public/FLUX_WMS_ORTHO_CAH_2019.map",
+                "name": "CAH-ORTHO_PCRS_JUIN_2019",
+                "format": "image/png",
+                "srs": "epsg:3857"
+              },
+              "bounding_boxes": [
+                [
+                  837587.0,
+                  6219135.0,
+                  892376.0,
+                  6260806.0
                 ]
               ]
             }
