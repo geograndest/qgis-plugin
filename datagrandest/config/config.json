@@ -1,5 +1,5 @@
 {
-  "title": "DataGrandEst - version du 15 août 2023",
+  "title": "DataGrandEst - version du 22 septembre 2023",
   "description": "",
   "type": "folder",
   "children": [
@@ -3027,6 +3027,48 @@
                   6219135.0,
                   892376.0,
                   6260806.0
+                ]
+              ]
+            },
+            {
+              "ident": "e665a08e-4073-42f4-a09d-7af9f964bb99",
+              "title": "Grand Nancy - 2022",
+              "description": "Orthophotographie couleur à une résolution de 5cm sur la Métropole du Grand Nancy - 2022",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-245400676-ORTHO-2022",
+              "type": "wms_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/grand-nancy/wms",
+                "name": "grandnancy_ortho2022",
+                "format": "image/png",
+                "srs": "epsg:3857"
+              },
+              "bounding_boxes": [
+                [
+                  925000.0,
+                  6838000.0,
+                  944000.0,
+                  6855000.0
+                ]
+              ]
+            },
+            {
+              "ident": "d26e92f3-31f3-4c48-b8d3-70a729479a8f",
+              "title": "Grand Nancy - 2021",
+              "description": "Orthophotographie couleur à une résolution de 5cm sur la Métropole du Grand Nancy - 2019",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/ORTHO_2021_ECW",
+              "type": "wms_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/grand-nancy/wms",
+                "name": "ortho",
+                "format": "image/png",
+                "srs": "epsg:3857"
+              },
+              "bounding_boxes": [
+                [
+                  925000.0,
+                  6838000.0,
+                  944000.0,
+                  6855000.0
                 ]
               ]
             }
