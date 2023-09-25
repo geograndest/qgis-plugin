@@ -3071,6 +3071,48 @@
                   6855000.0
                 ]
               ]
+            },
+            {
+              "ident": "d8fddec1-b556-4d29-8bfb-f14df38bb466",
+              "title": "Metz Métropole - 2022",
+              "description": "Orthophotoplan PCRS 2022 - EUROMETROPOLE de METZ ",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/metzmetropole_fdp_ort_2022_5cm_79278b0234a86c4e765c3e4808a0f5f7",
+              "type": "wms_layer",
+              "params": {
+                "url": "https://maps.eurometropolemetz.eu/wms",
+                "name": "public:fdp_ort_2022_5cm",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  915581.0,
+                  6876893.0,
+                  946644.0,
+                  6906897.0
+                ]
+              ]
+            },
+            {
+              "ident": "d26e92f3-31f3-4c48-b8d3-70a729479a8f",
+              "title": "Metz Métropole - 2019",
+              "description": "Orthophotoplan PCRS 2019 - EUROMETROPOLE de METZ",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/metzmetropole_fdp_ort_2019_5cm_78432a321b329d437fafe522138b51d9",
+              "type": "wms_layer",
+              "params": {
+                "url": "https://maps.eurometropolemetz.eu/wms",
+                "name": "public:fdp_ort_2019_5cm",
+                "format": "image/png",
+                "srs": "epsg:2154"
+              },
+              "bounding_boxes": [
+                [
+                  915699.0,
+                  6879227.0,
+                  946512.0,
+                  6906183.0
+                ]
+              ]
             }
           ]
         }
