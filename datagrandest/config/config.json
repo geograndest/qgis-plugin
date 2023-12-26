@@ -28,7 +28,7 @@
           "type": "wms_layer",
           "metadata_url": "https://geoservices.ign.fr/blog/2021/01/29/Maj_Cles_Geoservices.html",
           "params": {
-            "url": "https://wxs.ign.fr/choisirgeoportail/geoportail/r/wms?",
+            "url": "https://data.geopf.fr/wms-r",
             "name": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
             "format": "image/png",
             "srs": "epsg:2154"
@@ -1211,7 +1211,7 @@
               "type": "wms_layer",
               "metadata_url": "https://geoservices.ign.fr/services-web-experts-clc",
               "params": {
-                "url": "https://wxs.ign.fr/clc/geoportail/r/wmss",
+                "url": "https://data.geopf.fr/wms-r",
                 "name": "LANDCOVER.CLC90_FR",
                 "format": "image/png",
                 "srs": "epsg:2154"
@@ -1224,7 +1224,7 @@
               "type": "wms_layer",
               "metadata_url": "https://geoservices.ign.fr/services-web-experts-clc",
               "params": {
-                "url": "https://wxs.ign.fr/clc/geoportail/r/wms",
+                "url": "https://data.geopf.fr/wms-r",
                 "name": "LANDCOVER.CLC00_FR",
                 "format": "image/png",
                 "srs": "epsg:2154"
@@ -1237,7 +1237,7 @@
               "type": "wms_layer",
               "metadata_url": "https://geoservices.ign.fr/services-web-experts-clc",
               "params": {
-                "url": "https://wxs.ign.fr/clc/geoportail/r/wms",
+                "url": "https://data.geopf.fr/wms-r",
                 "name": "LANDCOVER.CLC06R_FR",
                 "format": "image/png",
                 "srs": "epsg:2154"
@@ -1250,7 +1250,7 @@
               "type": "wms_layer",
               "metadata_url": "https://geoservices.ign.fr/services-web-experts-clc",
               "params": {
-                "url": "https://wxs.ign.fr/clc/geoportail/r/wms",
+                "url": "https://data.geopf.fr/wms-r",
                 "name": "LANDCOVER.CLC12_FR",
                 "format": "image/png",
                 "srs": "epsg:2154"
@@ -1263,7 +1263,7 @@
               "type": "wms_layer",
               "metadata_url": "https://geoservices.ign.fr/services-web-experts-clc",
               "params": {
-                "url": "https://wxs.ign.fr/clc/geoportail/r/wms",
+                "url": "https://data.geopf.fr/wms-r",
                 "name": "LANDCOVER.CLC18_FR",
                 "format": "image/png",
                 "srs": "epsg:2154"
@@ -1537,7 +1537,7 @@
           "type": "wfs_feature_type",
           "metadata_url": "https://www.data.gouv.fr/fr/datasets/zones-interdites-a-la-prise-de-vue-aerienne-1/",
           "params": {
-            "url": "https://wxs.ign.fr/ortho/geoportail/wfs?",
+            "url": "https://data.geopf.fr/wfs/ows",
             "version": "2.0.0",
             "name": "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS:arrete",
             "srs": "epsg:2154"
