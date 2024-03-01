@@ -1,5 +1,5 @@
 {
-  "title": "DataGrandEst - version du 22 septembre 2023",
+  "title": "DataGrandEst - version du 1er mars 2024",
   "description": "",
   "type": "folder",
   "children": [
@@ -159,20 +159,19 @@
       "type": "folder",
       "children": [
         {
-          "title": "OCSGE2-2010",
-          "description": "Occupation du sol 2010 dans le Grand Est",
+          "title": "OCSGE2-2021",
+          "description": "Occupation du sol 2021 dans le Grand Est",
           "type": "folder",
           "children": [
             {
-              "ident": "1e5e48a2-1527-4f9c-a4d3-60e3474bba65",
-              "title": "Occupation du sol 2010 dans le Grand Est",
-              "description": "Agrégat des Occupations du Sols 2010 dans le Grand Est",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D67",
+              "ident": "e1ec6565-0f1a-4612-a728-212fac24fddc",
+              "title": "Occupation du sol 2021 dans le Grand Est",
+              "description": "Agrégat des occupations du sol 2021 dans le Grand Est",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocs2010",
+                "name": "geograndest:ocs_grand_est_2021",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -186,15 +185,15 @@
               ]
             },
             {
-              "ident": "2fba0fc3-a92b-47b8-945c-4339048cf20a",
-              "title": "Occupation du sol 2010 - Département 08 Ardennes",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 08 Ardennes",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D08",
+              "ident": "f23874db-73e1-4dce-8558-68504d12019b",
+              "title": "Occupation du sol 2021 - Département 08 Ardennes",
+              "description": "Occupation du sol 2021 à Grande Echelle - Département 08 Ardennes",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2021-D08",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d08_2010",
+                "name": "geograndest:ocs_grand_est_2021_d08",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -204,53 +203,19 @@
                   6904593.0,
                   873032.0,
                   7009400.0
-                ],
-                [
-                  774074.0,
-                  6904593.0,
-                  873032.0,
-                  7009400.0
                 ]
               ]
             },
             {
-              "ident": "09102fa4-c3ba-4914-b4c0-890c4f4e4b7f",
-              "title": "Occupation du sol 2010 - Département 10 Aube",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 10 Aube",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D10",
+              "ident": "68911be3-1c5c-478b-a4b6-c0d7b2d3f056",
+              "title": "Occupation du sol 2021 - Département 51 Marne",
+              "description": "Occupation du sol 2021 à Grande Echelle - Département 51 Marne",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2021-D51",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d10_2010",
-                "format": "image/png",
-                "srs": "EPSG:2154"
-              },
-              "bounding_boxes": [
-                [
-                  728328.0,
-                  6758663.0,
-                  838527.0,
-                  6847002.0
-                ],
-                [
-                  728328.0,
-                  6758663.0,
-                  838527.0,
-                  6847002.0
-                ]
-              ]
-            },
-            {
-              "ident": "f69f3e6b-1394-444f-afc5-7b377b78bf26",
-              "title": "Occupation du sol 2010 - Département 51 Marne",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 51 Marne",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D51",
-              "type": "wmts_layer",
-              "params": {
-                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
-                "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d51_2010",
+                "name": "geograndest:ocs_grand_est_2021_d51",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -260,53 +225,19 @@
                   6824200.0,
                   849294.0,
                   6923531.0
-                ],
-                [
-                  729098.0,
-                  6824200.0,
-                  849294.0,
-                  6923531.0
                 ]
               ]
             },
             {
-              "ident": "550ff339-e99d-47e3-9b63-fa493e999c29",
-              "title": "Occupation du sol 2010 - Département 52 Haute-Marne",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 52 Haute-Marne",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D52",
+              "ident": "ebae5e22-42c2-4eb0-923e-430b2c3113f4",
+              "title": "Occupation du sol 2021 - Département 54 Meurthe-et-Moselle",
+              "description": "Occupation du sol 2021 à Grande Echelle - Département 54 Meurthe-et-Moselle",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2021-D54",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d52_2010",
-                "format": "image/png",
-                "srs": "EPSG:2154"
-              },
-              "bounding_boxes": [
-                [
-                  820248.0,
-                  6721998.0,
-                  915914.0,
-                  6845059.0
-                ],
-                [
-                  820248.0,
-                  6721998.0,
-                  915914.0,
-                  6845059.0
-                ]
-              ]
-            },
-            {
-              "ident": "44b17d6d-d7f0-4dc9-b469-2eedb31be0f2",
-              "title": "Occupation du sol 2010 - Département 54 Meurthe-et-Moselle",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 54 Meurthe-et-Moselle",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D54",
-              "type": "wmts_layer",
-              "params": {
-                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
-                "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d54_2010",
+                "name": "geograndest:ocs_grand_est_2021_d54",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -316,25 +247,19 @@
                   6809573.0,
                   1004385.0,
                   6943963.0
-                ],
-                [
-                  875820.0,
-                  6809573.0,
-                  1004385.0,
-                  6943963.0
                 ]
               ]
             },
             {
-              "ident": "38ece3bd-e831-4d1e-9aed-e59d8cd51972",
-              "title": "Occupation du sol 2010 - Département 55 Meuse",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 55 Meuse",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D55",
+              "ident": "a2ee1512-1186-4de6-8b2e-e71299d4b74a",
+              "title": "Occupation du sol 2021 - Département 55 Meuse",
+              "description": "Occupation du sol 2021 à Grande Echelle - Département 55 Meuse",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2021-D55",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_D55_2010",
+                "name": "geograndest:ocs_grand_est_2021_d55",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -344,25 +269,19 @@
                   6815017.0,
                   908702.0,
                   6949057.0
-                ],
-                [
-                  838677.0,
-                  6815017.0,
-                  908702.0,
-                  6949057.0
                 ]
               ]
             },
             {
-              "ident": "1637daf4-0380-492e-8ec6-6e24a6c67414",
-              "title": "Occupation du sol 2010 - Département 57 Moselle",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 57 Moselle",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D57",
+              "ident": "38c6f022-0a9d-41f4-9d2d-7986c947f18b",
+              "title": "Occupation du sol 2021 - Département 57 Moselle",
+              "description": "Occupation du sol 2021 à Grande Echelle - Département 57 Moselle",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2021-D57",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d57_2010",
+                "name": "geograndest:ocs_grand_est_2021_d57",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -372,25 +291,19 @@
                   6833204.0,
                   1039003.0,
                   6939842.0
-                ],
-                [
-                  909507.0,
-                  6833204.0,
-                  1039003.0,
-                  6939842.0
                 ]
               ]
             },
             {
-              "ident": "de8c4c28-f2f4-4963-bd3d-02a0ad2e0338",
-              "title": "Occupation du sol 2010 - Département 67 Bas-Rhin",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 67 Bas-Rhin",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D67",
+              "ident": "e2e91f45-67f0-47b3-ac55-6877887606e8",
+              "title": "Occupation du sol 2021 - Département 67 Bas-Rhin",
+              "description": "Occupation du sol 2021 à Grande Echelle - Département 67 Bas-Rhin",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-GRAND-EST-D67",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d67_2010",
+                "name": "geograndest:ocs_grand_est_2021_d67",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -400,25 +313,19 @@
                   6789869.0,
                   1082898.0,
                   6895738.0
-                ],
-                [
-                  988626.0,
-                  6789869.0,
-                  1082898.0,
-                  6895738.0
                 ]
               ]
             },
             {
-              "ident": "27b998e4-5dbe-47f4-b714-4de927f72c4c",
-              "title": "Occupation du sol 2010 - Département 68 Haut-Rhin",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 68 Haut-Rhin",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D68",
+              "ident": "6e27ded8-49ec-498e-8e19-6c0711f45e63",
+              "title": "Occupation du sol 2021 - Département 68 Haut-Rhin",
+              "description": "Occupation du sol 2021 à Grande Echelle - Département 68 Haut-Rhin",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2021-D68",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d68_2010",
+                "name": "geograndest:ocs_grand_est_2021_d68",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -428,35 +335,23 @@
                   6710814.0,
                   1044947.0,
                   6809560.0
-                ],
-                [
-                  987327.0,
-                  6710814.0,
-                  1044947.0,
-                  6809560.0
                 ]
               ]
             },
             {
-              "ident": "92ddbac3-f313-4448-b0b3-c5fba652bb75",
-              "title": "Occupation du sol 2010 - Département 88 Vosges",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 88 Vosges",
-              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D88",
+              "ident": "578e0d68-7821-4eca-b55a-df335f628bf6",
+              "title": "Occupation du sol 2021 - Département 88 Vosges",
+              "description": "Occupation du sol 2021 à Grande Echelle - Département 88 Vosges",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2021-D88",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d88_2010",
+                "name": "geograndest:ocs_grand_est_2021_d88",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
               "bounding_boxes": [
-                [
-                  877185.0,
-                  6752778.0,
-                  1011125.0,
-                  6831654.0
-                ],
                 [
                   877185.0,
                   6752778.0,
@@ -475,13 +370,13 @@
             {
               "ident": "40719bde-a39a-4906-9d11-e4543f8a9302",
               "title": "Occupation du sol 2019 dans le Grand Est",
-              "description": "Agrégat des Occupations du Sols 2019 dans le Grand Est",
+              "description": "Agrégat des occupations du sol 2019 dans le Grand Est",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D67",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocs2019",
+                "name": "geograndest:ocs_grand_est_2019",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -497,13 +392,13 @@
             {
               "ident": "48a34466-8019-45ec-8fd0-d7f685a6e742",
               "title": "Occupation du sol 2019 - Département 08 Ardennes",
-              "description": "Occupation du sol 2019 à Grande Echelle- Département 08 Ardennes",
+              "description": "Occupation du sol 2019 à Grande Echelle - Département 08 Ardennes",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D08",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d08_2019",
+                "name": "geograndest:ocs_grand_est_2019_d08",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -519,7 +414,7 @@
             {
               "ident": "4d886942-6c22-4786-8b69-1c79d0823e9a",
               "title": "Occupation du sol 2019 - Département 10 Aube",
-              "description": "Occupation du sol 2019 à Grande Echelle- Département 10 Aube",
+              "description": "Occupation du sol 2019 à Grande Echelle - Département 10 Aube",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D10",
               "type": "wmts_layer",
               "params": {
@@ -541,13 +436,13 @@
             {
               "ident": "9476824a-68ac-480b-bb28-1cde87f24803",
               "title": "Occupation du sol 2019 - Département 51 Marne",
-              "description": "Occupation du sol 2019 à Grande Echelle- Département 51 Marne",
+              "description": "Occupation du sol 2019 à Grande Echelle - Département 51 Marne",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D51",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d51_2019",
+                "name": "geograndest:ocs_grand_est_2019_d51",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -563,7 +458,7 @@
             {
               "ident": "116ca7db-8601-4903-b4dc-977ba65d7bd1",
               "title": "Occupation du sol 2019 - Département 52 Haute-Marne",
-              "description": "Occupation du sol 2019 à Grande Echelle- Département 10 Haute-Marne",
+              "description": "Occupation du sol 2019 à Grande Echelle - Département 52 Haute-Marne",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D52",
               "type": "wmts_layer",
               "params": {
@@ -585,13 +480,13 @@
             {
               "ident": "fad8220c-faf4-445d-84ce-056e7bbc05a4",
               "title": "Occupation du sol 2019 - Département 54 Meurthe-et-Moselle",
-              "description": "Occupation du sol 2019 à Grande Echelle- Département 54 Meurthe-et-Moselle",
+              "description": "Occupation du sol 2019 à Grande Echelle - Département 54 Meurthe-et-Moselle",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D54",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d54_2019",
+                "name": "geograndest:ocs_grand_est_2019_d54",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -607,13 +502,13 @@
             {
               "ident": "1ba1ef23-e44f-43f3-9d51-d92295142f6d",
               "title": "Occupation du sol 2019 - Département 55 Meuse",
-              "description": "Occupation du sol 2019 à Grande Echelle- Département 55 Meuse",
+              "description": "Occupation du sol 2019 à Grande Echelle - Département 55 Meuse",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D55",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d55_2019",
+                "name": "geograndest:ocs_grand_est_2019_d55",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -629,13 +524,13 @@
             {
               "ident": "1c2d353c-3003-463c-b272-d9b1accb7874",
               "title": "Occupation du sol 2019 - Département 57 Moselle",
-              "description": "Occupation du sol 2019 à Grande Echelle- Département 57 Moselle",
+              "description": "Occupation du sol 2019 à Grande Echelle - Département 57 Moselle",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D57",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d57_2019",
+                "name": "geograndest:ocs_grand_est_2019_d57",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -651,13 +546,13 @@
             {
               "ident": "ac6b487e-6bc4-4086-b4c1-ec0277f71c2b",
               "title": "Occupation du sol 2019 - Département 67 Bas-Rhin",
-              "description": "Occupation du sol 2010 à Grande Echelle- Département 67 Bas-Rhin",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 67 Bas-Rhin",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D67",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d67_2019",
+                "name": "geograndest:ocs_grand_est_2019_d67",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -673,13 +568,13 @@
             {
               "ident": "ac6b487e-6bc4-4086-b4c1-ec0277f71c2b",
               "title": "Occupation du sol 2019 - Département 68 Haut-Rhin",
-              "description": "Occupation du sol 2019 à Grande Echelle- Département 68 Haut-Rhin",
+              "description": "Occupation du sol 2019 à Grande Echelle - Département 68 Haut-Rhin",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D68",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d68_2019",
+                "name": "geograndest:ocs_grand_est_2019_d68",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -695,13 +590,262 @@
             {
               "ident": "c2cb0a40-2f7a-4d62-a783-8b1b045b8b76",
               "title": "Occupation du sol 2019 - Département 88 Vosges",
-              "description": "Occupation du sol 2019 à Grande Echelle- Département 88 Vosges",
+              "description": "Occupation du sol 2019 à Grande Echelle - Département 88 Vosges",
               "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2019-D88",
               "type": "wmts_layer",
               "params": {
                 "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
                 "tilematrixset_name": "EPSG:2154",
-                "name": "geograndest:ocsge2_d88_2019",
+                "name": "geograndest:ocs_grand_est_2019_d88",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  877185.0,
+                  6752778.0,
+                  1011125.0,
+                  6831654.0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "OCSGE2-2010",
+          "description": "Occupation du sol 2010 dans le Grand Est",
+          "type": "folder",
+          "children": [
+            {
+              "ident": "1e5e48a2-1527-4f9c-a4d3-60e3474bba65",
+              "title": "Occupation du sol 2010 dans le Grand Est",
+              "description": "Agrégat des occupations du sol 2010 dans le Grand Est",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D67",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs_grand_est_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6710814.0,
+                  1082898.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "2fba0fc3-a92b-47b8-945c-4339048cf20a",
+              "title": "Occupation du sol 2010 - Département 08 Ardennes",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 08 Ardennes",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D08",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs_grand_est_2010_d08",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  774074.0,
+                  6904593.0,
+                  873032.0,
+                  7009400.0
+                ]
+              ]
+            },
+            {
+              "ident": "09102fa4-c3ba-4914-b4c0-890c4f4e4b7f",
+              "title": "Occupation du sol 2010 - Département 10 Aube",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 10 Aube",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D10",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d10_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  728328.0,
+                  6758663.0,
+                  838527.0,
+                  6847002.0
+                ]
+              ]
+            },
+            {
+              "ident": "f69f3e6b-1394-444f-afc5-7b377b78bf26",
+              "title": "Occupation du sol 2010 - Département 51 Marne",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 51 Marne",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D51",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs_grand_est_2010_d51",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  729098.0,
+                  6824200.0,
+                  849294.0,
+                  6923531.0
+                ]
+              ]
+            },
+            {
+              "ident": "550ff339-e99d-47e3-9b63-fa493e999c29",
+              "title": "Occupation du sol 2010 - Département 52 Haute-Marne",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 52 Haute-Marne",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D52",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocsge2_d52_2010",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  820248.0,
+                  6721998.0,
+                  915914.0,
+                  6845059.0
+                ]
+              ]
+            },
+            {
+              "ident": "44b17d6d-d7f0-4dc9-b469-2eedb31be0f2",
+              "title": "Occupation du sol 2010 - Département 54 Meurthe-et-Moselle",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 54 Meurthe-et-Moselle",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D54",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs_grand_est_2010_d54",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  875820.0,
+                  6809573.0,
+                  1004385.0,
+                  6943963.0
+                ]
+              ]
+            },
+            {
+              "ident": "38ece3bd-e831-4d1e-9aed-e59d8cd51972",
+              "title": "Occupation du sol 2010 - Département 55 Meuse",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 55 Meuse",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D55",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs_grand_est_2010_d55",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  838677.0,
+                  6815017.0,
+                  908702.0,
+                  6949057.0
+                ]
+              ]
+            },
+            {
+              "ident": "1637daf4-0380-492e-8ec6-6e24a6c67414",
+              "title": "Occupation du sol 2010 - Département 57 Moselle",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 57 Moselle",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D57",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs_grand_est_2010_d57",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  909507.0,
+                  6833204.0,
+                  1039003.0,
+                  6939842.0
+                ]
+              ]
+            },
+            {
+              "ident": "de8c4c28-f2f4-4963-bd3d-02a0ad2e0338",
+              "title": "Occupation du sol 2010 - Département 67 Bas-Rhin",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 67 Bas-Rhin",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-GRAND-EST-D67",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs_grand_est_2010_d67",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  988626.0,
+                  6789869.0,
+                  1082898.0,
+                  6895738.0
+                ]
+              ]
+            },
+            {
+              "ident": "27b998e4-5dbe-47f4-b714-4de927f72c4c",
+              "title": "Occupation du sol 2010 - Département 68 Haut-Rhin",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 68 Haut-Rhin",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D68",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs_grand_est_2010_d68",
+                "format": "image/png",
+                "srs": "EPSG:2154"
+              },
+              "bounding_boxes": [
+                [
+                  987327.0,
+                  6710814.0,
+                  1044947.0,
+                  6809560.0
+                ]
+              ]
+            },
+            {
+              "ident": "92ddbac3-f313-4448-b0b3-c5fba652bb75",
+              "title": "Occupation du sol 2010 - Département 88 Vosges",
+              "description": "Occupation du sol 2010 à Grande Echelle - Département 88 Vosges",
+              "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OCS-2010-D88",
+              "type": "wmts_layer",
+              "params": {
+                "url": "https://www.datagrandest.fr/geoserver/gwc/service/wmts",
+                "tilematrixset_name": "EPSG:2154",
+                "name": "geograndest:ocs_grand_est_2010_d88",
                 "format": "image/png",
                 "srs": "EPSG:2154"
               },
@@ -1463,14 +1607,14 @@
         {
           "ident": "40b93573-a46f-42b1-8a7a-ad84b9d7d92a",
           "title": "Documents d'urbanisme",
-          "description": "Agrégation des couches du GPU suivantes : documents d'urbanisme et emprises des documents d'urbanisme.",
+          "description": "Couche des documents d'urbanisme du Géoportail de l'urbanisme",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/e8f4a265-2511-4a5b-939a-4a4e49471e39",
           "type": "wms_layer",
           "params": {
-            "url": "https://www.datagrandest.fr/geoserver/gpu/ows",
-            "name": "GPU_documents_emprise",
+            "url": "https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v",
+            "name": "du",
             "format": "image/png",
-            "srs": "epsg:2154"
+            "srs": "EPSG:2154"
           },
           "bounding_boxes": [
             [
@@ -1484,14 +1628,14 @@
         {
           "ident": "47c63d52-a795-4fee-8a86-f13fc6b92de3",
           "title": "Zonages des documents d'urbanisme",
-          "description": "Agrégation des couches du GPU suivantes : zonages des documents d'urbanisme et emprises des documents d'urbanisme.",
+          "description": "Couche des zonages des documents d'urbanisme du Géoportail de l'urbanisme",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/e8f4a265-2511-4a5b-939a-4a4e49471e39",
           "type": "wms_layer",
           "params": {
-            "url": "https://www.datagrandest.fr/geoserver/gpu/ows",
-            "name": "GPU_zonage_emprise",
+            "url": "https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v",
+            "name": "zone_secteur",
             "format": "image/png",
-            "srs": "epsg:2154"
+            "srs": "EPSG:2154"
           },
           "bounding_boxes": [
             [
@@ -1504,15 +1648,15 @@
         },
         {
           "ident": "50d4b6c5-516c-43e8-879e-b9aca311b61a",
-          "title": "Zonages des documents d'urbanisme et communes soumises au RNU",
-          "description": "Agrégation des couches du GPU suivantes : documents d'urbanisme, emprises des documents d'urbanisme et des communes soumises au RNU.",
+          "title": "Emprises des communes soumises au RNU",
+          "description": "Couche des emprises des communes soumises au RNU du Géoportail de l'urbanisme",
           "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/e8f4a265-2511-4a5b-939a-4a4e49471e39",
           "type": "wms_layer",
           "params": {
-            "url": "https://www.datagrandest.fr/geoserver/gpu/ows",
-            "name": "GPU_zonage_rnu_emprise",
+            "url": "https://wxs-gpu.mongeoportail.ign.fr/externe/i9ytmrb6tgtq5yfek781ntqi/wms/v",
+            "name": "municipality",
             "format": "image/png",
-            "srs": "epsg:2154"
+            "srs": "EPSG:2154"
           },
           "bounding_boxes": [
             [
