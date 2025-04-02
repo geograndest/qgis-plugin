@@ -1,7 +1,7 @@
 [general]
 name=DataGrandEst
 description=Plugin pour QGIS 3 fournissant un accès simple aux flux de géographiques WMS et WFS de DataGrandEst et d'autres ressources géographiques utiles en région Grand Est.
-version=2.2
+version=2.3
 qgisMinimumVersion=3.00
 qgisMaximumVersion=3.99
 author=Région Hauts-de-France, Neogeo Technologies, Benjamin Chartier, UMR LETG
